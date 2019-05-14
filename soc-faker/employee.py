@@ -20,7 +20,6 @@ class Employee(object):
         self.username = "{}{}".format(finit.lower(), lastname.lower())
         self._name = "%s %s" % (firstname, lastname)
 
-
     @property
     def username(self):
         return self._username
@@ -42,6 +41,10 @@ class Employee(object):
     def gender(self):
         return random.choice('male', 'female', 'undisclosed')
 
+    @property
+    def status(self):
+        return random.choice('Current Employee', 'Retired', 'Terminated', 'On Parental Leave')
+        
     @property
     def ssn(self):
         # Certain numbers are invalid for United States Social Security
@@ -129,16 +132,3 @@ class Employee(object):
             "ta-IN",
             "ta-LK"
         ])
-
-
-emp = Employee()
-
-print(emp.name)
-print(emp.name)
-print(emp.language)
-
-print(emp.id)
-emp.id = 24
-print(emp.id)
-print(emp.dob)
-print(emp.ssn)

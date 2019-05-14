@@ -14,7 +14,7 @@ A python package for use in generating fake data for SOC and security automation
 
 - [ ] Username (review) - add id component? 
 - [x] Sex/Gender
-- [ ] Employment Status?
+- [x] Employment Status?
 - [x] ID
 - [x] Phone Number
 - [x] Email Address (based on flastname)
@@ -25,15 +25,15 @@ A python package for use in generating fake data for SOC and security automation
 - [x] DOB
 
 ### Computer
-- [ ] Operating System
-- [ ] Hostname (Net)
+- [x] Operating System
+- [x] Hostname (Net)
 - [ ] IP (Net)
-- [ ] Disk size
-- [ ] Memory 
+- [x] Disk size
+- [x] Memory 
 - [ ] Networking configuration/settings
-- [ ] Type (laptop, desktop, workstation, server, cloud)
+- [x] Type (laptop, desktop, workstation, server, cloud)
 - [ ] Owner
-- [ ] NETBIOS
+- [x] NETBIOS
 
 
 
@@ -52,27 +52,26 @@ A python package for use in generating fake data for SOC and security automation
 - [ ] Physical Address?
 
 ### Organization
-- [ ] Name
+- [x] Name
 - [x] Division
 - [ ] Department
-- [ ] Title/Job Function
+- [x] Title/Job Function
 
 ### Network
-- [ ] IP Address (v4/v6), private optional
-- [ ] Hostname
+- [x] IP Address (v4/v6), private optional
+- [x] Hostname
 - [ ] Physical Location
 - [ ] Email Address (optional domain input)
 - [ ] URL
-- [ ] MAC addr
+- [x] MAC addr
 
 ### File Info
-- [ ] Filename
-- [ ] File Size
-- [ ] File date/timestamp
-- [ ] File Hash
-- [ ] Sha256
-- [ ] Sha1
-- [ ] Md5
+- [x] Filename
+- [x] File Size
+- [x] File date/timestamp
+- [x] Sha256
+- [x] Sha1
+- [x] Md5
 - [ ] fuzzy?
 - [ ] File Path
 - [ ] File Reputation?
