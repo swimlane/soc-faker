@@ -1,12 +1,19 @@
 import random
 
+
 class Organization(object):
 
     def __init__(self):
         self.name = 'test'
+        self.division = ''
+        self.title = ''
 
     @property
     def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, value):
         first = random.choice([
             'Adaptive',
             'Advanced',
@@ -217,15 +224,16 @@ class Organization(object):
             'workforce'
         ])
 
-        return "%s %s" % (first, second)
-    
-    @name.setter
-    def name(self, value):
-        self._name = value
+        self._name = "%s %s" % (first, second)
+
 
     @property
     def division(self):
-        return random.choice([
+        return self._division
+
+    @division.setter
+    def division(self, value):
+        self._division = random.choice([
             'Marketing',
             'Human Resources',
             'Information Security',
@@ -240,7 +248,11 @@ class Organization(object):
 
     @property
     def title(self):
-        return random.choice([
+        return self._title 
+
+    @title.setter
+    def title(self, value):
+        self._title = random.choice([
             "Actor",
             "Administrator",
             "Aeronautical engineer",

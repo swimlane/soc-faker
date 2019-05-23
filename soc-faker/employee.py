@@ -3,9 +3,16 @@ import random, string, pendulum
 class Employee(object):
 
     def __init__(self):
-        self.name = 'name'
-        self.id = 18
+        self.name = ''
+        self.logon_timestamp = 120
+        self.userId = 18
         self.dob = 18
+        self.gender = ''
+        self.language = ''
+        self.accountStatus = ''
+        self.ssn = ''
+        self.photo = ''
+        self.phone_number = ''
 
     @property
     def name(self):        
@@ -16,9 +23,20 @@ class Employee(object):
         firstname = random.choice(['Liam', 'Noah', 'William', 'James', 'Logan', 'Benjamin', 'Mason', 'Elijah', 'Oliver', 'Jacob', 'Emma', 'Olivia', 'Ava', 'Isabella', 'Sophia', 'Mia', 'Charlotte', 'Amelia', 'Evelyn', 'Abigail'])
         lastname = random.choice(['Smith', 'Taylor', 'Hayes', 'Anderson', 'Thomas', 'Jackson', 'White', 'Harris', 'Martin', 'Thompson', 'Garcia', 'Martinez', 'Johnson', 'Robinson', 'Clark', 'Rodriguez', 'Lewis', 'Lee', 'Walker', 'Hall', 'Allen', 'Young', 'Hernandez', 'Williams', 'King', 'Wright', 'Lopez', 'Hill', 'Scott', 'Green', 'Adams', 'Baker', 'Gonzalez', 'Nelson', 'Jones', 'Carter', 'Mitchell', 'Perez', 'Roberts', 'Turner', 'Phillips', 'Campbell', 'Parker', 'Evans', 'Edwards', 'Brown', 'Collins', 'Stewart', 'Sanchez', 'Morris', 'Rogers', 'Reed', 'Cook', 'Morgan', 'Bell', 'Murphy', 'Davis', 'Bailey', 'Rivera', 'Cooper', 'Richardson', 'Cox', 'Howard', 'Ward', 'Torres', 'Peterson', 'Gray', 'Miller', 'Ramirez', 'James', 'Watson', 'Brooks', 'Kelly', 'Sanders', 'Price', 'Bennett', 'Wood', 'Barnes', 'Wilson', 'Ross', 'Henderson', 'Coleman', 'Jenkins', 'Perry', 'Powell', 'Long', 'Patterson', 'Hughes', 'Flores', 'Moore', 'Washington', 'Butler', 'Simmons', 'Foster', 'Gonzales', 'Bryant', 'Alexander', 'Russell', 'Griffin', 'Diaz'])
         
+        self._firstName = firstname
+        self._lastName = lastname
+
         finit = firstname[:1]
         self.username = "{}{}".format(finit.lower(), lastname.lower())
         self._name = "%s %s" % (firstname, lastname)
+
+    @property
+    def firstName(self):
+        return self._firstName
+
+    @property
+    def lastName(self):
+        return self._lastName
 
     @property
     def username(self):
@@ -39,14 +57,26 @@ class Employee(object):
 
     @property
     def gender(self):
-        return random.choice('male', 'female', 'undisclosed')
+        return self._gender
+
+    @gender.setter
+    def gender(self, value):
+        self._gender = random.choice(['male', 'female', 'undisclosed'])
 
     @property
-    def status(self):
-        return random.choice('Current Employee', 'Retired', 'Terminated', 'On Parental Leave')
+    def accountStatus(self):
+        return self._accountStatus
         
+    @accountStatus.setter
+    def accountStatus(self, value):
+        self._accountStatus = random.choice(['Enabled'] * 9 + ['Disabled'])
+
     @property
     def ssn(self):
+        return self._ssn
+
+    @ssn.setter
+    def ssn(self, value):
         # Certain numbers are invalid for United States Social Security
         # Numbers. The area (first 3 digits) cannot be 666 or 900-999.
         # The group number (middle digits) cannot be 00. The serial
@@ -58,8 +88,7 @@ class Employee(object):
         group = random.randint(1, 99)
         serial = random.randint(1,9999)
 
-        ssn = "{0:03d}-{1:02d}-{2:04d}".format(area, group, serial)
-        return ssn
+        self._ssn = "{0:03d}-{1:02d}-{2:04d}".format(area, group, serial)
 
     @property
     def dob(self):
@@ -71,20 +100,33 @@ class Employee(object):
         
     @property
     def photo(self):
-        return 'https://picsum.photos/200/300?image=%s' % random.randint(0,1084)
+        return self._photo
+
+    @photo.setter
+    def photo(self, value):
+        url = 'https://picsum.photos/200/300?image=%s' % random.randint(0,1084)
+        if requests.get(url).status_code is 200:
+            self._photo = url
+        else:
+            print('Trying to retrieve another random photo')
+            self.photo = ''
 
     @property
-    def id(self):
-        return self._id
+    def userId(self):
+        return self._userId
 
-    @id.setter
-    def id(self, stringLength=18):
+    @userId.setter
+    def userId(self, stringLength=18):
         lettersAndDigits = string.ascii_letters + string.digits
         randomString = ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
-        self._id = '00%s' % randomString
+        self._userId = '00%s' % randomString
 
     @property
     def phone_number(self):
+        return self._phone_number
+
+    @phone_number.setter
+    def phone_number(self, value):
         first = str(random.randint(100,999))
         second = str(random.randint(1,888)).zfill(3)
 
@@ -92,13 +134,24 @@ class Employee(object):
         while last in ['1111','2222','3333','4444','5555','6666','7777','8888']:
             last = (str(random.randint(1,9998)).zfill(4))
 
-        return '{}-{}-{}'.format(first,second, last)
+        self._phone_number = '{}-{}-{}'.format(first,second, last)
     
-    
+    @property
+    def logon_timestamp(self):
+        return self._logon_timestamp
+
+    @logon_timestamp.setter
+    def logon_timestamp(self, value):
+        if isinstance(value, int):
+            self._logon_timestamp = pendulum.now().subtract(days=random.randint(1,value), hours=random.randint(1,59), minutes=random.randint(1,59), seconds=random.randint(1,59))
 
     @property
     def language(self):
-        return random.choice([
+        return self._language
+
+    @language.setter
+    def language(self, value):
+        self._language = random.choice([
             "bn-BD",
             "bn-IN",
             "zh-CN",
