@@ -1,12 +1,22 @@
 # soc-faker
+
 A python package for use in generating fake data for SOC and security automation.
 
-## Currently Implemented
+## Install
 
-* employee
-* application
-* organization
+To install you can create a virtual env or you can use the accompanying dockerfile to build/install this package.
 
+To use the dockerfile run, cd to this repositories directory and run:
+
+```
+docker build --force-rm -t socfaker .
+```
+
+Once it is built, then run the docker container:
+
+```
+docker run socfaker
+```
 
 ## TODO
 
@@ -84,7 +94,30 @@ I.e. log.generate(date(today), workstation.name, ip.addr) -> 2019-05-13 00:00:00
 
 
 ### Vulnerability
-- [ ] CVE
-- [ ] Type
 
+- [x] Critical Vulns
+- [x] High Vulns
+- [x] Medium Vulns
+- [x] Low Vulns
+- [x] Informational Vulns
 
+### Vulnerability Host
+
+- [x] Host ID
+- [x] Name
+- [x] Checks Considered
+- [x] Percentage of vulns vs checks considered
+- [x] Total Vuln Score for this host
+
+### Vulnerability Scan
+
+- [x] Scan Name
+- [x] Scanner Name
+- [x] Scan Type
+- [x] Scan Status
+- [x] Scan ID
+- [x] Scan UUID
+- [x] Scan Start Time 
+- [x] Scan End Time 
+- [x] Host Count
+- [x] IP List for Scan
