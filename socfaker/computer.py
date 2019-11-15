@@ -1,10 +1,19 @@
-import random, requests, json, ipaddress
+import random, requests, json, ipaddress, string
 
 class Computer(object):
 
     def __init__(self):
-        self.hostname = 'test'
+        self.name = 'test'
         self.os = 'os'
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        prefix = random.choice(['Desktop'] * 4 + ['Laptop'])
+        self._name = '%s-' % prefix + ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(7))
 
     @property
     def disk(self):
@@ -38,8 +47,12 @@ class Computer(object):
 
     @property
     def platform(self):
-        return random.choice('Laptop', 'Desktop', 'Workstation', 'Server', 'Virtual Machine', 'Container', 'Micro-Service', 'Droplet', 'SaaS')
+        return random.choice(['Laptop', 'Desktop', 'Workstation', 'Server', 'Virtual Machine', 'Container', 'Micro-Service', 'Droplet', 'SaaS'])
 
+    @property
+    def mac_address(self):
+        return ':'.join("%02x"%random.randint(0, 255) for _ in range(5))
+        
     @property
     def os(self):
         return self._os

@@ -14,6 +14,7 @@ class Employee(object):
         self.ssn = ''
         self.photo = ''
         self.phone_number = ''
+        self.department = ''
 
     @property
     def name(self):        
@@ -186,3 +187,35 @@ class Employee(object):
             "ta-IN",
             "ta-LK"
         ])
+
+    @property
+    def title(self):
+        job_titles = \
+            10 * ['Analyst'] + \
+            5 * ['Supervisor'] + \
+            3 * ['Manager'] + \
+            2 * ['Director'] + \
+            1 * ['CFO'] + \
+            1 * ['CISO'] + \
+            1 * ['CIO'] + \
+            1 * ['CEO']
+
+        job_title = random.choice(job_titles)
+
+        if job_title not in ['CFO', 'CISO', 'CIO', 'CEO']:
+            return "{}, {}".format(random.choice(self.department), job_title)
+        return job_title
+
+    @property
+    def department(self):
+        return self._department
+
+    @department.setter
+    def department(self, value):
+        departments = \
+            10 * ['SOC'] + \
+            10 * ['NOC'] + \
+            5 * ['Help Desk'] + \
+            5 * ['HR'] + \
+            4 * ['QA']
+        self._department = random.choice(departments)
