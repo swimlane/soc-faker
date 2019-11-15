@@ -121,3 +121,26 @@ I.e. log.generate(date(today), workstation.name, ip.addr) -> 2019-05-13 00:00:00
 - [x] Scan End Time 
 - [x] Host Count
 - [x] IP List for Scan
+
+### Windows Event Logs
+
+- [x] Generate Fake Windows Event Logs
+
+### ServiceNow
+
+- [x] Create ServiceNow Incident Search Results
+
+### PCAP
+
+- [x] Generate Fake PCAP files
+
+### Elastic
+
+- [x] Create Elastic Search Query Results
+
+### Azure
+
+- [x] Generate Fake Azure VM Details
+- [x] Generate Fake Azure VM Metrics
+
+
