@@ -81,6 +81,8 @@ print(sc.file.signature_status)
 print(sc.logs)
 print(sc.logs.syslog())
 print(sc.logs.windows)
+print(sc.logs.windows.eventlog())
+print(sc.logs.windows.sysmon())
 
 # Network
 print(sc.network)
