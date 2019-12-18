@@ -4,7 +4,6 @@ from github import Github
 from githubcontroller import GitHubController
 
 
-
 class DownloadWindowsEventData(GitHubController):
 
     __RAW_URL = 'https://raw.githubusercontent.com/hunters-forge/OSSEM/master/{}'

@@ -6,7 +6,7 @@ class Application(object):
     def __init__(self):
         self.logon_timestamp = 45
         self.status = ''
-        self.accountStatus = ''
+        self.account_status = ''
         self.name = ''
 
     @property 
@@ -18,11 +18,11 @@ class Application(object):
         self._status = random.choice(['Active', 'Inactive', 'Legacy'])
 
     @property
-    def accountStatus(self):
+    def account_status(self):
         return self._accountStatus
 
-    @accountStatus.setter
-    def accountStatus(self, value):
+    @account_status.setter
+    def account_status(self, value):
         self._accountStatus = random.choice(['Enabled'] * 9 + ['Disabled'])
 
     @property

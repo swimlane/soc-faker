@@ -1,4 +1,8 @@
-import pendulum, random
+import pendulum, random, cStringIO, base64, datetime, ast
+from PIL import ImageGrab
+import matplotlib.pyplot as plt
+from io import BytesIO
+
 
 __METRIC_LIST__ = {
     'percent': [
@@ -46,31 +50,121 @@ __METRIC_LIST__ = {
 
 class AzureVMMetrics(object):
 
+    __METRICS = None
+    
+    def __init__(self):
+        self.metric_list = []
+        self.timestamp_list = []
+        self.metric_dict = {}
+        self.plt = plt
+        self.image_list = []
+
     def get(self):
-        metric_dict = {}
-        yesterday = pendulum.yesterday()
-        now = pendulum.now()
-        for key, val in __METRIC_LIST__.items():
-            for metric in val:
-                time_stamp = yesterday
-                timestamp_list = []
-                while time_stamp <= now:
-                    total_value = None
-                    if key == 'percent':
-                        total_value = round(float(random.randint(0, 100)),2)
-                    elif key == 'bytes':
-                        total_value = round(float(random.randint(50, 10000)),2)
-                    elif key == 'count_per_second':
-                        total_value = round(float(random.randint(50, 1000)), 2)
-                    elif key == 'count':
-                        total_value = round(float(random.uniform(0.0, 1000)), 2)
-                    else:
-                        pass
-                    time_stamp = time_stamp.add(hours=1)
-                    timestamp_list.append({
-                            'time_stamp': time_stamp.to_iso8601_string(),
-                            'total': total_value,
-                            'unit': key
-                        })
-                metric_dict[metric] = timestamp_list
-        return metric_dict
+        if not self.__METRICS:
+            metric_dict = {}
+            yesterday = pendulum.yesterday()
+            now = pendulum.now()
+            for key, val in __METRIC_LIST__.items():
+                for metric in val:
+                    time_stamp = yesterday
+                    timestamp_list = []
+                    while time_stamp <= now:
+                        total_value = None
+                        if key == 'percent':
+                            total_value = round(float(random.randint(0, 100)),2)
+                        elif key == 'bytes':
+                            total_value = round(float(random.randint(50, 10000)),2)
+                        elif key == 'count_per_second':
+                            total_value = round(float(random.randint(50, 1000)), 2)
+                        elif key == 'count':
+                            total_value = round(float(random.uniform(0.0, 1000)), 2)
+                        else:
+                            pass
+                        time_stamp = time_stamp.add(hours=1)
+                        timestamp_list.append({
+                                'time_stamp': time_stamp.to_iso8601_string(),
+                                'total': total_value,
+                                'unit': key
+                            })
+                    metric_dict[metric] = timestamp_list
+            self.__METRICS = metric_dict
+        return self.__METRICS
+
+    @property
+    def average(self):
+        if self.__METRICS:
+            for key,val in self.__METRICS.iteritems():
+                count = 0
+                total = 0
+                for details in val:
+                    if 'total' in details and details['total']:
+                        total += details['total']
+                        count += 1
+                if total is not 0 or count is not 0:
+                    return '{} Average is {}'.format(key, (total/count))
+        else:
+            self.get()
+            return self.average
+
+    @property
+    def graphs(self):
+        if self.__METRICS:
+            self.__get_data(self.__METRICS)
+            plt.close('all')
+            return self.image_list
+        else:
+            self.get()
+            self.__get_data(self.__METRICS)
+            plt.close('all')
+            return self.image_list
+
+    def __add_to_plot(self, hour_list, val, color):
+        self.plt.plot(hour_list, val, color=color)
+
+    def __generate_number_of_colors(self, count):
+        return ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
+             for i in range(count)]
+
+    def __plot_data(self, key, val, color):
+        fig = plt.figure()
+        timestamp_list = []
+        totals_list = []
+        y_label = ''
+        for details in val:          
+            if 'time_stamp' in details:
+                timestamp_list.append(pendulum.parse(details['time_stamp']).to_day_datetime_string())
+            if 'total' in details and details['total']:
+                totals_list.append(details['total'])
+            y_label = details['unit']
+
+        if len(timestamp_list) == len(totals_list):
+            oldest_time = max(timestamp_list)
+            latest_time = min(timestamp_list)
+            plt.style.use('dark_background')
+            plt.plot(timestamp_list,totals_list,'#53a8dd')
+            frame1 = plt.gca()
+            frame1.axes.xaxis.set_ticklabels([])
+            plt.xlabel('{} - {}'.format(oldest_time,latest_time))
+            plt.gcf().subplots_adjust(left=0.15)
+            plt.ylabel(y_label)
+            plt.title(key)
+            if frame1.lines:
+                tmpfile = BytesIO()
+                plt.savefig(tmpfile, format='JPEG')
+                self.image_list.append({
+                    'attachment': {
+                        'filename': '{}.jpeg'.format(key.replace('/', '_')),
+                        'base64': base64.b64encode(tmpfile.getvalue()).decode('utf-8')
+                    }
+                })
+
+    def __get_data(self, data):
+        temp_list = []
+        for key,val in data.iteritems():
+            temp_list.append(key)
+        colors = self.__generate_number_of_colors(len(temp_list))
+        random.shuffle(colors)
+        for key,val in data.iteritems():
+            if 'deprecated' not in key:
+                color = colors.pop()
+                self.__plot_data(key, val, color)

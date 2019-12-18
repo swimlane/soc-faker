@@ -1,6 +1,6 @@
 import uuid, random
-from computer import Computer
-from words import Words
+from .computer import Computer
+from .words import Words
 
 
 __SIZE_LIST__ = [
@@ -50,7 +50,9 @@ __LOCATION_LIST__ = [
   'southafricanorth',
   'southafricawest'
 ]
-class AzureVM(object):
+
+
+class AzureVMDetails(object):
 
     def __init__(self):
         self.word_list = Words().get()
@@ -76,7 +78,7 @@ class AzureVM(object):
             return_dict['license'] = random.choice(['Linux_Client', 'Linux_Server'])
         return return_dict
 
-    def generate(self):
+    def get(self):
         unique_ids = self.__get_unique_ids()
         os_type = self.__os_type()
         return_dict = {}
@@ -84,6 +86,7 @@ class AzureVM(object):
         resource_group_name = '{}_{}_{}'.format(random.choice(self.word_list), random.choice(self.word_list), random.choice(self.word_list))
         os_disk_name = "{}_OsDisk_1_{}".format(computer_name, uuid.uuid4().hex)
         return_dict['name'] = computer_name
+        return_dict['resourceGroupName'] = resource_group_name
         return_dict['id'] = "/subscriptions/{sub_id}/resourceGroups/{rgn}/providers/Microsoft.Compute/virtualMachines/{name}".format(
             sub_id=unique_ids['subscription_id'],
             rgn=resource_group_name,

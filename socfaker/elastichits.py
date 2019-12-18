@@ -1,5 +1,5 @@
 import random, pendulum, string, uuid, codecs
-from windowsevent import WindowsEvent
+from windowseventlog import WindowsEventLog
 from computer import Computer
 
 
@@ -16,7 +16,7 @@ class ElasticHits(object):
     """    
 
     def __init__(self):
-        self.win_events = WindowsEvent('../data/windows-event/', json=True)
+        self.win_events = WindowsEventLog(file_directory='./data/windows-event/', json=True)
         self.host_id = str(uuid.uuid4())
         self.computer = Computer()
 
@@ -32,7 +32,7 @@ class ElasticHits(object):
     def _get_hits(self):
         hit_list = []
         count = 0
-        for event in self.win_events.get(self.computer.name):
+        for event in self.win_events.get(computer_name=self.computer.name):
             while count <= self.count:
                 event_data_dict = {}
                 if event['Event'].get('EventData'):

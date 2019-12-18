@@ -1,7 +1,7 @@
 import random, pendulum, uuid
 
 
-class ServiceNowSearch(object):
+class ServiceNow(object):
 
     def __init__(self):
         """Generate a Fake response from a Service Now Incident Search
@@ -11,8 +11,7 @@ class ServiceNowSearch(object):
         """        
         self.search_list = []
 
-
-    def get(self, random_keyword=None):
+    def search(self, random_keyword=None):
         root_url = 'https://dev{}.service-now.com'.format(random.randint(10000,90000))
         return_dict = { 
             'active': random.choice(['true', 'false']),

@@ -5,7 +5,7 @@ def parse_requirements(requirement_file):
         return f.readlines()
 
 setup(
-    name='soc-faker',
+    name='socfaker',
     version='0.0.1',
     packages=find_packages(exclude=['tests*']),
     license='MIT',

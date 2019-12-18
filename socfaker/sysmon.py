@@ -1,0 +1,100 @@
+import glob, os, fnmatch, random, uuid
+
+import pendulum
+
+from string import Formatter
+
+from computer import Computer
+from file import File
+from organization import Organization
+from employee import Employee
+from network import Network
+from registry import Registry
+
+class SysMon(object):
+
+    __TEMPLATE_DIRECTORY = './data/sysmon/'
+
+    def __init__(self):
+        self.templates = self.__check_file_directory()
+
+    def get(self, count=21):
+        return_list = []
+        current_count = 1
+        while current_count <= count:
+            for template in self.templates:
+                current_count += 1
+                with open(template, 'r') as file:
+                    data = file.read()
+                names = [fn for _, fn, _, _ in Formatter().parse(data) if fn is not None]
+                computer = Computer()
+                f = File()
+                org = Organization()
+                emp = Employee()
+                net = Network()
+                properties = {}
+                for item in names:
+                    if item == 'guid':
+                        properties['guid'] = str(uuid.uuid4())
+                    elif item == 'timestamp':
+                        properties['timestamp'] = pendulum.now().add(days=random.randint(1,15), hours=random.randint(1,24), minutes=random.randint(1,60), seconds=random.randint(1,60)).to_iso8601_string()
+                    elif item == 'creation_time':
+                        properties['creation_time'] = pendulum.now().subtract(days=random.randint(1,15), hours=random.randint(1,24), minutes=random.randint(1,60), seconds=random.randint(1,60)).to_iso8601_string()
+                    elif item == 'previous_creation_time':
+                        properties['previous_creation_time'] = properties['timestamp']
+                    elif item == 'process_id':
+                        properties['process_id'] = random.randint(2000,4000)
+                    elif item == 'thread_id':
+                        properties['thread_id'] = random.randint(2000,4000)
+                    elif item == 'image_path':
+                        f = File()
+                        properties['image_path'] = '{}\\{}'.format(f.full_path(), f.filename())
+                    elif item == 'current_directory':
+                        properties['current_directory'] = '{}'.format(f.full_path())
+                    elif item == 'parent_path':
+                        properties['parent_path'] = '{}'.format(f.full_path())
+                    elif item == 'process_state':
+                        properties['process_state'] = 'Loaded'
+                    elif item == 'computer_name':
+                        properties['computer_name'] = computer.name
+                    elif item == 'domain':
+                        properties['domain'] = org.domain
+                    elif item == 'user':
+                        properties['user'] = emp.username
+                    elif item == 'protocol':
+                        properties['protocol'] = net.protocol
+                    elif item == 'source_ip':
+                        properties['source_ip'] = Network(private=True).ipv4
+                    elif item == 'source_port':
+                        properties['source_port'] = random.randint(100,5000)
+                    elif item == 'destination_ip':
+                        properties['destination_ip'] = net.ipv4
+                    elif item == 'destination_port':
+                        properties['destination_port'] = random.randint(100,5000)
+                    elif item == 'target_filename':
+                        properties['target_filename'] = f.filename(type=random.choice(['bin', 'sys', 'exe']))
+                    elif item == 'registry_object':
+                        properties['registry_object'] = '{}'.format(Registry().path)
+                    elif item == 'registry_value':
+                        properties['registry_value'] = properties['registry_object'].split('\\',1)[1]
+                    elif item == 'exe':
+                        properties['exe'] = f.filename()
+                    elif item == 'sha1':
+                        properties['sha1'] = f.sha1
+                    elif item == 'sha256':
+                        properties['sha256'] = f.sha256
+                    elif item == 'signed':
+                        properties['signed'] = f.signed
+                    elif item == 'signature':
+                        properties['signature'] = f.signature
+                    elif item == 'signature_status':
+                        properties['signature_status'] = f.signature_status
+                return_list.append(data.format(**properties))
+        return return_list
+
+    def __check_file_directory(self):
+        matches = []
+        for root, dirnames, filenames in os.walk(self.__TEMPLATE_DIRECTORY):
+            for filename in fnmatch.filter(filenames, '*.txt'):
+                matches.append(os.path.abspath(os.path.join(root, filename)))
+        return matches

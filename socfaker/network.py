@@ -31,16 +31,12 @@ class Network(object):
             'exploded': addr.exploded
         }
 
-    @property
-    def ipv4range(self):
-        return self._ipv4range
-
-    @ipv4range.setter
-    def ipv4range(self, value):
-        self._ipv4range = []
-        if '/' in value:
-            for ip in ipaddress.IPv4Network(unicode(value)):
-                self._ipv4range.append(str(ip))
+    def get_cidr_range(self, cidr):
+        ipv4range = []
+        if '/' in cidr:
+            for ip in ipaddress.IPv4Network(unicode(cidr)):
+                ipv4range.append(str(ip))
+        return ipv4range
 
     @property
     def hostname(self):
@@ -69,3 +65,22 @@ class Network(object):
             random.randint(0, 255),
             random.randint(0, 255)
         )
+
+    @property
+    def protocol(self):
+        return random.choice([
+            'TCP',
+            'UDP',
+            'RPC',
+            'NetBIOS',
+            'SMB',
+            'DHCP',
+            'DNS',
+            'FTP',
+            'NTP',
+            'IRC',
+            'TELNET',
+            'SSH',
+            'TFTP',
+            'SFTP'
+        ])

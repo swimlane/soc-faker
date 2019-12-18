@@ -1,0 +1,25 @@
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{guid}" />
+    <EventID>9</EventID>
+    <Version>2</Version>
+    <Level>4</Level>
+    <Task>9</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="{timestamp}" />
+    <EventRecordID>1944686</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="{process_id}" ThreadID="{thread_id}" />
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>{computer_name}</Computer>
+    <Security UserID="S-1-5-18" />
+  </System>
+  <EventData>
+    <Data Name="UtcTime">{timestamp}</Data>
+    <Data Name="ProcessGuid">{guid}</Data>
+    <Data Name="ProcessId">{process_id}</Data>
+    <Data Name="Image">System</Data>
+    <Data Name="Device">\Device\HarddiskVolume2</Data>
+  </EventData>
+ </Event>

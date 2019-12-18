@@ -1,4 +1,4 @@
-import random, string, pendulum
+import random, string, pendulum, requests
 
 
 class Employee(object):
@@ -6,11 +6,11 @@ class Employee(object):
     def __init__(self):
         self.name = ''
         self.logon_timestamp = 120
-        self.userId = 18
+        self.user_id = 18
         self.dob = 18
         self.gender = ''
         self.language = ''
-        self.accountStatus = ''
+        self.account_status = ''
         self.ssn = ''
         self.photo = ''
         self.phone_number = ''
@@ -33,11 +33,11 @@ class Employee(object):
         self._name = "%s %s" % (firstname, lastname)
 
     @property
-    def firstName(self):
+    def first_name(self):
         return self._firstName
 
     @property
-    def lastName(self):
+    def last_name(self):
         return self._lastName
 
     @property
@@ -66,11 +66,11 @@ class Employee(object):
         self._gender = random.choice(['male', 'female', 'undisclosed'])
 
     @property
-    def accountStatus(self):
+    def account_status(self):
         return self._accountStatus
         
-    @accountStatus.setter
-    def accountStatus(self, value):
+    @account_status.setter
+    def account_status(self, value):
         self._accountStatus = random.choice(['Enabled'] * 9 + ['Disabled'])
 
     @property
@@ -110,15 +110,14 @@ class Employee(object):
         if requests.get(url).status_code is 200:
             self._photo = url
         else:
-            print('Trying to retrieve another random photo')
             self.photo = ''
 
     @property
-    def userId(self):
+    def user_id(self):
         return self._userId
 
-    @userId.setter
-    def userId(self, stringLength=18):
+    @user_id.setter
+    def user_id(self, stringLength=18):
         lettersAndDigits = string.ascii_letters + string.digits
         randomString = ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
         self._userId = '00%s' % randomString

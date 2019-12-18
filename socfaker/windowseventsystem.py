@@ -33,8 +33,8 @@ class WindowsEventSystem(object):
 
     def __init__(self, provider, event_id, os_version, computer_name, event_level=None, task_id=None, system_time=None, event_record_id=None, process_id=None, threat_id=None):
         self.soup = BeautifulSoup(features='lxml')
-        self.soup.append(self.soup.new_tag('System'))
-        self.soup.System.append(self.soup.new_tag('Provider', Name=provider, Guid=str(uuid.uuid4())))
+       # self.soup.append(self.soup.new_tag('System'))
+        self.soup.append(self.soup.new_tag('Provider', Name=provider, Guid=str(uuid.uuid4())))
 
         # Setting EventId
         self._add_subelement('EventId', text=event_id)
@@ -97,21 +97,21 @@ class WindowsEventSystem(object):
             kwargs = dict(props)
             if text:
                 new_tag = self.soup.new_tag(sub_element, **kwargs)
-                self.soup.System.append(new_tag)
+                self.soup.append(new_tag)
                 new_tag.string = text
             else:
                 new_tag = self.soup.new_tag(sub_element, **kwargs)
-                self.soup.System.append(new_tag)
+                self.soup.append(new_tag)
         elif props and isinstance(props, tuple):
             kwargs = dict([props])
             if text:
                 new_tag = self.soup.new_tag(sub_element, **kwargs)
-                self.soup.System.append(new_tag)
+                self.soup.append(new_tag)
                 new_tag.string = text
             else:
                 new_tag = self.soup.new_tag(sub_element, **kwargs)
-                self.soup.System.append(new_tag)
+                self.soup.append(new_tag)
         elif text:
             new_tag = self.soup.new_tag(sub_element)
-            self.soup.System.append(new_tag)
+            self.soup.append(new_tag)
             new_tag.string = text

@@ -18,39 +18,132 @@ Once it is built, then run the docker container:
 docker run socfaker
 ```
 
+## Features
+
+`socfaker` has many different ways to generate fake data.  Here are the basics for interacting with this package and properties:
+
+```python
+from socfaker import SocFaker
+
+sc = SocFaker()
+
+# Computer
+print(sc.computer)
+print(sc.computer.name)
+print(sc.computer.disk)
+print(sc.computer.memory)
+print(sc.computer.platform)
+print(sc.computer.mac_address)
+print(sc.computer.os)
+
+# Application
+print(sc.application)
+print(sc.application.status)
+print(sc.application.account_status)
+print(sc.application.name)
+print(sc.application.logon_timestamp)
+
+# Employee
+print(sc.employee)
+print(sc.employee.name)
+print(sc.employee.first_name)
+print(sc.employee.username)
+print(sc.employee.email)
+print(sc.employee.gender)
+print(sc.employee.account_status)
+print(sc.employee.ssn)
+print(sc.employee.dob)
+print(sc.employee.photo)
+print(sc.employee.user_id)
+print(sc.employee.phone_number)
+print(sc.employee.logon_timestamp)
+print(sc.employee.language)
+print(sc.employee.title)
+print(sc.employee.department)
+
+# File
+print(sc.file)
+print(sc.file.filename)
+print(sc.file.size)
+print(sc.file.timestamp)
+print(sc.file.hashes)
+print(sc.file.md5)
+print(sc.file.sha1)
+print(sc.file.sha256)
+print(sc.file.full_path())
+print(sc.file.full_path(type='bin'))
+print(sc.file.full_path(type='sys'))
+print(sc.file.signed)
+print(sc.file.signature)
+print(sc.file.signature_status)
+
+# Logs
+print(sc.logs)
+print(sc.logs.syslog())
+print(sc.logs.windows)
+
+# Network
+print(sc.network)
+print(sc.network.ipv4)
+print(sc.network.ipv6)
+print(sc.network.get_cidr_range('192.168.1.0/24'))
+print(sc.network.hostname)
+print(sc.network.netbios)
+print(sc.network.mac)
+print(sc.network.protocol)
+
+# Organization
+print(sc.organization)
+print(sc.organization.name)
+print(sc.organization.division)
+print(sc.organization.title)
+
+# Products
+print(sc.products)
+
+## Azure
+print(sc.products.azure)
+print(sc.products.azure.vm)
+print(sc.products.azure.vm.details)
+print(sc.products.azure.vm.metrics)
+print(sc.products.azure.vm.metrics.average)
+print(sc.products.azure.vm.metrics.graphs)
+print(sc.products.azure.vm.topology)
+
+## Elastic
+print(sc.products.elastic)
+print(sc.products.elastic.hits(count=1))
+
+## QualysGuard
+print(sc.products.qualysguard)
+print(sc.products.qualysguard.scan(count=1))
+
+## ServiceNow
+print(sc.products.servicenow)
+print(sc.products.servicenow.search())
+
+# User Agent
+print(sc.user_agent)
+
+# Vulnerability
+print(sc.vulnerability())
+print(sc.vulnerability().host)
+print(sc.vulnerability().scan)
+print(sc.vulnerability().data)
+print(sc.vulnerability().critical)
+print(sc.vulnerability().high)
+print(sc.vulnerability().medium)
+print(sc.vulnerability().low)
+print(sc.vulnerability().informational)
+
+```
+
+
 ## TODO
 
 ### Employee
 
-- [ ] Username (review) - add id component? 
-- [x] Sex/Gender
-- [x] Employment Status?
-- [x] ID
-- [x] Phone Number
-- [x] Email Address (based on flastname)
-- [ ] Photo / RoboHash
-- [x] Language
 - [ ] Manager (Employee Object)
-- [x] SSN
-- [x] DOB
-
-### Computer
-- [x] Operating System
-- [x] Hostname (Net)
-- [ ] IP (Net)
-- [x] Disk size
-- [x] Memory 
-- [ ] Networking configuration/settings
-- [x] Type (laptop, desktop, workstation, server, cloud)
-- [ ] Owner
-- [x] NETBIOS
-
-
-
-### Application
-- [x] Application Status
-- [x] Application Name
-- [x] App Logon Timestamp
 
 ### Date
 - [ ] Date Between
@@ -61,86 +154,15 @@ docker run socfaker
 ### Address
 - [ ] Physical Address?
 
-### Organization
-- [x] Name
-- [x] Division
-- [ ] Department
-- [x] Title/Job Function
-
 ### Network
-- [x] IP Address (v4/v6), private optional
-- [x] Hostname
-- [ ] Physical Location
-- [ ] Email Address (optional domain input)
 - [ ] URL
-- [x] MAC addr
+
 
 ### File Info
-- [x] Filename
-- [x] File Size
-- [x] File date/timestamp
-- [x] Sha256
-- [x] Sha1
-- [x] Md5
 - [ ] fuzzy?
 - [ ] File Path
 - [ ] File Reputation?
-- [ ] File Extension/Type
-
-### Logs
-- [ ] Easy string format that includes objects from other classes
-log.generate(**kwargs)
-I.e. log.generate(date(today), workstation.name, ip.addr) -> 2019-05-13 00:00:00, KNPR-KSDFJKL, 192.1.1.1
-
-
-### Vulnerability
-
-- [x] Critical Vulns
-- [x] High Vulns
-- [x] Medium Vulns
-- [x] Low Vulns
-- [x] Informational Vulns
-
-### Vulnerability Host
-
-- [x] Host ID
-- [x] Name
-- [x] Checks Considered
-- [x] Percentage of vulns vs checks considered
-- [x] Total Vuln Score for this host
-
-### Vulnerability Scan
-
-- [x] Scan Name
-- [x] Scanner Name
-- [x] Scan Type
-- [x] Scan Status
-- [x] Scan ID
-- [x] Scan UUID
-- [x] Scan Start Time 
-- [x] Scan End Time 
-- [x] Host Count
-- [x] IP List for Scan
-
-### Windows Event Logs
-
-- [x] Generate Fake Windows Event Logs
-
-### ServiceNow
-
-- [x] Create ServiceNow Incident Search Results
 
 ### PCAP
 
-- [x] Generate Fake PCAP files
-
-### Elastic
-
-- [x] Create Elastic Search Query Results
-
-### Azure
-
-- [x] Generate Fake Azure VM Details
-- [x] Generate Fake Azure VM Metrics
-
-
+- [ ] Generate Fake PCAP files

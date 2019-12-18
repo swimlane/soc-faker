@@ -228,6 +228,10 @@ class Organization(object):
 
 
     @property
+    def domain(self):
+        return self.name.split(' ')[0].upper()
+            
+    @property
     def division(self):
         return self._division
 

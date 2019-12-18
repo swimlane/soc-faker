@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroCEF\natives_blob.bin
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroCEF\snapshot_blob.bin
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\Javascripts\JSByteCodeWin.bin
+C:\Program Files (x86)\Google\Chrome\Application\78.0.3904.87\natives_blob.bin
+C:\Program Files (x86)\Google\Chrome\Application\78.0.3904.87\v8_context_snapshot.bin
+C:\Program Files (x86)\Microsoft Office\root\Office16\ExcelCtxUICellLayoutModel.bin
+C:\Program Files (x86)\Microsoft Office\root\Office16\ExcelCtxUICellModel.bin
+C:\Program Files (x86)\Microsoft Office\root\Office16\ExcelCtxUIFormulaBarModel.bin
+C:\Program Files (x86)\Microsoft Office\root\Office16\ExcelFloatieTextModel.bin
+C:\Program Files (x86)\Microsoft Office\root\Office16\ExcelFloatieXLEditTextModel.bin
+C:\Program Files (x86)\Microsoft Office\root\Office16\ExcelTellMeOnnxModel.bin
+C:\Program Files (x86)\Microsoft Office\root\Office16\WordInterProviderRanker.bin

@@ -1,202 +1,49 @@
-import random, requests, pendulum, hashlib, string
+import random, requests, pendulum, hashlib, string, os, fnmatch
 
-__EXTENSIONS__ = [
-    '.DOC',
-    '.DOCX',
-    '.LOG',
-    '.MSG',
-    '.ODT',
-    '.PAGES',
-    '.RTF',
-    '.TEX',
-    '.TXT',
-    '.WPD',
-    '.WPS',
-    '.CSV',
-    '.DAT',
-    '.GED',
-    '.KEY',
-    '.KEYCHAIN',
-    '.PPS',
-    '.PPT',
-    '.PPTX',
-    '.SDF',
-    '.TAR',
-    '.TAX2016',
-    '.TAX2018',
-    '.VCF',
-    '.XML',
-    '.AIF',
-    '.IFF',
-    '.M3U',
-    '.M4A',
-    '.MID',
-    '.MP3',
-    '.MPA',
-    '.WAV',
-    '.WMA',
-    '.3G2',
-    '.3GP',
-    '.ASF',
-    '.AVI',
-    '.FLV',
-    '.M4V',
-    '.MOV',
-    '.MP4',
-    '.MPG',
-    '.RM',
-    '.SRT',
-    '.SWF',
-    '.VOB',
-    '.WMV',
-    '.3DM',
-    '.3DS',
-    '.MAX',
-    '.OBJ',
-    '.BMP',
-    '.DDS',
-    '.GIF',
-    '.HEIC',
-    '.JPG',
-    '.PNG',
-    '.PSD',
-    '.PSPIMAGE',
-    '.TGA',
-    '.THM',
-    '.TIF',
-    '.TIFF',
-    '.YUV',
-    '.AI',
-    '.EPS',
-    '.PS',
-    '.SVG',
-    '.INDD',
-    '.PCT',
-    '.PDF',
-    '.XLR',
-    '.XLS',
-    '.XLSX',
-    '.ACCDB',
-    '.DB',
-    '.DBF',
-    '.MDB',
-    '.PDB',
-    '.SQL',
-    '.APK',
-    '.APP',
-    '.BAT',
-    '.CGI',
-    '.COM',
-    '.EXE',
-    '.GADGET',
-    '.JAR',
-    '.WSF',
-    '.B',
-    '.DEM',
-    '.GAM',
-    '.NES',
-    '.ROM',
-    '.SAV',
-    '.DWG',
-    '.DXF',
-    '.GPX',
-    '.KML',
-    '.KMZ',
-    '.ASP',
-    '.ASPX',
-    '.CER',
-    '.CFM',
-    '.CSR',
-    '.CSS',
-    '.DCR',
-    '.HTM',
-    '.HTML',
-    '.JS',
-    '.JSP',
-    '.PHP',
-    '.RSS',
-    '.XHTML',
-    '.CRX',
-    '.PLUGIN',
-    '.FNT',
-    '.FON',
-    '.OTF',
-    '.TTF',
-    '.CAB',
-    '.CPL',
-    '.CUR',
-    '.DESKTHEMEPACK',
-    '.DLL',
-    '.DMP',
-    '.DRV',
-    '.ICNS',
-    '.ICO',
-    '.LNK',
-    '.SYS',
-    '.CFG',
-    '.INI',
-    '.PRF',
-    '.HQX',
-    '.MIM',
-    '.UUE',
-    '.7Z',
-    '.CBR',
-    '.DEB',
-    '.GZ',
-    '.PKG',
-    '.RAR',
-    '.RPM',
-    '.SITX',
-    '.TAR.GZ',
-    '.ZIP',
-    '.ZIPX',
-    '.BIN',
-    '.CUE',
-    '.DMG',
-    '.ISO',
-    '.MDF',
-    '.TOAST',
-    '.VCD',
-    '.C',
-    '.CLASS',
-    '.CPP',
-    '.CS',
-    '.DTD',
-    '.FLA',
-    '.H',
-    '.JAVA',
-    '.LUA',
-    '.M',
-    '.PL',
-    '.PY',
-    '.SH',
-    '.ps1',
-    '.SLN',
-    '.SWIFT',
-    '.VB',
-    '.VCXPROJ',
-    '.XCODEPROJ',
-    '.BAK',
-    '.TMP',
-    '.CRDOWNLOAD',
-    '.ICS',
-    '.MSI',
-    '.PART',
-    '.TORRENT'
-]
 
 class File(object):
 
+    __TEMPLATE_DIRECTORY = './data/filenames/'
+
     def __init__(self):
+        self.__filename = None
+        self.__full_path = None
+        self._filenames = self.__check_file_directory()
         self._name = ''
+        self.random_value = ''.join(random.choice(string.ascii_uppercase) for i in range(256))
+
+    def filename(self, type='exe'):
+        data = None
+        if not self.__filename:
+            for item in self._filenames:
+                if type in item:
+                    with open(item, 'r') as file:
+                        data = file.read()
+                    return random.choice(data.splitlines()).rsplit('\\',1)[1]
+        return self.__filename
+
+    def full_path(self, type='exe'):
+        data = None
+        if not self.__full_path:
+            for item in self._filenames:
+                if type in item:
+                    with open(item, 'r') as file:
+                        data = file.read()
+                    return random.choice(data.splitlines()).rsplit('\\',1)[0]
+        return self.__full_path
+           
+    @property
+    def signed(self):
+        return random.choice(['True', 'False'])
 
     @property
-    def name(self):
-        word_site = "http://svnweb.freebsd.org/csrg/share/dict/words?view=co&content-type=text/plain"
-        response = requests.get(word_site)
-        WORDS = response.content.splitlines()
-        return "%s-%s-%s%s" % (random.choice(WORDS), random.choice(WORDS), random.choice(WORDS), random.choice(__EXTENSIONS__))
+    def signature(self):
+        return 'Microsoft Windows'
 
+    @property
+    def signature_status(self):
+        return random.choice(['Verified', 'Unknown', 'Counterfit'])
+        
     @property
     def size(self):
         file_size_list = []
@@ -222,10 +69,28 @@ class File(object):
         ).to_datetime_string()
 
     @property
+    def md5(self):
+        return hashlib.md5(str(self.random_value)).hexdigest()
+
+    @property
+    def sha1(self):
+        return hashlib.sha1(str(self.random_value)).hexdigest(),
+
+    @property
+    def sha256(self):
+        return hashlib.sha256(str(self.random_value)).hexdigest()
+
+    @property
     def hashes(self):
-        random_val = ''.join(random.choice(string.ascii_uppercase) for i in range(256))
         return {
-            'md5': hashlib.md5(str(random_val)).hexdigest(),
-            'sha1': hashlib.sha1(str(random_val)).hexdigest(),
-            'sha256': hashlib.sha256(str(random_val)).hexdigest()
+            'md5': self.md5,
+            'sha1': self.sha1,
+            'sha256': self.sha256
         }
+
+    def __check_file_directory(self):
+        matches = []
+        for root, dirnames, filenames in os.walk(self.__TEMPLATE_DIRECTORY):
+            for filename in fnmatch.filter(filenames, '*.txt'):
+                matches.append(os.path.abspath(os.path.join(root, filename)))
+        return matches

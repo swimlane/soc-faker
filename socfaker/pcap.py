@@ -1,5 +1,6 @@
 import sys
-import binascii
+import binascii, base64
+from io import BytesIO
 
 from network import Network
 
@@ -76,12 +77,22 @@ class PCAP(object):
         return len(''.join(string1.split())) / 2
 
     def __write_byte_string_to_file(self, bytestring, filename):
-        bitout = open(filename, 'wb')
+        tmpfile = BytesIO()
+
+        #bitout = open(tmpfile, 'wb')
         for string in bytestring:
             bytelist = string.split()  
             bytes = binascii.a2b_hex(''.join(bytelist))
-            bitout.write(bytes)
-        bitout.close()
+            tmpfile.write(bytes)
+       # bitout.close()
+        encoded = base64.b64encode(tmpfile.getvalue())
+        return {
+            'attachment': {
+                'filename': '{}.pcap'.format(filename),
+                'base64': encoded
+            }
+        }
+        
 
     #Calculates and returns the IP checksum based on the given IP Header
     def __ip_checksum(self, iph):
@@ -103,36 +114,38 @@ class PCAP(object):
     def generate(self, message, pcapfile, port=9600):
         count = 0
         bytestring_list = []
-        while count < 10:
-            # Replace upd header with desired port
-            udp = self.__udp_header.replace('XX XX',"%04x"%port)
-            # getting the length of our provided message and the upd header
-            udp_len = self.__get_byte_length(message) + self.__get_byte_length(self.__udp_header)
-            # replace upd header length with combined message and existing upd header length
-            udp = udp.replace('YY YY',"%04x"%udp_len)
+        #while count < 10:
+        # Replace upd header with desired port
+        udp = self.__udp_header.replace('XX XX',"%04x"%port)
+        # getting the length of our provided message and the upd header
+        udp_len = self.__get_byte_length(message) + self.__get_byte_length(self.__udp_header)
+        # replace upd header length with combined message and existing upd header length
+        udp = udp.replace('YY YY',"%04x"%udp_len)
 
-            # get upd header legnth and ip header length
-            ip_len = udp_len + self.__get_byte_length(self.__ip_header)
-            # replace ip header legnth with the combined upd and ip header length
-            ip = self.__ip_header.replace('XX XX',"%04x"%ip_len)
-            # Clear current ip header checksum and set to 00 00
-            checksum = self.__ip_checksum(ip.replace('YY YY','00 00'))
-            # replace ip header checksum with generated ip checksum
-            ip = ip.replace('YY YY',"%04x"%checksum)
-            
-            
-            pcap_len = ip_len + self.__get_byte_length(self.__ethernet_header)
-            hex_str = "%08x"%pcap_len
-            reverse_hex_str = hex_str[6:] + hex_str[4:6] + hex_str[2:4] + hex_str[:2]
-            pcaph = self.__packet_header.replace('XX XX XX XX',reverse_hex_str)
-            pcaph = pcaph.replace('YY YY YY YY',reverse_hex_str)
+        # get upd header legnth and ip header length
+        ip_len = udp_len + self.__get_byte_length(self.__ip_header)
+        # replace ip header legnth with the combined upd and ip header length
+        ip = self.__ip_header.replace('XX XX',"%04x"%ip_len)
+        # Clear current ip header checksum and set to 00 00
+        checksum = self.__ip_checksum(ip.replace('YY YY','00 00'))
+        # replace ip header checksum with generated ip checksum
+        ip = ip.replace('YY YY',"%04x"%checksum)
+        
+        
+        pcap_len = ip_len + self.__get_byte_length(self.__ethernet_header)
+        hex_str = "%08x"%pcap_len
+        reverse_hex_str = hex_str[6:] + hex_str[4:6] + hex_str[2:4] + hex_str[:2]
+        pcaph = self.__packet_header.replace('XX XX XX XX',reverse_hex_str)
+        pcaph = pcaph.replace('YY YY YY YY',reverse_hex_str)
 
-            bytestring_list.append(self.__global_header + pcaph + self.__ethernet_header + ip + udp + message)
-            count += 1    
-        self.__write_byte_string_to_file(bytestring_list, pcapfile)
+        bytestring_list.append(self.__global_header + pcaph + self.__ethernet_header + ip + udp + message)
+            #count += 1    
+        return self.__write_byte_string_to_file(bytestring_list, pcapfile)
 
 
 
 pcap = PCAP()
 
-pcap.generate(__MESSAGE__, 'test_pcap.pcap')
+pcap = pcap.generate(__MESSAGE__, 'test_pcap.pcap')
+
+print(pcap)

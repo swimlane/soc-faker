@@ -16,8 +16,8 @@ class WindowsEventData(object):
         </EventData>
     '''
     def __init__(self):
-        self.soup = BeautifulSoup()
-        self.soup.append(self.soup.new_tag("EventData"))
+        self.data_list = []
+        self.soup = BeautifulSoup(features='lxml')
         
     @property
     def get(self):
@@ -25,5 +25,5 @@ class WindowsEventData(object):
 
     def add(self, name, text):
         new_tag = self.soup.new_tag(name)
-        self.soup.EventData.append(new_tag)
+        self.soup.append(new_tag)
         new_tag.string = text

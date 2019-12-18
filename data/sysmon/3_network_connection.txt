@@ -1,0 +1,37 @@
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+        <Provider Name="Microsoft-Windows-Sysmon" Guid="{guid}" />
+        <EventID>3</EventID>
+        <Version>5</Version>
+        <Level>4</Level>
+        <Task>3</Task>
+        <Opcode>0</Opcode>
+        <Keywords>0x8000000000000000</Keywords>
+        <TimeCreated SystemTime="{timestamp}" />
+        <EventRecordID>10953</EventRecordID>
+        <Correlation />
+        <Execution ProcessID="{process_id}" ThreadID="{thread_id}" />
+        <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+        <Computer>{computer_name}</Computer>
+        <Security UserID="S-1-5-18" />
+    </System>
+    <EventData>
+        <Data Name="UtcTime">{timestamp}</Data>
+        <Data Name="ProcessGuid">{guid}</Data>
+        <Data Name="ProcessId">{process_id}</Data>
+        <Data Name="Image">{image_path}</Data>
+        <Data Name="User">{domain}\{user}</Data>
+        <Data Name="Protocol">{protocol}</Data>
+        <Data Name="Initiated">true</Data>
+        <Data Name="SourceIsIpv6">false</Data>
+        <Data Name="SourceIp">{source_ip}</Data>
+        <Data Name="SourceHostname">{computer_name}</Data>
+        <Data Name="SourcePort">{source_port}</Data>
+        <Data Name="SourcePortName"></Data>
+        <Data Name="DestinationIsIpv6">false</Data>
+        <Data Name="DestinationIp">{destination_ip}</Data>
+        <Data Name="DestinationHostname"></Data>
+        <Data Name="DestinationPort">{destination_port}</Data>
+        <Data Name="DestinationPortName">https</Data>
+    </EventData>
+</Event>

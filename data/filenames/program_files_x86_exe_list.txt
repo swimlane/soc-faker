@@ -1,0 +1,197 @@
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroBroker.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32Info.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroTextExtractor.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\ADelRCP.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AdobeCollabSync.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\arh.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\Eula.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\FullTrustNotifier.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\LogTransport2.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\reader_sl.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\wow_helper.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroCEF\RdrCEF.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroCEF\RdrServicesUpdater.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroLayoutRecognizer\AcroLayoutRecognizer.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\Browser\WCChromeExtn\WCChromeNativeMessagingHost.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\plug_ins\pi_brokers\32BitMAPIBroker.exe
+C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\plug_ins\pi_brokers\64BitMAPIBroker.exe
+C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe
+C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARMHelper.exe
+C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\armsvc.exe
+C:\Program Files (x86)\Common Files\microsoft shared\Ink\pipanel.exe
+C:\Program Files (x86)\Common Files\microsoft shared\Ink\TabTip32.exe
+C:\Program Files (x86)\Common Files\microsoft shared\MSInfo\msinfo32.exe
+C:\Program Files (x86)\Common Files\microsoft shared\OFFICE16\LICLUA.EXE
+C:\Program Files (x86)\Common Files\microsoft shared\Source Engine\OSE.EXE
+C:\Program Files (x86)\Common Files\microsoft shared\VSTO\10.0\VSTOInstaller.exe
+C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+C:\Program Files (x86)\Google\Chrome\Application\chrome_proxy.exe
+C:\Program Files (x86)\Google\Chrome\Application\78.0.3904.87\elevation_service.exe
+C:\Program Files (x86)\Google\Chrome\Application\78.0.3904.87\notification_helper.exe
+C:\Program Files (x86)\Google\Chrome\Application\78.0.3904.87\Installer\chrmstp.exe
+C:\Program Files (x86)\Google\Chrome\Application\78.0.3904.87\Installer\setup.exe
+C:\Program Files (x86)\Google\Update\GoogleUpdate.exe
+C:\Program Files (x86)\Google\Update\1.3.35.342\GoogleCrashHandler.exe
+C:\Program Files (x86)\Google\Update\1.3.35.342\GoogleCrashHandler64.exe
+C:\Program Files (x86)\Google\Update\1.3.35.342\GoogleUpdate.exe
+C:\Program Files (x86)\Google\Update\1.3.35.342\GoogleUpdateBroker.exe
+C:\Program Files (x86)\Google\Update\1.3.35.342\GoogleUpdateComRegisterShell64.exe
+C:\Program Files (x86)\Google\Update\1.3.35.342\GoogleUpdateCore.exe
+C:\Program Files (x86)\Google\Update\1.3.35.342\GoogleUpdateOnDemand.exe
+C:\Program Files (x86)\Google\Update\1.3.35.342\GoogleUpdateSetup.exe
+C:\Program Files (x86)\Google\Update\1.3.35.342\GoogleUpdateWebPlugin.exe
+C:\Program Files (x86)\Google\Update\Download\{430FD4D0-B729-4F61-AA34-91526481799D}\1.3.35.342\GoogleUpdateSetup.exe
+C:\Program Files (x86)\Google\Update\Download\{8A69D345-D564-463C-AFF1-A69D9E530F96}\78.0.3904.87\78.0.3904.87_76.0.3809.132_chrome_updater.exe
+C:\Program Files (x86)\Internet Explorer\ExtExport.exe
+C:\Program Files (x86)\Internet Explorer\ieinstal.exe
+C:\Program Files (x86)\Internet Explorer\ielowutil.exe
+C:\Program Files (x86)\Internet Explorer\iexplore.exe
+C:\Program Files (x86)\Microsoft Office\Office16\OSPPREARM.EXE
+C:\Program Files (x86)\Microsoft Office\root\Client\AppVDllSurrogate32.exe
+C:\Program Files (x86)\Microsoft Office\root\Client\AppVDllSurrogate64.exe
+C:\Program Files (x86)\Microsoft Office\root\Client\AppVLP.exe
+C:\Program Files (x86)\Microsoft Office\root\Flattener\Flattener.exe
+C:\Program Files (x86)\Microsoft Office\root\Integration\Integrator.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\ACCICONS.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\AppSharingHookController.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\CLVIEW.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\CNFNOT32.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\excelcnv.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\GRAPH.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\lync.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\lync99.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\lynchtmlconv.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\misc.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\MSACCESS.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\msoadfsb.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\msoasb.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\msoev.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\MSOHTMED.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\msoia.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\MSOSREC.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\MSOSYNC.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\msotd.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\MSOUC.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\MSPUB.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\MSQRY32.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\NAMECONTROLSERVER.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\OcPubMgr.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\officebackgroundtaskhandler.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\OLCFG.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\ORGCHART.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\PDFREFLOW.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\PerfBoost.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\POWERPNT.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\PPTICO.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\protocolhandler.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\SCANPST.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\SELFCERT.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\SETLANG.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\UcMapi.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\VPREVIEW.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\WINWORD.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\Wordconv.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\WORDICON.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\XLICONS.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\ADDINS\Microsoft Power Query for Excel Integrated\bin\Microsoft.Mashup.Container.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\ADDINS\Microsoft Power Query for Excel Integrated\bin\Microsoft.Mashup.Container.NetFX40.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\ADDINS\Microsoft Power Query for Excel Integrated\bin\Microsoft.Mashup.Container.NetFX45.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\DCF\Common.DBConnection.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\DCF\Common.DBConnection64.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\DCF\Common.ShowHelp.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\DCF\DATABASECOMPARE.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\DCF\filecompare.exe
+C:\Program Files (x86)\Microsoft Office\root\Office16\DCF\SPREADSHEETCOMPARE.EXE
+C:\Program Files (x86)\Microsoft Office\root\Office16\SkypeSrv\SKYPESERVER.EXE
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX64\Microsoft Shared\OFFICE16\MSOXMLED.EXE
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX64\Microsoft Shared\OfficeSoftwareProtectionPlatform\OSPPSVC.EXE
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\DW\DW20.EXE
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\DW\DWTRIG20.EXE
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\EQUATION\eqnedt32.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\FLTLDR.EXE
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\MSOICONS.EXE
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\MSOXMLED.EXE
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\OLicenseHeartbeat.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\SDXHelper.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\SDXHelperBgt.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\Smart Tag\SmartTagInstall.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\Source Engine\OSE.EXE
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesX64\Microsoft Office\Office16\AppSharingHookController64.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesX64\Microsoft Office\Office16\MSOHTMED.EXE
+C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesX86\Microsoft Analysis Services\AS OLEDB\140\SQLDumper.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\accicons.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\dbcicons.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\grv_icons.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\joticon.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\lyncicon.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\misc.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\msouc.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\ohub32.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\osmadminicon.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\osmclienticon.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\outicon.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\pj11icon.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\pptico.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\pubs.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\sscicons.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\visicon.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\wordicon.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-000F-0000-0000-0000000FF1CE}\xlicons.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-001F-0409-0000-0000000FF1CE}\misc.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-001F-040C-0000-0000000FF1CE}\misc.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-001F-0C0A-0000-0000000FF1CE}\misc.exe
+C:\Program Files (x86)\Microsoft Office\root\vfs\Windows\Installer\{90160000-006E-0409-0000-0000000FF1CE}\misc.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Flattener\Flattener.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\CLVIEW.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\CNFNOT32.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\EXCEL.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\excelcnv.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\GRAPH.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\lync.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\lync99.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\lynchtmlconv.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\MSACCESS.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\msoev.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\msoia.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\MSOSREC.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\MSOSYNC.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\msotd.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\MSOUC.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\MSPUB.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\MSQRY32.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\NAMECONTROLSERVER.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\OcPubMgr.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\officebackgroundtaskhandler.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\ORGCHART.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\OUTLOOK.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\PDFREFLOW.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\PerfBoost.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\POWERPNT.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\protocolhandler.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\SCANPST.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\SELFCERT.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\SETLANG.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\UcMapi.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\VPREVIEW.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\WINWORD.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\Wordconv.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\DCF\Common.DBConnection.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\DCF\Common.DBConnection64.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\DCF\DATABASECOMPARE.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\Office16\DCF\SPREADSHEETCOMPARE.EXE
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\OLicenseHeartbeat.exe
+C:\Program Files (x86)\Microsoft Office\Updates\Download\PackageFiles\203E799D-74DB-445C-ABED-6378CA0EBBA6\Data\Delta\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\SDXHelper.exe
+C:\Program Files (x86)\Microsoft OneDrive\OneDriveSetup.exe
+C:\Program Files (x86)\Windows Mail\wab.exe
+C:\Program Files (x86)\Windows Mail\wabmig.exe
+C:\Program Files (x86)\Windows Media Player\setup_wm.exe
+C:\Program Files (x86)\Windows Media Player\wmlaunch.exe
+C:\Program Files (x86)\Windows Media Player\wmpconfig.exe
+C:\Program Files (x86)\Windows Media Player\wmplayer.exe
+C:\Program Files (x86)\Windows Media Player\wmprph.exe
+C:\Program Files (x86)\Windows Media Player\wmpshare.exe
+C:\Program Files (x86)\windows nt\accessories\wordpad.exe
+C:\Program Files (x86)\Windows Photo Viewer\ImagingDevices.exe

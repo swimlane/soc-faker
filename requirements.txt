@@ -1,3 +1,8 @@
 requests
 pendulum
 ipaddress
+Pillow
+networkx
+matplotlib
+PyGithub
+PyYAML
