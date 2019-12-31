@@ -1,9 +1,10 @@
 import random, requests, pendulum, hashlib, string, os, fnmatch
 
+import constants as constants
 
 class File(object):
 
-    __TEMPLATE_DIRECTORY = './data/filenames/'
+    __TEMPLATE_DIRECTORY = 'data/filenames/'
 
     def __init__(self):
         self.__filename = None
@@ -12,21 +13,26 @@ class File(object):
         self._name = ''
         self.random_value = ''.join(random.choice(string.ascii_uppercase) for i in range(256))
 
-    def filename(self, type='exe'):
+    @property
+    def filename(self):
         data = None
+        file_type = random.choice(['exe', 'sys', 'bin'])
         if not self.__filename:
             for item in self._filenames:
-                if type in item:
+                if file_type in item:
                     with open(item, 'r') as file:
                         data = file.read()
                     return random.choice(data.splitlines()).rsplit('\\',1)[1]
         return self.__filename
 
-    def full_path(self, type='exe'):
+
+    @property
+    def full_path(self):
         data = None
+        file_type = random.choice(['exe', 'sys', 'bin'])
         if not self.__full_path:
             for item in self._filenames:
-                if type in item:
+                if file_type in item:
                     with open(item, 'r') as file:
                         data = file.read()
                     return random.choice(data.splitlines()).rsplit('\\',1)[0]
@@ -90,7 +96,10 @@ class File(object):
 
     def __check_file_directory(self):
         matches = []
-        for root, dirnames, filenames in os.walk(self.__TEMPLATE_DIRECTORY):
+        file_path = os.path.join(constants.__FOLDER_PATH__, self.__TEMPLATE_DIRECTORY)
+        for root, dirnames, filenames in os.walk(file_path):
             for filename in fnmatch.filter(filenames, '*.txt'):
                 matches.append(os.path.abspath(os.path.join(root, filename)))
         return matches
+
+#f = File().full_path()

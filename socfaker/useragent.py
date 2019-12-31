@@ -1,7 +1,7 @@
-import json, requests, datetime, random
+import json, requests, datetime, random, os
 from bs4 import BeautifulSoup
 
-__USER_AGENT_PATH__ = './data/useragent.json'
+__USER_AGENT_PATH__ = 'data/useragent.json'
 __USER_AGENT_URL__ = 'http://www.useragentstring.com/pages/useragentstring.php?name={}'
 
 
@@ -30,19 +30,33 @@ class UserAgent(object):
 
     @property
     def updated(self):
-        with open(__USER_AGENT_PATH__) as json_file:
+        dirname = os.path.dirname(__file__)
+        filename = os.path.join(dirname, __USER_AGENT_PATH__)
+        with open(filename) as json_file:
             last_updated = json.load(json_file)['updated']
             return last_updated
 
     @updated.setter
     def updated(self, value):
-        with open(__USER_AGENT_PATH__, "w") as f:
-            json.dump(value, f)
+        dirname = os.path.dirname(__file__)
+        filename = os.path.join(dirname, __USER_AGENT_PATH__)
+        if not os.path.exists(filename):
+            try:
+                os.makedirs(os.path.dirname(filename))
+            except:
+                raise AssertionError('Unable to create file in {}'.format(filename))
+            
+        with open(filename, "w+") as f:
+            f.write(json.dumps(value))
+
+           # json.dump(value, f)
 
     @property 
     def strings(self):
-        try:    
-            with open(__USER_AGENT_PATH__, 'r') as f:
+        try:
+            dirname = os.path.dirname(__file__)
+            filename = os.path.join(dirname, __USER_AGENT_PATH__)
+            with open(filename, 'r') as f:
                 return json.loads(f.read())
         except:
             return False

@@ -20,21 +20,21 @@ class LogStreamer(Thread):
     def __wait(self, min_time=100, max_time=10000):
         time.sleep(float(decimal.Decimal(random.randrange(min_time, max_time))/1000))
 
-    def generate(self, type='clean'):
+    def generate(self, type='clean', count=10):
         self.__wait()
         if type == 'clean':
-            self.__generate_clean_logs(random.randint(10, 150))
+            self.__generate_clean_logs(random.randint(1, int(count)))
         elif type == 'ransomware':
-            self.__generate_ransomware_logs(random.randint(10,50))
+            self.__generate_ransomware_logs(random.randint(1,int(count)))
         return self.__log_list
 
     def __generate_clean_logs(self, count):
-        for _ in range(count):
+        for _ in range(int(count)):
             self.__generate_outbound_log()
             self.__wait(100, 500)
 
     def __generate_ransomware_logs(self, count):
-        for _ in range(count):
+        for _ in range(int(count)):
             self.__generate_outbound_log(method='GET', extension=random.choice(["exe", "zip", "xlsx", "docx", "docm", "xlsm"]), response_code='200', referrer="-")
         self.__wait(10000, 30000)
         for _ in range(random.randint(2,5)):
@@ -43,7 +43,7 @@ class LogStreamer(Thread):
             self.__generate_clean_logs(random.randint(5, 15))
             self.__wait(100,1000)
         self.__wait()
-        for _ in range(count):
+        for _ in range(int(count)):
             self.__generate_outbound_log(method='POST', referrer="-")
             self.__wait(100,5000)
 

@@ -1,6 +1,19 @@
+from os.path import expanduser
+
+import constants as constants
 
 class SocFaker(object):
 
+    def __init__(self, config_file=None, config_folder_path=None):
+        if config_file:
+            constants.__CONFIG_FILE__ = config_file
+        else:
+            constants.__CONFIG_FILE__ = 'config.yml'
+            
+        if config_folder_path:
+            constants.__FOLDER_PATH__ = config_folder_path
+        else:
+            constants.__FOLDER_PATH__ = expanduser("~")
 
     @property
     def application(self):

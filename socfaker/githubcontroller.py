@@ -1,5 +1,8 @@
+import os
 import yaml
 from github import Github
+
+import constants as constants
 
 
 class GitHubController(object):
@@ -10,7 +13,9 @@ class GitHubController(object):
 
     def __get_token_from_config(self):
         cfg = ''
-        with open("./config.yml", 'r') as ymlfile:
+      
+        filename = os.path.join(constants.__FOLDER_PATH__, constants.__CONFIG_FILE__)
+        with open(filename, 'r') as ymlfile:
             cfg = yaml.load(ymlfile)
         if 'GitHub' in cfg:
             if 'token' in cfg['GitHub']:

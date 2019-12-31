@@ -1,8 +1,23 @@
 from setuptools import setup, find_packages
+import os
 
 def parse_requirements(requirement_file):
     with open(requirement_file) as f:
         return f.readlines()
+
+def parse_data_files():
+    return_list = []
+    path = 'data/sysmon'
+    for (dirpath, dirnames, filenames) in os.walk(path):
+        for item in filenames:
+            return_list.append('{}/{}'.format(dirpath.split('/')[1],item))
+    path = 'data/filenames'
+    for (dirpath, dirnames, filenames) in os.walk(path):
+        for item in filenames:
+            return_list.append('{}/{}'.format(dirpath.split('/')[1],item))
+    return_list.append('nessus-plugin-samples.json')
+    return_list.append('useragent.json')
+    return return_list
 
 setup(
     name='socfaker',
@@ -17,5 +32,8 @@ setup(
     url='https://github.com/swimlane/soc-faker',
     author='Swimlane',
     author_email='info@swimlane.com',
-    python_requires='>=2.6, !=3.0.*, !=3.1.*, !=3.2.*, <4'
+    python_requires='>=2.6, !=3.0.*, !=3.1.*, !=3.2.*, <4',
+    package_data={
+        'socfaker': parse_data_files()
+    }
 )

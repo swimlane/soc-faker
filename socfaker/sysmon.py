@@ -48,11 +48,11 @@ class SysMon(object):
                         properties['thread_id'] = random.randint(2000,4000)
                     elif item == 'image_path':
                         f = File()
-                        properties['image_path'] = '{}\\{}'.format(f.full_path(), f.filename())
+                        properties['image_path'] = '{}\\{}'.format(f.full_path, f.filename)
                     elif item == 'current_directory':
-                        properties['current_directory'] = '{}'.format(f.full_path())
+                        properties['current_directory'] = '{}'.format(f.full_path)
                     elif item == 'parent_path':
-                        properties['parent_path'] = '{}'.format(f.full_path())
+                        properties['parent_path'] = '{}'.format(f.full_path)
                     elif item == 'process_state':
                         properties['process_state'] = 'Loaded'
                     elif item == 'computer_name':
@@ -72,13 +72,13 @@ class SysMon(object):
                     elif item == 'destination_port':
                         properties['destination_port'] = random.randint(100,5000)
                     elif item == 'target_filename':
-                        properties['target_filename'] = f.filename(type=random.choice(['bin', 'sys', 'exe']))
+                        properties['target_filename'] = f.filename
                     elif item == 'registry_object':
                         properties['registry_object'] = '{}'.format(Registry().path)
                     elif item == 'registry_value':
                         properties['registry_value'] = properties['registry_object'].split('\\',1)[1]
                     elif item == 'exe':
-                        properties['exe'] = f.filename()
+                        properties['exe'] = f.filename
                     elif item == 'sha1':
                         properties['sha1'] = f.sha1
                     elif item == 'sha256':
