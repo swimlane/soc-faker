@@ -8,3 +8,4 @@ PyGithub
 PyYAML
 Faker
 bs4
+lxml
