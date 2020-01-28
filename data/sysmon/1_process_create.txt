@@ -26,7 +26,7 @@
         <Data Name="LogonGuid">{{logon_guid}}</Data>
         <Data Name="LogonId">0x7eb05</Data>
         <Data Name="TerminalSessionId">1</Data>
-        <Data Name="IntegrityLevel">Medium</Data>
+        <Data Name="IntegrityLevel">{integrity_level}</Data>
         <Data Name="Hashes">SHA256={sha256}</Data>
         <Data Name="ParentProcessGuid">{guid}</Data>
         <Data Name="ParentProcessId">{process_id}</Data>
