@@ -52,6 +52,12 @@ PyGithub
 PyYAML
 ```
 
+### GitHub PAT
+
+In addition, you must provide a GitHub Personal Access Token to utilize specific features that rely on data from public github repositories.
+
+Please follow this guide to get a personal access token [https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
+
 ### Development
 
 You can use the provided [Dockerfile](Dockerfile) to get a development and testing environment up and running for `soc-faker`.
