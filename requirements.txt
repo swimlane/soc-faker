@@ -7,3 +7,4 @@ matplotlib
 PyGithub
 PyYAML
 Faker
+bs4
