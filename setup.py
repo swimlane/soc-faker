@@ -17,11 +17,13 @@ def parse_data_files():
             return_list.append('{}/{}'.format(dirpath.split('/')[1],item))
     return_list.append('nessus-plugin-samples.json')
     return_list.append('useragent.json')
+    return_list.append('alert_names.txt')
+    return_list.append('country.txt')
     return return_list
 
 setup(
     name='socfaker',
-    version='0.0.1',
+    version='1.0.0',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='A Python package to fake SOC (Security Operations Center) data',

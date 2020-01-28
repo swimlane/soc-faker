@@ -1,12 +1,62 @@
 # soc-faker
 
-A python package for use in generating fake data for SOC and security automation.
+soc-faker is used to generate fake data for use by Security Operation Centers, Information security professionals, product teams, and many more.
 
-## Install
+## Getting Started
 
-To install you can create a virtual env or you can use the accompanying dockerfile to build/install this package.
+`soc-faker` is compatible with Python 2.x and 3.x.  You can install `soc-faker` using `pip` as well as cloning this repository directly.
 
-To use the dockerfile run, cd to this repositories directory and run:
+At the time of writing this document, `soc-faker` has the ability to fake data for the following main categories.  You can find specific details for each category by selecting the links below:
+
+* [Computer](docs/source/faker/computer.md)
+* [Application](docs/source/faker/application.md)
+* [Employee](docs/source/faker/employee.md)
+* [File](docs/source/faker/file.md)
+* [Logs](docs/source/faker/logs.md)
+* [Network](docs/source/faker/network.md)
+* [Organization](docs/source/faker/organization.md)
+* Products
+    * [Azure](docs/source/faker/azure.md)
+    * [Elastic](docs/source/faker/elastic.md)
+    * [QualysGuard](docs/source/faker/qualysguard.md)
+    * [ServiceNow](docs/source/faker/servicenow.md)
+* [User Agent](docs/source/faker/useragent.md)
+* [Vulnerability](docs/source/faker/vulnerability)
+
+### Installing soc-faker
+
+```bash
+pip install soc-faker --user
+```
+
+### Installing from source
+
+```bash
+git clone git@github.com:swimlane/soc-faker.git
+cd soc-faker
+python setup.py install
+```
+
+### Prerequisites
+
+The following libraries are required and installed by soc-faker
+
+```
+requests
+pendulum
+ipaddress
+Pillow
+networkx
+matplotlib
+PyGithub
+PyYAML
+```
+
+### Development
+
+You can use the provided [Dockerfile](Dockerfile) to get a development and testing environment up and running for `soc-faker`.
+
+To use the `Dockerfile` run, cd to this repositories directory and run:
 
 ```
 docker build --force-rm -t socfaker .
@@ -18,126 +68,68 @@ Once it is built, then run the docker container:
 docker run socfaker
 ```
 
-## Features
+Running this will call the test python file in [bin\test.py](bin\test.py).  Modify this file for additional testing and development.
 
-`socfaker` has many different ways to generate fake data.  Here are the basics for interacting with this package and properties:
 
-```python
-from socfaker import SocFaker
+## Running the tests
 
-sc = SocFaker()
+Tests within this project should cover all available properties and methods.  As this project grows the tests will become more robust but for now we are testing that they exist and return outputs.
 
-# Computer
-print(sc.computer)
-print(sc.computer.name)
-print(sc.computer.disk)
-print(sc.computer.memory)
-print(sc.computer.platform)
-print(sc.computer.mac_address)
-print(sc.computer.os)
+## Built With
 
-# Application
-print(sc.application)
-print(sc.application.status)
-print(sc.application.account_status)
-print(sc.application.name)
-print(sc.application.logon_timestamp)
+* [carcass](https://github.com/MSAdministrator/carcass) - Python packaging template
 
-# Employee
-print(sc.employee)
-print(sc.employee.name)
-print(sc.employee.first_name)
-print(sc.employee.username)
-print(sc.employee.email)
-print(sc.employee.gender)
-print(sc.employee.account_status)
-print(sc.employee.ssn)
-print(sc.employee.dob)
-print(sc.employee.photo)
-print(sc.employee.user_id)
-print(sc.employee.phone_number)
-print(sc.employee.logon_timestamp)
-print(sc.employee.language)
-print(sc.employee.title)
-print(sc.employee.department)
+## Contributing
 
-# File
-print(sc.file)
-print(sc.file.filename)
-print(sc.file.size)
-print(sc.file.timestamp)
-print(sc.file.hashes)
-print(sc.file.md5)
-print(sc.file.sha1)
-print(sc.file.sha256)
-print(sc.file.full_path())
-print(sc.file.full_path(type='bin'))
-print(sc.file.full_path(type='sys'))
-print(sc.file.signed)
-print(sc.file.signature)
-print(sc.file.signature_status)
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-# Logs
-print(sc.logs)
-print(sc.logs.syslog())
-print(sc.logs.windows)
-print(sc.logs.windows.eventlog())
-print(sc.logs.windows.sysmon())
+## Versioning
 
-# Network
-print(sc.network)
-print(sc.network.ipv4)
-print(sc.network.ipv6)
-print(sc.network.get_cidr_range('192.168.1.0/24'))
-print(sc.network.hostname)
-print(sc.network.netbios)
-print(sc.network.mac)
-print(sc.network.protocol)
+We use [SemVer](http://semver.org/) for versioning. 
 
-# Organization
-print(sc.organization)
-print(sc.organization.name)
-print(sc.organization.division)
-print(sc.organization.title)
+## Change Log
 
-# Products
-print(sc.products)
+Please read [CHANGELOG.md](CHANGELOG.md) for details on features for a specific version of `soc-faker`
 
-## Azure
-print(sc.products.azure)
-print(sc.products.azure.vm)
-print(sc.products.azure.vm.details)
-print(sc.products.azure.vm.metrics)
-print(sc.products.azure.vm.metrics.average)
-print(sc.products.azure.vm.metrics.graphs)
-print(sc.products.azure.vm.topology)
+## Authors
 
-## Elastic
-print(sc.products.elastic)
-print(sc.products.elastic.hits(count=1))
+* Josh Rickard - *Initial work* - [MSAdministrator](https://github.com/msadministrator)
+* Nick Tausek
 
-## QualysGuard
-print(sc.products.qualysguard)
-print(sc.products.qualysguard.scan(count=1))
+See also the list of [contributors](https://github.com/{github_username}/{package_name}/contributors) who participated in this project.
 
-## ServiceNow
-print(sc.products.servicenow)
-print(sc.products.servicenow.search())
+## License
 
-# User Agent
-print(sc.user_agent)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
 
-# Vulnerability
-print(sc.vulnerability())
-print(sc.vulnerability().host)
-print(sc.vulnerability().scan)
-print(sc.vulnerability().data)
-print(sc.vulnerability().critical)
-print(sc.vulnerability().high)
-print(sc.vulnerability().medium)
-print(sc.vulnerability().low)
-print(sc.vulnerability().informational)
+## Credits
 
+`soc-faker` is a [Swimlane](https://swimlane.com) open-source project; we believe in giving back to the open-source community by sharing some of the projects we build for our application. Swimlane is an automated cyber security operations and incident response platform that enables cyber security teams to leverage threat intelligence, speed up incident response and automate security operations.
+
+[SecOps Hub](https://secopshub.com) is an open, product-agnostic, online community for security professionals to share ideas, use cases, best practices, and incident response strategies.
+
+## Acknowledgments
+
+* This project utilizes data from the OSSEM project by [hunters-forge](https://github.com/hunters-forge/OSSEM)
+
+```eval_rst
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   
+   docs/source/faker/application
+   docs/source/faker/azure
+   docs/source/faker/computer
+   docs/source/faker/elastic
+   docs/source/faker/employee
+   docs/source/faker/file
+   docs/source/faker/logs
+   docs/source/faker/network
+   docs/source/faker/organization
+   docs/source/faker/qualysguard
+   docs/source/faker/servicenow
+   docs/source/faker/useragent
+   docs/source/faker/vulnerability
 ```
 
 
