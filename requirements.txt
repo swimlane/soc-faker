@@ -6,3 +6,4 @@ networkx
 matplotlib
 PyGithub
 PyYAML
+Faker
