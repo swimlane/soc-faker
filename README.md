@@ -50,6 +50,7 @@ networkx
 matplotlib
 PyGithub
 PyYAML
+Faker
 ```
 
 ### GitHub PAT
@@ -57,6 +58,14 @@ PyYAML
 In addition, you must provide a GitHub Personal Access Token to utilize specific features that rely on data from public github repositories.
 
 Please follow this guide to get a personal access token [https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
+
+Once you have a PAT you can provide this token during initialization of the the `SocFaker` object:
+
+```
+from socfaker import SocFaker
+
+sf = SocFaker(github_token='YOUR PERSONAL ACCESS TOKEN')
+```
 
 ### Development
 
