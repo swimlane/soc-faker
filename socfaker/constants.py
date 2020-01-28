@@ -1,2 +1,1 @@
-__FOLDER_PATH__ = ''
-__CONFIG_FILE__ = ''
+__GITHUB_PAT__ = ''

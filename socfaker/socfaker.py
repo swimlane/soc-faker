@@ -1,19 +1,19 @@
+import os
 from os.path import expanduser
 
-import constants as constants
+from .constants import __GITHUB_PAT__ as __GITHUB_PAT__
+
 
 class SocFaker(object):
 
-    def __init__(self, config_file=None, config_folder_path=None):
-        if config_file:
-            constants.__CONFIG_FILE__ = config_file
-        else:
-            constants.__CONFIG_FILE__ = 'config.yml'
-            
-        if config_folder_path:
-            constants.__FOLDER_PATH__ = config_folder_path
-        else:
-            constants.__FOLDER_PATH__ = expanduser("~")
+    def __init__(self, github_token=None):
+        if github_token:
+            __GITHUB_PAT__ = github_token
+
+    @property 
+    def alert(self):
+        from .alert import Alert
+        return Alert()
 
     @property
     def application(self):
@@ -56,6 +56,11 @@ class SocFaker(object):
         return Products()
 
     @property
+    def timestamp(self):
+        from .timestamp import Timestamp
+        return Timestamp()
+        
+    @property
     def user_agent(self):
         from .useragent import UserAgent
         return UserAgent().get()
@@ -64,3 +69,8 @@ class SocFaker(object):
     def vulnerability(self, host_count=1, critical=1, high=1, medium=1, low=1, informational=1):
         from .vulnerability import Vulnerability
         return Vulnerability(host_count=host_count,critical=critical,high=high,medium=medium,low=low,informational=informational)
+
+    @property
+    def registry(self):
+        from .registry import Registry
+        return Registry()

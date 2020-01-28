@@ -22,7 +22,7 @@ class UserAgent(object):
 
     def get(self):
         user_agent_list = []
-        for key,val in self.strings.iteritems():
+        for key,val in self.strings.items():
             if isinstance(val, list):
                 for ua_string in val:
                     user_agent_list.append(ua_string)

@@ -2,7 +2,7 @@ import sys
 import binascii, base64
 from io import BytesIO
 
-from network import Network
+from .network import Network
 
 #Custom Foo Protocol Packet
 __MESSAGE__ =  ('01 01 00 08'   #Foo Base Header

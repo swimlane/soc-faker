@@ -1,12 +1,11 @@
 import random, time
 import socket
-from faker import Faker  # pip install faker
-# import string
+from faker import Faker 
 import decimal
-import pendulum  # pip install pendulum
+import pendulum 
 from threading import Thread
-from useragent import UserAgent
-from network import Network
+from .useragent import UserAgent
+from .network import Network
 
 
 class LogStreamer(Thread):

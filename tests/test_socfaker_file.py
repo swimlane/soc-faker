@@ -1,4 +1,5 @@
 def test_socfaker_file_filename(socfaker_fixture):
+    print(socfaker_fixture.file.filename)
     assert socfaker_fixture.file.filename
 
 def test_socfaker_file_size(socfaker_fixture):
@@ -19,14 +20,8 @@ def test_socfaker_file_sha1(socfaker_fixture):
 def test_socfaker_file_sha256(socfaker_fixture):
     assert socfaker_fixture.file.sha256
 
-def test_socfaker_file_full_path_exe(socfaker_fixture):
-    assert socfaker_fixture.file.full_path()
-
-def test_socfaker_file_full_path_bin(socfaker_fixture):
-    assert socfaker_fixture.file.full_path(type='bin')
-
-def test_socfaker_file_full_path_sys(socfaker_fixture):
-    assert socfaker_fixture.file.full_path(type='sys')
+def test_socfaker_file_full_path(socfaker_fixture):
+    assert socfaker_fixture.file.full_path
 
 def test_socfaker_file_signed(socfaker_fixture):
     assert socfaker_fixture.file.signed

@@ -1,7 +1,7 @@
 import requests, yaml, base64, os
 from github import Github
 
-from githubcontroller import GitHubController
+from .githubcontroller import GitHubController
 
 
 class DownloadWindowsEventData(GitHubController):

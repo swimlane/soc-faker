@@ -1,6 +1,6 @@
 import random, pendulum, string, uuid, codecs
-from windowseventlog import WindowsEventLog
-from computer import Computer
+from .windowseventlog import WindowsEventLog
+from .computer import Computer
 
 
 class ElasticHits(object):

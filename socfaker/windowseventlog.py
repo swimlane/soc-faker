@@ -1088,11 +1088,11 @@ __WINDOWS_PROVIDERS__ = [
     'Microsoft-PerfTrack-MSHTML'
 ]
 
-from windowseventdata import WindowsEventData
-from windowseventsystem import WindowsEventSystem
-from markdowntable import MarkdownTable
-from downloadwindowseventdata import DownloadWindowsEventData
-from computer import Computer
+from .windowseventdata import WindowsEventData
+from .windowseventsystem import WindowsEventSystem
+from .markdowntable import MarkdownTable
+from .downloadwindowseventdata import DownloadWindowsEventData
+from .computer import Computer
 import glob, os, fnmatch, re
 import xmltodict, random
 from StringIO import StringIO
@@ -1159,7 +1159,7 @@ class WindowsEventLog(object):
             return str(random.randint(0,2))
 
     def __check_for_event_data_cache(self, file_directory):
-        markdown_files = self.__check_file_directory(file_directory)
+        markdown_files = self.__check_file_directory(os.path.abspath(file_directory))
         if not markdown_files:
             DownloadWindowsEventData().save(file_directory)
             markdown_files = self.__check_file_directory(file_directory)

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 import networkx as nx
 
-from azureproperties import AzureProperties
+from .azureproperties import AzureProperties
 
 
 class AzureVMTopology(object):

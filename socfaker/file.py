@@ -1,10 +1,8 @@
 import random, requests, pendulum, hashlib, string, os, fnmatch
 
-import constants as constants
-
 class File(object):
 
-    __TEMPLATE_DIRECTORY = 'data/filenames/'
+    __TEMPLATE_DIRECTORY = 'data/filenames'
 
     def __init__(self):
         self.__filename = None
@@ -76,15 +74,18 @@ class File(object):
 
     @property
     def md5(self):
-        return hashlib.md5(str(self.random_value)).hexdigest()
-
+        return '44d88612fea8a8f36de82e1278abb02f'
+       # return random.choice(['44d88612fea8a8f36de82e1278abb02f'] + 5 * [hashlib.md5(str(self.random_value)).hexdigest()])
+      
     @property
     def sha1(self):
-        return hashlib.sha1(str(self.random_value)).hexdigest(),
-
+        return '3395856ce81f2b7382dee72602f798b642f14140'
+      #  return random.choice(['3395856ce81f2b7382dee72602f798b642f14140'] + 5 * [hashlib.sha1(str(self.random_value)).hexdigest()])
+      
     @property
     def sha256(self):
-        return hashlib.sha256(str(self.random_value)).hexdigest()
+        return '275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f'
+      #  return random.choice(['275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f'] + 5 * [hashlib.sha256(str(self.random_value)).hexdigest()])
 
     @property
     def hashes(self):
@@ -96,10 +97,8 @@ class File(object):
 
     def __check_file_directory(self):
         matches = []
-        file_path = os.path.join(constants.__FOLDER_PATH__, self.__TEMPLATE_DIRECTORY)
+        file_path = os.path.abspath(self.__TEMPLATE_DIRECTORY)
         for root, dirnames, filenames in os.walk(file_path):
             for filename in fnmatch.filter(filenames, '*.txt'):
                 matches.append(os.path.abspath(os.path.join(root, filename)))
         return matches
-
-#f = File().full_path()

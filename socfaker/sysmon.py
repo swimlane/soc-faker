@@ -4,12 +4,12 @@ import pendulum
 
 from string import Formatter
 
-from computer import Computer
-from file import File
-from organization import Organization
-from employee import Employee
-from network import Network
-from registry import Registry
+from .computer import Computer
+from .file import File
+from .organization import Organization
+from .employee import Employee
+from .network import Network
+from .registry import Registry
 
 class SysMon(object):
 
@@ -89,6 +89,8 @@ class SysMon(object):
                         properties['signature'] = f.signature
                     elif item == 'signature_status':
                         properties['signature_status'] = f.signature_status
+                    elif item == 'integrity_level':
+                        properties['integrity_level'] = random.choice(['Low', 'Medium', 'High'])
                 return_list.append(data.format(**properties))
         return return_list
 

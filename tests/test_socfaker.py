@@ -1,3 +1,6 @@
+def test_sockfaker_alert(socfaker_fixture):
+    assert socfaker_fixture.alert
+
 def test_socfaker_computer(socfaker_fixture):
     assert socfaker_fixture.computer
 
@@ -21,6 +24,9 @@ def test_socfaker_organization(socfaker_fixture):
 
 def test_socfaker_products(socfaker_fixture):
     assert socfaker_fixture.products
+
+def test_socfaker_timestamp(socfaker_fixture):
+    assert socfaker_fixture.timestamp
 
 def test_socfaker_useragent(socfaker_fixture):
     assert socfaker_fixture.user_agent

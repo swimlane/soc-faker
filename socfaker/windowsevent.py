@@ -1,7 +1,7 @@
-from windowseventdata import WindowsEventData
-from windowseventsystem import WindowsEventSystem
-from markdowntable import MarkdownTable
-from downloadwindowseventdata import DownloadWindowsEventData
+from .windowseventdata import WindowsEventData
+from .windowseventsystem import WindowsEventSystem
+from .markdowntable import MarkdownTable
+from .downloadwindowseventdata import DownloadWindowsEventData
 import glob, os, fnmatch
 import xmltodict, random
 from StringIO import StringIO

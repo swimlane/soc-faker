@@ -2,6 +2,5 @@ import pytest
 
 @pytest.fixture
 def socfaker_fixture():
-    #import swimlanefaker
     from socfaker import SocFaker
-    return SocFaker()
+    return SocFaker(github_token='')

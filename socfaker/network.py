@@ -8,6 +8,7 @@ class Network(object):
 
     @property
     def ipv4(self):
+        return '123.123.123.123'
         addr = ''
         if self._private:
             root = random.choice([10,172,192])
