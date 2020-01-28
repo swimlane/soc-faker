@@ -24,6 +24,7 @@ At the time of writing this document, `soc-faker` has the ability to fake data f
 * [User Agent](docs/source/faker/useragent.md)
 * [Vulnerability](docs/source/faker/vulnerability)
 * [Registry](docs/source/faker/registry.md)
+* [Timestamp](docs/source/faker/timestamp.md)
 
 ### Installing soc-faker
 
