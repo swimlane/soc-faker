@@ -1,0 +1,30 @@
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+        <Provider Name="Microsoft-Windows-Sysmon" Guid="{guid}" />
+        <EventID>10</EventID>
+        <Version>3</Version>
+        <Level>4</Level>
+        <Task>10</Task>
+        <Opcode>0</Opcode>
+        <Keywords>0x8000000000000000</Keywords>
+        <TimeCreated SystemTime="{timestamp}" />
+        <EventRecordID>1406</EventRecordID>
+        <Correlation />
+        <Execution ProcessID="{process_id}" ThreadID="{thread_id}" />
+        <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+        <Computer>{computer_name}</Computer>
+        <Security UserID="S-1-5-18" />
+    </System>
+    <EventData>
+        <Data Name="UtcTime">{timestamp}</Data>
+        <Data Name="SourceProcessGUID">{guid}</Data>
+        <Data Name="SourceProcessId">{process_id}</Data>
+        <Data Name="SourceThreadId">{thread_id}</Data>
+        <Data Name="SourceImage">{image_path}</Data>
+        <Data Name="TargetProcessGUID">{guid}</Data>
+        <Data Name="TargetProcessId">{process_id}</Data>
+        <Data Name="TargetImage">{image_path}</Data>
+        <Data Name="GrantedAccess">0x40</Data>
+        <Data Name="CallTrace">C:\Windows\SYSTEM32\ntdll.dll+a5594|C:\Windows\system32\KERNELBASE.dll+1e865|C:\mimikatz\x64\mimikatz.exe+77ad|C:\mimikatz\x64\mimikatz.exe+7759|C:\mimikatz\x64\mimikatz.exe+f095|C:\mimikatz\x64\mimikatz.exe+6610a|C:\mimikatz\x64\mimikatz.exe+65dc4|C:\mimikatz\x64\mimikatz.exe+4ac00|C:\mimikatz\x64\mimikatz.exe+4aa36|C:\mimikatz\x64\mimikatz.exe+4a81d|C:\mimikatz\x64\mimikatz.exe+6ebe5|C:\Windows\system32\KERNEL32.DLL+18102|C:\Windows\SYSTEM32\ntdll.dll+5c5b4</Data>
+    </EventData>
+</Event>

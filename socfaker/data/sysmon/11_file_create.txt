@@ -1,0 +1,28 @@
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+
+    <System>
+        <Provider Name="Microsoft-Windows-Sysmon" Guid="{guid}" />
+        <EventID>11</EventID>
+        <Version>2</Version>
+        <Level>4</Level>
+        <Task>11</Task>
+        <Opcode>0</Opcode>
+        <Keywords>0x8000000000000000</Keywords>
+        <TimeCreated SystemTime="{timestamp}" />
+        <EventRecordID>734181</EventRecordID>
+        <Correlation />
+        <Execution ProcessID="{process_id}" ThreadID="{thread_id}" />
+        <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+        <Computer>{computer_name}</Computer>
+        <Security UserID="S-1-5-18" />
+    </System>
+    <EventData>
+        <Data Name="UtcTime">{timestamp}</Data>
+        <Data Name="ProcessGuid">{guid}</Data>
+        <Data Name="ProcessId">{process_id}</Data>
+        <Data Name="Image">{image_path}</Data>
+        <Data Name="TargetFilename">{target_filename}</Data>
+        <Data Name="CreationUtcTime">{timestamp}</Data>
+    </EventData>
+</Event>
+
