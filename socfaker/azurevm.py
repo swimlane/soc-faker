@@ -10,10 +10,7 @@ class AzureVM(object):
     @property
     def metrics(self):
         from .azurevmmetrics import AzureVMMetrics
-        if not self.__AZ_METRICS:
-            self.__AZ_METRICS = AzureVMMetrics()
-            return self.__AZ_METRICS.get()
-        return self.__AZ_METRICS
+        return AzureVMMetrics().get()
 
     @property
     def topology(self):

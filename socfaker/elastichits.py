@@ -14,9 +14,9 @@ class ElasticHits(object):
       print(hits.get(count=15))
 
     """    
-
+    
     def __init__(self):
-        self.win_events = WindowsEventLog(file_directory='./data/windows-event/', json=True)
+        self.win_events = WindowsEventLog(json=True)
         self.host_id = str(uuid.uuid4())
         self.computer = Computer()
 

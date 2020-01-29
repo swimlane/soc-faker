@@ -10,47 +10,47 @@ from bs4 import BeautifulSoup
 
 class WindowsEvent(object):
 
+    __DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'windows-event'))
+    __PROVIDER_LIST = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'windows-providers' + '.txt'))
 
-    def __init__(self, file_directory, provider_list='./data/windows-providers.txt', json=False):
+    def __init__(self, json=False):
         """Get Fake Windows Events
         
         Args:
-            file_directory ([type]): File directory to data/windows-event folder
-            provider_list (str, optional): The list of Windows service providers that typically log to a Windows Event Viewer. Defaults to './data/windows-providers.txt'.
             json (bool, optional): Converts the object to JSON from RAW XML. Defaults to False.
 
         Example:
-            win_event = WindowsEvent('./data/windows-events/', json=True)
+            win_event = WindowsEvent(json=True)
 
             import json
             for item in win_event.get():
                 print(json.dumps(item['Event']))
         """        
-        self._get_windows_providers(provider_list)
+        self._get_windows_providers()
 
-        self.file_directory = self.__check_for_event_data_cache(file_directory)
+        self.file_directory = self.__check_for_event_data_cache()
         
         self.json = json
 
 
-    def __check_for_event_data_cache(self, file_directory):
-        markdown_files = self.__check_file_directory(file_directory)
+    def __check_for_event_data_cache(self):
+        markdown_files = self.__check_file_directory()
         if not markdown_files:
-            DownloadWindowsEventData().save(file_directory)
-            markdown_files = self.__check_file_directory(file_directory)
+            DownloadWindowsEventData().save()
+            markdown_files = self.__check_file_directory()
         
         return markdown_files
 
-    def __check_file_directory(self, file_directory):
+    def __check_file_directory(self):
         matches = []
-        for root, dirnames, filenames in os.walk(file_directory):
+        for root, dirnames, filenames in os.walk(self.__DATA_PATH):
             for filename in fnmatch.filter(filenames, '*.md'):
                 matches.append(os.path.abspath(os.path.join(root, filename)))
         return matches
     
-    def _get_windows_providers(self, provider_list):
+    def _get_windows_providers(self):
         self.provider_list = []
-        f = open(provider_list, 'r')
+        f = open(self.__PROVIDER_LIST, 'r')
         for x in f:
             self.provider_list.append(x.strip())
 

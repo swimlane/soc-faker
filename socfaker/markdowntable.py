@@ -1,4 +1,4 @@
-import markdown, codecs, re
+import codecs, re
 from bs4 import BeautifulSoup
 import collections
 
@@ -45,12 +45,3 @@ class MarkdownTable(object):
                 return_list.append(return_dict)
             row_count += 1
         return return_list
-
-'''
-import pprint, json
-
-mdtable = MarkdownTable('test2.md')
-for row in mdtable.rows():
-    print(row['Field Name'])
-  #  pprint.pprint(json.dumps(row))
-'''

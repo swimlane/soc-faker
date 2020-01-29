@@ -13,7 +13,7 @@ from .registry import Registry
 
 class SysMon(object):
 
-    __TEMPLATE_DIRECTORY = './data/sysmon/'
+    __DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'sysmon'))
 
     def __init__(self):
         self.templates = self.__check_file_directory()
@@ -96,7 +96,7 @@ class SysMon(object):
 
     def __check_file_directory(self):
         matches = []
-        for root, dirnames, filenames in os.walk(self.__TEMPLATE_DIRECTORY):
+        for root, dirnames, filenames in os.walk(self.__DATA_PATH):
             for filename in fnmatch.filter(filenames, '*.txt'):
                 matches.append(os.path.abspath(os.path.join(root, filename)))
         return matches

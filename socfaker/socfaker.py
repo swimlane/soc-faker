@@ -1,8 +1,8 @@
 import os
 from os.path import expanduser
 
-from .constants import __GITHUB_PAT__ as __GITHUB_PAT__
-
+from .settings import __GITHUB_PAT__
+#import settings as settings
 
 class SocFaker(object):
 

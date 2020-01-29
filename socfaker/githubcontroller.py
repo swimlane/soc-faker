@@ -1,6 +1,6 @@
 from github import Github
 
-from .constants import __GITHUB_PAT__ as __GITHUB_PAT__
+from .settings import __GITHUB_PAT__
 
 class GitHubController(object):
 

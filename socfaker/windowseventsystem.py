@@ -33,7 +33,6 @@ class WindowsEventSystem(object):
 
     def __init__(self, provider, event_id, os_version, computer_name, event_level=None, task_id=None, system_time=None, event_record_id=None, process_id=None, threat_id=None):
         self.soup = BeautifulSoup(features='lxml')
-       # self.soup.append(self.soup.new_tag('System'))
         self.soup.append(self.soup.new_tag('Provider', Name=provider, Guid=str(uuid.uuid4())))
 
         # Setting EventId

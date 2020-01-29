@@ -55,12 +55,12 @@ class AzureProperties(object):
 
     @property
     def vm_name(self):
-        from computer import Computer
+        from .computer import Computer
         return Computer().name
 
     @property
     def resource_group_name(self):
-        from words import Words
+        from .words import Words
         word_list = []
         word_list = Words().get()
         return '{}_{}_{}'.format(random.choice(word_list), random.choice(word_list), random.choice(word_list))

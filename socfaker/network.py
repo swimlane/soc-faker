@@ -1,6 +1,14 @@
-import random, ipaddress, requests
+import random, ipaddress, requests, os, json
+
+from netaddr import IPNetwork
+
 
 class Network(object):
+
+    __TLD_DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'tld' + '.json'))
+    __WORDS_DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'words' + '.txt'))
+    __WORD_LIST = None
+    __TLD_LIST = None
 
     def __init__(self, private=False):
         self._private = private
@@ -8,7 +16,6 @@ class Network(object):
 
     @property
     def ipv4(self):
-        return '123.123.123.123'
         addr = ''
         if self._private:
             root = random.choice([10,172,192])
@@ -35,7 +42,7 @@ class Network(object):
     def get_cidr_range(self, cidr):
         ipv4range = []
         if '/' in cidr:
-            for ip in ipaddress.IPv4Network(unicode(cidr)):
+            for ip in IPNetwork(cidr):
                 ipv4range.append(str(ip))
         return ipv4range
 
@@ -46,11 +53,23 @@ class Network(object):
     @hostname.setter
     def hostname(self, value):
         tld_list = []
-        data = requests.get('https://raw.githubusercontent.com/umpirsky/tld-list/master/data/en/tld.json').json()
-        for tld in data:
-            tld_list.append(tld)
-        wordlist = requests.get('https://raw.githubusercontent.com/elasticdog/genhost/master/wordlist')
-        self._hostname = "%s.%s.%s" % (random.choice(wordlist.text.splitlines()), random.choice(wordlist.text.splitlines()),random.choice(tld_list))
+        word_list = []
+       # data = requests.get('https://raw.githubusercontent.com/umpirsky/tld-list/master/data/en/tld.json').json()
+        if not self.__TLD_LIST:
+            with open(self.__TLD_DATA_PATH, 'r') as tlds:
+                data = json.load(tlds)
+                for key,val in data.items():
+                    tld_list.append(val)
+                self.__TLD_LIST = tld_list
+        if not self.__WORD_LIST:
+            with open(self.__WORDS_DATA_PATH, 'r') as wordlist:
+            #wordlist = requests.get('https://raw.githubusercontent.com/elasticdog/genhost/master/wordlist')
+                for line in wordlist:
+                    if line:
+                        word_list.append(line)
+                self.__WORD_LIST = word_list
+        
+        self._hostname = "%s.%s.%s" % (random.choice(self.__WORD_LIST), random.choice(self.__WORD_LIST),random.choice(self.__TLD_LIST))
 
     @property
     def netbios(self):

@@ -6,6 +6,8 @@ from .network import Network
 
 class Alert(object):
 
+    __DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
+
     @property
     def summary(self):
         return '{status} {action} {type} {direction} {location}'.format(
@@ -20,11 +22,12 @@ class Alert(object):
     def signature_name(self):
         return_list = []
         filename = 'alert_names.txt'
-        if not os.path.isfile('./data/{}'.format(filename)):
-            self.__save_location_data('https://www.symantec.com/security_response/attacksignatures/', filename)
-            return_list = self.__get_location(filename)
+        file_path = os.path.join(self.__DATA_PATH, filename)
+        if not os.path.isfile(file_path):
+            self.__save_location_data('https://www.symantec.com/security_response/attacksignatures/', file_path)
+            return_list = self.__get_location(file_path)
         else:
-            return_list = self.__get_location(filename)
+            return_list = self.__get_location(file_path)
         return random.choice(return_list)
 
     @property
@@ -47,18 +50,21 @@ class Alert(object):
     def location(self):
         return_list = []
         filename = 'country.txt'
-        if not os.path.isfile('./data/{}'.format(filename)):
-            self.__save_location_data('https://restcountries.eu/rest/v2/all', filename)
-            return_list = self.__get_location(filename)
+        file_path = os.path.join(self.__DATA_PATH, filename)
+        if not os.path.isfile(file_path):
+            self.__save_location_data('https://restcountries.eu/rest/v2/all', file_path)
+            return_list = self.__get_location(file_path)
         else:
-            return_list = self.__get_location(filename)
+            return_list = self.__get_location(file_path)
         return random.choice(return_list)
 
-    def __save_location_data(self, url, filename):
+    def __save_location_data(self, url, file_path):
+        #print(self.__FILE_PATH)
+       # print(os.listdir(os.path.join(os.path.dirname(__file__), 'data')))
         response = requests.get(url)
         if response:
-            with open('./data/{}'.format(filename), 'w') as filehandle:
-                if filename == 'alert_names.txt':
+            with open(file_path, 'w') as filehandle:
+                if 'alert_names.txt' in file_path:
                     soup = BeautifulSoup(response.text, 'html5lib')
                     for link in soup.find_all('a'):
                         item = link.get('href')
@@ -68,9 +74,9 @@ class Alert(object):
                     for item in response.json():
                         filehandle.write('{}\n'.format(item['alpha2Code']))
            
-    def __get_location(self, filename):
+    def __get_location(self, file_path):
         return_list = []
-        with open("./data/{}".format(filename), "r") as filehandle:
+        with open(file_path, "r") as filehandle:
             for item in filehandle.readlines():
                 return_list.append(item)
         return return_list

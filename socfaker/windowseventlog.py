@@ -1095,16 +1095,19 @@ from .downloadwindowseventdata import DownloadWindowsEventData
 from .computer import Computer
 import glob, os, fnmatch, re
 import xmltodict, random
-from StringIO import StringIO
+from io import StringIO
 from bs4 import BeautifulSoup
 
 
 class WindowsEventLog(object):
 
-    def __init__(self, file_directory='./data/windows-events/',json=False):
-        self.file_directory = self.__check_for_event_data_cache(file_directory)
+    __DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'windows-event'))
+    __PROVIDER_LIST = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'windows-providers' + '.txt'))
+
+    def __init__(self, json=False):
+        self.file_directory = self.__check_for_event_data_cache()
         self.json = json
-        self.provider_list = __WINDOWS_PROVIDERS__
+        self._get_windows_providers()
 
     def get(self, count=1, computer_name=None, os_version='Windows'):
         return_list = []
@@ -1147,6 +1150,11 @@ class WindowsEventLog(object):
             md_count += 1
         return return_list
 
+    def _get_windows_providers(self):
+        self.provider_list = []
+        f = open(self.__PROVIDER_LIST, 'r')
+        for x in f:
+            self.provider_list.append(x.strip())
 
     def __check_os_type(self, os_version):
         if os_version in ['Windows Server 2008', 'Windows Vista']:
@@ -1158,17 +1166,17 @@ class WindowsEventLog(object):
         else:
             return str(random.randint(0,2))
 
-    def __check_for_event_data_cache(self, file_directory):
-        markdown_files = self.__check_file_directory(os.path.abspath(file_directory))
+    def __check_for_event_data_cache(self):
+        markdown_files = self.__check_file_directory()
         if not markdown_files:
-            DownloadWindowsEventData().save(file_directory)
-            markdown_files = self.__check_file_directory(file_directory)
+            DownloadWindowsEventData().save()
+            markdown_files = self.__check_file_directory()
         
         return markdown_files
 
-    def __check_file_directory(self, file_directory):
+    def __check_file_directory(self):
         matches = []
-        for root, dirnames, filenames in os.walk(file_directory):
+        for root, dirnames, filenames in os.walk(self.__DATA_PATH):
             for filename in fnmatch.filter(filenames, '*.md'):
                 matches.append(os.path.abspath(os.path.join(root, filename)))
         return matches
