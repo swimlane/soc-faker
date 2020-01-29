@@ -79,8 +79,6 @@ print(sc.organization.title)
 print(sc.products.azure.vm)
 print(sc.products.azure.vm.details)
 print(sc.products.azure.vm.metrics)
-print(sc.products.azure.vm.metrics.average)
-print(sc.products.azure.vm.metrics.graphs)
 print(sc.products.azure.vm.topology)
 
 ## Elastic
