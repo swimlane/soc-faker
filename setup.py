@@ -27,7 +27,7 @@ def parse_data_files():
     return return_list
 
 setup(
-    name='socfaker',
+    name='soc-faker',
     version='1.0.0',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
