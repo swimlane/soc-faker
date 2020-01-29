@@ -9,3 +9,5 @@ PyYAML
 Faker
 bs4
 lxml
+xmltodict
+netaddr
