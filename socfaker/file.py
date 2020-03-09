@@ -74,15 +74,15 @@ class File(object):
 
     @property
     def md5(self):
-        return random.choice([hashlib.md5(str(self.random_value)).hexdigest()])
+        return random.choice([hashlib.md5(str(self.random_value).encode('utf-8')).hexdigest()])
       
     @property
     def sha1(self):
-        return random.choice([hashlib.sha1(str(self.random_value)).hexdigest()])
+        return random.choice([hashlib.sha1(str(self.random_value).encode('utf-8')).hexdigest()])
       
     @property
     def sha256(self):
-        return random.choice([hashlib.sha256(str(self.random_value)).hexdigest()])
+        return random.choice([hashlib.sha256(str(self.random_value).encode('utf-8')).hexdigest()])
 
     @property
     def hashes(self):

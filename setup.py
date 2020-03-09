@@ -28,7 +28,7 @@ def parse_data_files():
 
 setup(
     name='soc-faker',
-    version='1.0.0',
+    version='1.0.1',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='A Python package to fake SOC (Security Operations Center) data',
