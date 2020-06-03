@@ -1,5 +1,4 @@
 import random, time
-import socket
 from faker import Faker 
 import decimal
 import pendulum 
