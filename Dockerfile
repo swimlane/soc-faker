@@ -1,25 +1,16 @@
-FROM python:3.7-alpine
+FROM python:3.5  AS build-env
 
-COPY requirements.txt /
-
-RUN apk add --no-cache --virtual .build-deps gcc musl-dev \
- && pip install cython \
- && apk del .build-deps
-
-RUN apk add --no-cache libressl-dev musl-dev libffi-dev libpng-dev freetype-dev build-base python-dev py-pip jpeg-dev zlib-dev libxml2-dev
-RUN apk add --update --no-cache g++ gcc libxslt-dev
-
-RUN pip install -r /requirements.txt
-
-ENV TZ="America/Chicago"
-
-COPY . /app
-
+ADD . /app
 WORKDIR /app
 
-RUN export PYTHONPATH=/app:$PYTHONPATH
-RUN python setup.py install
+RUN pip install -r ./requirements.txt
 
+FROM gcr.io/distroless/python3
+COPY --from=build-env /app /app
+COPY --from=build-env /usr/local/lib/python3.5/site-packages /usr/local/lib/python3.5/site-packages
 
+WORKDIR /app
+ENV TZ="America/Chicago"
+ENV PYTHONPATH=/app:/usr/local/lib/python3.5/site-packages
 
-CMD [ "python", "/app/bin/test.py" ]
+CMD ["/app/bin/test.py"] 
