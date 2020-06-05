@@ -124,7 +124,7 @@ class AccessLogStreamer(Thread):
             src_ip=self.__get_public_ip()
             user_agent = UserAgent().get()
 
-        log = """{src_ip} {logname} {username} {timestamp} \"{method} {full_path} {version}\" {response_code} {bytes} {referrer} \"{user_agent}\"""".format(
+        log = """{src_ip} {logname} {username} {timestamp} \"{method} {full_path} {version}\" {response_code} {bytes} \"{referrer}\" \"{user_agent}\"""".format(
             src_ip=src_ip,
             logname=self.__get_logname(),
             username=self.__get_username(),
@@ -174,7 +174,7 @@ class AccessLogStreamer(Thread):
             src_ip=self.__get_public_ip()
             user_agent = UserAgent().get()
 
-        log = """{src_ip} {logname} {username} {timestamp} \"{method} {full_path} {version}\" {response_code} {bytes} {referrer} \"{user_agent}\"""".format(
+        log = """{src_ip} {logname} {username} {timestamp} \"{method} {full_path} {version}\" {response_code} {bytes} \"{referrer}\" \"{user_agent}\"""".format(
             src_ip=src_ip,
             logname=self.__get_logname(),
             username=self.__get_username(),
