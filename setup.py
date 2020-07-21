@@ -5,27 +5,6 @@ def parse_requirements(requirement_file):
     with open(requirement_file) as f:
         return f.readlines()
 
-def parse_data_files():
-    return_list = []
-    path = 'data/sysmon'
-    for (dirpath, dirnames, filenames) in os.walk(path):
-        for item in filenames:
-            return_list.append('{}/{}'.format(dirpath.split('/')[1],item))
-    path = 'data/filenames'
-    for (dirpath, dirnames, filenames) in os.walk(path):
-        for item in filenames:
-            return_list.append('{}/{}'.format(dirpath.split('/')[1],item))
-    path = 'data/windows-event'
-    for (dirpath, dirnames, filenames) in os.walk(path):
-        for item in filenames:
-            return_list.append('{}/{}'.format(dirpath.split('/')[1],item))
-    return_list.append('nessus-plugin-samples.json')
-    return_list.append('useragent.json')
-    return_list.append('alert_names.txt')
-    return_list.append('country.txt')
-    return_list.append('words.txt')
-    return return_list
-
 setup(
     name='soc-faker',
     version='1.0.1',
