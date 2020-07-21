@@ -15,7 +15,7 @@ print(sc.network.ipv6)
 print(sc.network.get_cidr_range('192.168.1.0/24'))
 print(sc.network.hostname)
 print(sc.network.netbios)
-print(sc.network.mac)
+print(sc.network.port)
 print(sc.network.protocol)
 ```
 

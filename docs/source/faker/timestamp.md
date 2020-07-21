@@ -13,6 +13,7 @@ sc = SocFaker()
 print(sc.timestamp.in_the_past())
 print(sc.timestamp.in_the_future())
 print(sc.timestamp.current)
+print(sc.timestamp.date_string())
 ```
 
 ## Timestamp Class

@@ -12,6 +12,7 @@ sc = SocFaker()
 
 print(sc.employee.name)
 print(sc.employee.first_name)
+print(sc.employee.last_name)
 print(sc.employee.username)
 print(sc.employee.email)
 print(sc.employee.gender)
