@@ -12,6 +12,7 @@ At the time of writing this document, `soc-faker` has the ability to fake data f
 * [Alert](docs/source/faker/alert.md)
 * [Computer](docs/source/faker/computer.md)
 * [Application](docs/source/faker/application.md)
+* [Cloud](docs/source/faker/cloud.md)
 * [Employee](docs/source/faker/employee.md)
 * [File](docs/source/faker/file.md)
 * [Logs](docs/source/faker/logs.md)

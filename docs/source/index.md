@@ -10,6 +10,7 @@ At the time of writing this document, `soc-faker` has the ability to fake data f
 
 * [Agent](faker/agent.md)
 * [Application](faker/application.md)
+* [Cloud](faker/cloud.md)
 * [Employee](faker/employee.md)
 * [File](faker/file.md)
 * [Logs](faker/logs.md)
