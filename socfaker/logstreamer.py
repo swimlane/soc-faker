@@ -10,6 +10,9 @@ from .network import Network
 
 class LogStreamer(Thread):
 
+    """The LogStreamer class will generate and stream logs in syslog format
+    """
+
     def __init__(self):
         super(LogStreamer, self).__init__()
         self.__log_list = []
@@ -20,6 +23,15 @@ class LogStreamer(Thread):
         time.sleep(float(decimal.Decimal(random.randrange(min_time, max_time))/1000))
 
     def generate(self, type='clean', count=10):
+        """Generates either clean syslogs or sprinkles ransomware communications through out the log stream
+
+        Args:
+            type (str, optional): The type of logs to generate.  Options are ransomware or clean. Defaults to 'clean'.
+            count (int, optional): How many log events are generated. Defaults to 10.
+
+        Returns:
+            list: Returns a list of syslog events
+        """
         self.__wait()
         if type == 'clean':
             self.__generate_clean_logs(random.randint(1, int(count)))

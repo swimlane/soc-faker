@@ -1,26 +1,38 @@
-import random, pendulum, string, uuid, codecs
+import string
 from .windowseventlog import WindowsEventLog
 from .computer import Computer
+from .baseclass import BaseClass
 
 
-class ElasticHits(object):
+class ElasticHits(BaseClass):
 
     """Fake's Elastic Search Hits from Windows Event Data
     
     Example Usage:
 
-      import pprint
       hits = ElasticHits()
       print(hits.get(count=15))
 
     """    
     
     def __init__(self):
+        """ElasticHits uses Windows Event Logs to generate fake response to queries to elasticsearch
+        """
+        super(ElasticHits, self).__init__()
         self.win_events = WindowsEventLog(json=True)
-        self.host_id = str(uuid.uuid4())
-        self.computer = Computer()
+        self.host_id = str(self.uuid.uuid4())
+        self.__computer = Computer()
 
     def get(self, count=10):
+        """The get method is the main method to retrieve a specified count (default of 10) 
+        of Elasticsearch hits
+
+        Args:
+            count (int, optional): The number of hits to return. Defaults to 10.
+
+        Returns:
+            list: Returns a list of elasticsearch query hits
+        """
         self.count = count
         hit_list = self._get_hits()
         return {
@@ -32,7 +44,7 @@ class ElasticHits(object):
     def _get_hits(self):
         hit_list = []
         count = 0
-        for event in self.win_events.get(computer_name=self.computer.name):
+        for event in self.win_events.get(computer_name=self.__computer.name):
             while count <= self.count:
                 event_data_dict = {}
                 if event['Event'].get('EventData'):
@@ -58,20 +70,20 @@ class ElasticHits(object):
                             },
                             "host": {
                                 "id": self.host_id,
-                                "hostname": self.computer.name,
+                                "hostname": self.__computer.name,
                                 "architecture": "x86_64",
-                                "name": self.computer.name,
+                                "name": self.__computer.name,
                                 "os": {
-                                    "platform": self.computer.platform,
+                                    "platform": self.__computer.platform,
                                     "version": "10.0",
                                     "family": "windows",
-                                    "name": self.computer.os,
+                                    "name": self.__computer.os,
                                     "kernel": "10.0.17763.379 (WinBuild.160101.0800)",
                                     "build": "17763.379"
                                 }
                             },
                             "agent": {
-                                "hostname": self.computer.name,
+                                "hostname": self.__computer.name,
                                 "id": self.host_id,
                                 "version": "7.2.0",
                                 "type": "winlogbeat",
@@ -95,7 +107,7 @@ class ElasticHits(object):
                                 "provider_guid": event['Event']['System']['Provider']['@Guid'],
                                 "provider_name": event['Event']['System']['Provider']['@Name'],
                                 "api": "wineventlog",
-                                "computer_name": "{}.deepdive.local".format(self.computer.name),
+                                "computer_name": "{}.deepdive.local".format(self.__computer.name),
                                 "event_data": event_data_dict,
                                 "event_id": event['Event']['System']['EventId']
                             },
@@ -123,4 +135,4 @@ class ElasticHits(object):
 
     def _random_id(self, stringLength):
         lettersAndDigits = string.ascii_letters + string.digits
-        return ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
+        return ''.join(self.random.choice(lettersAndDigits) for i in range(stringLength))

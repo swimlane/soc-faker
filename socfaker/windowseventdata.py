@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import uuid, random, pendulum
 
+
 class WindowsEventData(object):
     '''
     Example: 
