@@ -8,6 +8,7 @@ soc-faker is used to generate fake data for use by Security Operation Centers, I
 
 At the time of writing this document, `soc-faker` has the ability to fake data for the following main categories.  You can find specific details for each category by selecting the links below:
 
+* [Agent](docs/source/faker/agent.md)
 * [Alert](docs/source/faker/alert.md)
 * [Computer](docs/source/faker/computer.md)
 * [Application](docs/source/faker/application.md)
