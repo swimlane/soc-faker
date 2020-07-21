@@ -41,6 +41,9 @@ setup(
     author_email='info@swimlane.com',
     python_requires='>=2.6, !=3.0.*, !=3.1.*, !=3.2.*, <4',
     package_data={
-        'socfaker':  ['data/*.txt', 'data/*.json', 'data/filenames/*.txt', 'data/sysmon/*.txt', 'data/windows-event/*.md']
+    entry_points={
+          'console_scripts': [
+              'soc-faker = socfaker.__main__:main'
+          ]
     }
 )
