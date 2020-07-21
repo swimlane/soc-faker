@@ -10,6 +10,7 @@ from socfaker import SocFaker
 
 sc = SocFaker()
 
+print(sc.computer.architecture)
 print(sc.computer.name)
 print(sc.computer.disk)
 print(sc.computer.memory)
