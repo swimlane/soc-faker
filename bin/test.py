@@ -42,6 +42,7 @@ print(sc.computer.memory)
 print(sc.computer.platform)
 print(sc.computer.mac_address)
 print(sc.computer.os)
+print(sc.computer.ipv4)
 
 # Container
 print(sc.container.id)

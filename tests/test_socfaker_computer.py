@@ -15,3 +15,6 @@ def test_socfaker_computer_mac_address(socfaker_fixture):
 
 def test_socfaker_computer_os(socfaker_fixture):
     assert socfaker_fixture.computer.os
+
+def test_socfaker_computer_ipv4(socfaker_fixture):
+    assert socfaker_fixture.computer.ipv4

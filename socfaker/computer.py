@@ -1,4 +1,5 @@
 import string
+from .network import Network
 from .operatingsystem import OperatingSystem
 from .baseclass import BaseClass
 
@@ -113,3 +114,12 @@ class Computer(BaseClass):
         if not self._os:
             self._os = OperatingSystem().fullname
         return self._os
+
+    @property
+    def ipv4(self):
+        """The operating system ipv4 address
+
+        Returns:
+            str: A random operating system ipv4 address
+        """
+        return Network(private=True).ipv4
