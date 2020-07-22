@@ -3,7 +3,7 @@ class Logs(object):
     """The main entry point to generate different log standards
     """
 
-    def syslog(self, type='ransomware', count=10):
+    def syslog(self, type='ransomware', count=1):
         """The syslog method generates random syslog messages based on the type and count requested
 
         Args:
