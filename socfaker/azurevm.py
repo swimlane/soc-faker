@@ -25,7 +25,7 @@ class AzureVM(object):
             AzureVMMetrics: Returns an object containing properties to access metrics related to an Azure VM
         """
         from .azurevmmetrics import AzureVMMetrics
-        return AzureVMMetrics().get()
+        return AzureVMMetrics()
 
     @property
     def topology(self):

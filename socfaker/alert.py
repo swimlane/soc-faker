@@ -53,7 +53,7 @@ class Alert(BaseClass):
                 self.__signature_name_list = self._get_data(self.__DATA_PATH)
             else:
                 self.__signature_name_list = self._get_data(self.__DATA_PATH)
-        return self.random.choice(self.__signature_name_list)
+        return self.random.choice(self.__signature_name_list).strip()
 
     @property
     def type(self):

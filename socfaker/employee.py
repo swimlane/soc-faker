@@ -210,11 +210,18 @@ class Employee(BaseClass):
             str: Returns a random employee title
         """
         job_title = self.random.choice([
-            10 * ['Analyst'] + 5 * ['Supervisor'] + 3 * ['Manager'] + 2 * ['Director'] + 1 * ['CFO'] + 1 * ['CISO'] + 1 * ['CIO'] + 1 * ['CEO']
+            10 * ['Analyst'], 
+            5 * ['Supervisor'], 
+            3 * ['Manager'], 
+            2 * ['Director'], 
+            1 * ['CFO'], 
+            1 * ['CISO'], 
+            1 * ['CIO'], 
+            1 * ['CEO']
         ])
-        if job_title not in ['CFO', 'CISO', 'CIO', 'CEO']:
-            return "{}, {}".format(self.random.choice(self.department), job_title)
-        return job_title
+        if job_title[0] not in ['CFO', 'CISO', 'CIO', 'CEO']:
+            return "{}, {}".format(self.random.choice(self.department), job_title[0])
+        return job_title[0]
 
     @property
     def department(self):
@@ -224,5 +231,9 @@ class Employee(BaseClass):
             str: Returns a random employee department
         """
         return self.random.choice([
-            10 * ['SOC'] + 10 * ['NOC'] + 5 * ['Help Desk'] + 5 * ['HR'] + 4 * ['QA']
-        ])
+            10 * ['SOC'],
+            10 * ['NOC'],
+            5 * ['Help Desk'], 
+            5 * ['HR'], 
+            4 * ['QA']
+        ])[0]

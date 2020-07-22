@@ -64,7 +64,7 @@ class AzureVMMetrics(BaseClass):
         self.metric_dict = {}
         self.image_list = []
 
-    def get(self):
+    def generate(self):
         """Returns a list of dicts containing Azure VM Metrics
 
         Returns:
@@ -102,10 +102,14 @@ class AzureVMMetrics(BaseClass):
 
     @property
     def average(self):
+        if not self.__METRICS:
+            self.generate()
         from .azurevmmetricsproperties import AzureVMMetricsProperties
         return AzureVMMetricsProperties(self.__METRICS).get_average()
 
     @property
     def graphs(self):
+        if not self.__METRICS:
+            self.generate()
         from .azurevmmetricsproperties import AzureVMMetricsProperties
         return AzureVMMetricsProperties(self.__METRICS).get_graphs()
