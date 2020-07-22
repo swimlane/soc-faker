@@ -14,7 +14,7 @@ class AzureVMMetricsProperties(BaseClass):
         self.plt = plt
 
     def get_average(self):
-        for key,val in self.metrics.iteritems():
+        for key,val in self.metrics.items():
             count = 0
             total = 0
             for details in val:
@@ -71,11 +71,11 @@ class AzureVMMetricsProperties(BaseClass):
 
     def __get_data(self, data):
         temp_list = []
-        for key,val in data.iteritems():
+        for key,val in data.items():
             temp_list.append(key)
         colors = self.__generate_number_of_colors(len(temp_list))
         self.random.shuffle(colors)
-        for key,val in data.iteritems():
+        for key,val in data.items():
             if 'deprecated' not in key:
                 color = colors.pop()
                 self.__plot_data(key, val, color)
