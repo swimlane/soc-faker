@@ -28,7 +28,7 @@ class WindowsEventLog(object):
         if not self.__provider_list:
             self.__get_windows_providers()
         md_count = 0
-        shuffled = shuffled = random.sample(self.__file_directory, len(self.__file_directory))
+        shuffled = random.sample(self.__file_directory, len(self.__file_directory))
         for md_file in shuffled:
             if md_count == count:
                 break

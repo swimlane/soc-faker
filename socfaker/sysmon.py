@@ -24,7 +24,7 @@ class SysMon(BaseClass):
         super(SysMon, self).__init__()
         self.templates = self.__check_file_directory()
 
-    def get(self, count=21):
+    def get(self, count=1):
         """Returns a list of generated sysmon logs
 
         Args:
@@ -35,8 +35,10 @@ class SysMon(BaseClass):
         """
         return_list = []
         current_count = 1
-        while current_count <= count:
-            for template in self.templates:
+        
+        shuffled = self.random.sample(self.templates, len(self.templates))
+        for template in shuffled:
+            while current_count <= count:
                 current_count += 1
                 with open(template, 'r') as file:
                     data = file.read()

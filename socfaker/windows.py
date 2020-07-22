@@ -17,7 +17,7 @@ class Windows(object):
         from .windowseventlog import WindowsEventLog
         return WindowsEventLog(json=json).get(count=count, computer_name=computer_name, os_version=os_version)
 
-    def sysmon(self, count=21):
+    def sysmon(self, count=1):
         """Generate fake sysmon logs for Windows
 
         Args:
