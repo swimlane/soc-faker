@@ -14,7 +14,7 @@ class BaseClass(object):
     def __str__(self):
         return_dict = {}
         for item in dir(self):
-            if not item.startswith('_') and item not in self.__dict__:
+            if not item.startswith('_') and item not in self.__dict__ and not item.startswith('random'):
                 return_dict[item] = getattr(self, item)
         return str(return_dict)
 
