@@ -1,15 +1,13 @@
-import uuid,random, json
-
 import matplotlib.pyplot as plt
-
 import networkx as nx
-
 from .azureproperties import AzureProperties
+from .baseclass import BaseClass
 
 
-class AzureVMTopology(object):
+class AzureVMTopology(BaseClass):
 
     def __init__(self):
+        super(AzureVMTopology, self).__init__()
         self.root_node = ''
         self.graph = nx.Graph()
         self.props = AzureProperties()
@@ -21,12 +19,18 @@ class AzureVMTopology(object):
             "location": self.props.location, 
             "network_zones": self.props.network_zone, 
             "score": self.props.score, 
-            "id": "/subscriptions/{resource_group_id}/resourceGroups/{resource_group_name}/providers/Microsoft.Network/virtualNetworks/{vm_name}".format(resource_group_id=self.props.resource_group_id, resource_group_name=self.props.resource_group_name,vm_name=self.props.vm_name), 
+            "id": "/subscriptions/{resource_group_id}/resourceGroups/{resource_group_name}/providers/Microsoft.Network/virtualNetworks/{vm_name}".format(
+                resource_group_id=self.props.resource_group_id, 
+                resource_group_name=self.props.resource_group_name, 
+                vm_name=self.props.vm_name), 
             "severity": "Healthy"
         }
         child_list = []
         child_list.append({
-            "1": "/subscriptions/{resource_group_id}/resourceGroups/{resource_group_name}/providers/Microsoft.Network/virtualNetworks/{vm_name}/subnets/default".format(resource_group_id=self.props.resource_group_id, resource_group_name=self.props.resource_group_name,vm_name=self.props.vm_name)
+            "1": "/subscriptions/{resource_group_id}/resourceGroups/{resource_group_name}/providers/Microsoft.Network/virtualNetworks/{vm_name}/subnets/default".format(
+                resource_group_id=self.props.resource_group_id, 
+                resource_group_name=self.props.resource_group_name, 
+                vm_name=self.props.vm_name)
         })
         parent['children'] = child_list
         return_list.append(parent)
@@ -36,7 +40,10 @@ class AzureVMTopology(object):
             "location": self.props.location, 
             "network_zones": self.props.network_zone, 
             "score": self.props.score, 
-            "id": "/subscriptions/{resource_group_id}/resourceGroups/{resource_group_name}/providers/Microsoft.Network/virtualNetworks/{vm_name}/subnets/default".format(resource_group_id=self.props.resource_group_id, resource_group_name=self.props.resource_group_name,vm_name=self.props.vm_name), 
+            "id": "/subscriptions/{resource_group_id}/resourceGroups/{resource_group_name}/providers/Microsoft.Network/virtualNetworks/{vm_name}/subnets/default".format(
+                resource_group_id=self.props.resource_group_id, 
+                resource_group_name=self.props.resource_group_name, 
+                vm_name=self.props.vm_name), 
             "severity": "High"
         }
         count = 1
@@ -47,7 +54,10 @@ class AzureVMTopology(object):
                 "location": self.props.location, 
                 "network_zones": AzureProperties().network_zone, 
                 "score": AzureProperties().score, 
-                "id": "/subscriptions/{resource_group_id}/resourceGroups/{resource_group_name}/providers/Microsoft.Compute/virtualMachines/{child_vm_name}".format(resource_group_id=self.props.resource_group_id, resource_group_name=self.props.resource_group_name, child_vm_name=AzureProperties().vm_name), 
+                "id": "/subscriptions/{resource_group_id}/resourceGroups/{resource_group_name}/providers/Microsoft.Compute/virtualMachines/{child_vm_name}".format(
+                    resource_group_id=self.props.resource_group_id, 
+                    resource_group_name=self.props.resource_group_name, 
+                    child_vm_name=AzureProperties().vm_name), 
                 "severity": "High"
             }
             child_list.append(child_dict)
@@ -63,7 +73,14 @@ class AzureVMTopology(object):
             if 'root' in item:
                 count = 1
                 item_id = item['root']['id'].rsplit('/',1)[1]
-                self.graph.add_node(item_id, weight=count,id=item['root']['id'], location=item['root']['location'], network_zones=item['root']['network_zones'], score=item['root']['score'], severity=item['root']['severity'])
+                self.graph.add_node(
+                    item_id, 
+                    weight=count, 
+                    id=item['root']['id'], 
+                    location=item['root']['location'], 
+                    network_zones=item['root']['network_zones'], 
+                    score=item['root']['score'], 
+                    severity=item['root']['severity'])
                 count += 2
                 if root:
                     self.root_node = item_id
@@ -72,17 +89,23 @@ class AzureVMTopology(object):
                 for child in item['children']:
                     for key,val in child.iteritems():
                         if isinstance(val, dict):
-                            self.graph.add_node(val['id'].rsplit('/',1)[1], weight=count,id=val['id'], location=val['location'], network_zones=val['network_zones'], score=val['score'], severity=val['severity'])
+                            self.graph.add_node(
+                                val['id'].rsplit('/',1)[1], 
+                                weight=count,id=val['id'], 
+                                location=val['location'], 
+                                network_zones=val['network_zones'], 
+                                score=val['score'], 
+                                severity=val['severity'])
                             self.graph.add_edge(item_id, val['id'].rsplit('/',1)[1])
                         else:
                             self.graph.add_edge(item_id, val.rsplit('/',1)[1])
                 
     def get(self):
-        return self.__generate_topology_template(children_count=random.randint(1,5))
+        return self.__generate_topology_template(children_count=self.random.randint(1,5))
 
     def topology_graphic(self, topology=None):
         if not topology:
-            topology = self.__generate_topology_template(children_count=random.randint(1,5))
+            topology = self.__generate_topology_template(children_count=self.random.randint(1,5))
         self.__parse_topology(topology)
         pos = self.__hierarchy_pos(self.graph, root=self.root_node)
 
@@ -94,7 +117,14 @@ class AzureVMTopology(object):
             else:
                 color_map.append('skyblue')
 
-        nx.draw(self.graph, pos=pos, node_color=color_map, node_size=2000, edge_color='white', font_color='white', font_size=8)
+        nx.draw(
+            self.graph, 
+            pos=pos, 
+            node_color=color_map, 
+            node_size=2000, 
+            edge_color='white', 
+            font_color='white', 
+            font_size=8)
         fig.set_facecolor("#00000F")
 
         plt.autoscale()
@@ -138,9 +168,17 @@ class AzureVMTopology(object):
             if isinstance(G, nx.DiGraph):
                 root = next(iter(nx.topological_sort(G)))  #allows back compatibility with nx version 1.11
             else:
-                root = random.choice(list(G.nodes))
+                root = self.random.choice(list(G.nodes))
 
-        def _hierarchy_pos(G, root, width=1., vert_gap = 0.2, vert_loc = 0, xcenter = 0.5, pos = None, parent = None):
+        def _hierarchy_pos(
+            G, 
+            root, 
+            width=1., 
+            vert_gap = 0.2, 
+            vert_loc = 0, 
+            xcenter = 0.5, 
+            pos = None, 
+            parent = None):
             '''
             see hierarchy_pos docstring for most arguments
 
@@ -161,9 +199,20 @@ class AzureVMTopology(object):
                 nextx = xcenter - width/2 - dx/2
                 for child in children:
                     nextx += dx
-                    pos = _hierarchy_pos(G,child, width = dx, vert_gap = vert_gap, 
-                                        vert_loc = vert_loc-vert_gap, xcenter=nextx,
-                                        pos=pos, parent = root)
+                    pos = _hierarchy_pos(
+                        G,child, 
+                        width = dx, 
+                        vert_gap = vert_gap, 
+                        vert_loc = vert_loc-vert_gap, 
+                        xcenter=nextx,
+                        pos=pos, 
+                        parent = root)
             return pos
 
-        return _hierarchy_pos(G, root, width, vert_gap, vert_loc, xcenter)
+        return _hierarchy_pos(
+            G, 
+            root, 
+            width, 
+            vert_gap, 
+            vert_loc, 
+            xcenter)

@@ -11,6 +11,7 @@ from socfaker import SocFaker
 sc = SocFaker()
 
 print(sc.organization.name)
+print(sc.organization.domain)
 print(sc.organization.division)
 print(sc.organization.title)
 ```

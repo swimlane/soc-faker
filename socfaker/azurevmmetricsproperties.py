@@ -1,59 +1,18 @@
-import pendulum, random, cStringIO, base64, datetime, ast
+import pendulum, base64
 import matplotlib.pyplot as plt
 from io import BytesIO
+from .baseclass import BaseClass
 
 
-__METRIC_LIST__ = {
-    'percent': [
-        'percentage_cpu',
-        'premium_data_disk_cache_read_hit',
-        'premium_data_disk_cache_read_miss',
-        'premium_os_disk_cache_read_hit',
-        'premium_os_disk_cache_read_miss',
-    ],
-    'bytes': [
-        'network_in_billable_deprecated',
-        'network_out_billable_deprecated',
-        'disk_read_bytes',
-        'disk_write_bytes',
-        'network_in_total',
-        'network_out_total'
-    ],
-    'count_per_second': [
-        'disk_read_operations_sec',
-        'inbound_flows_maximum_creation_rate',
-        'outbound_flows_maximum_creation_rate',
-        'disk_write_operations_sec',
-        'os_disk_write_bytes_sec',
-        'os_disk_read_operations_sec',
-        'data_disk_read_bytes_sec_deprecated',
-        'data_disk_write_bytes_sec_deprecated',
-        'data_disk_read_operations_sec_deprecated',
-        'data_disk_write_operations_sec_deprecated',
-        'data_disk_read_operations_sec',
-        'data_disk_write_operations_sec',
-        'os_disk_read_bytes_sec',
-        'os_disk_write_operations_sec'
-    ],
-    'count': [
-        'cpu_credits_remaining',
-        'cpu_credits_consumed',
-        'data_disk_qd_deprecated',
-        'inbound_flows',
-        'outbound_flows',
-        'os_disk_qd_deprecated',
-        'os_disk_queue_depth',
-        'data_disk_queue_depth'
-    ]
-}
+class AzureVMMetricsProperties(BaseClass):
 
-class AzureVMMetricsProperties(object):
+    _image_list = []
 
     def __init__(self, metrics):
+        super(AzureVMMetricsProperties, self).__init__()
         self.metrics = metrics
-        self.image_list = []
-       
-    
+        self.plt = plt
+
     def get_average(self):
         for key,val in self.metrics.iteritems():
             count = 0
@@ -68,13 +27,13 @@ class AzureVMMetricsProperties(object):
     def get_graphs(self):
         self.__get_data(self.metrics)
         plt.close('all')
-        return self.image_list
+        return self._image_list
 
     def __add_to_plot(self, hour_list, val, color):
         self.plt.plot(hour_list, val, color=color)
 
     def __generate_number_of_colors(self, count):
-        return ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
+        return ["#"+''.join([self.random.choice('0123456789ABCDEF') for j in range(6)])
              for i in range(count)]
 
     def __plot_data(self, key, val, color):
@@ -103,7 +62,7 @@ class AzureVMMetricsProperties(object):
             if frame1.lines:
                 tmpfile = BytesIO()
                 plt.savefig(tmpfile, format='JPEG')
-                self.image_list.append({
+                self._image_list.append({
                     'attachment': {
                         'filename': '{}.jpeg'.format(key.replace('/', '_')),
                         'base64': base64.b64encode(tmpfile.getvalue()).decode('utf-8')
@@ -115,7 +74,7 @@ class AzureVMMetricsProperties(object):
         for key,val in data.iteritems():
             temp_list.append(key)
         colors = self.__generate_number_of_colors(len(temp_list))
-        random.shuffle(colors)
+        self.random.shuffle(colors)
         for key,val in data.iteritems():
             if 'deprecated' not in key:
                 color = colors.pop()

@@ -14,7 +14,6 @@ class MarkdownTable(object):
         self.row_list = []
         self.column_list = self.columns()
         self.column_dict = collections.OrderedDict()
-    
 
     def columns(self):
         column_list = []
@@ -25,7 +24,7 @@ class MarkdownTable(object):
                     if column:
                         column_list.append(column)
             return column_list
-            
+
     def rows(self):
         row_count = 0
         return_list = []

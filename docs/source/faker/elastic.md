@@ -10,8 +10,8 @@ from socfaker import SocFaker
 
 sc = SocFaker()
 
-print(sc.products.elastic)
 print(sc.products.elastic.hits(count=1))
+print(sc.products.elastic.document(count=1))
 ```
 
 ## Elastic Class

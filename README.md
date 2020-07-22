@@ -8,23 +8,37 @@ soc-faker is used to generate fake data for use by Security Operation Centers, I
 
 At the time of writing this document, `soc-faker` has the ability to fake data for the following main categories.  You can find specific details for each category by selecting the links below:
 
+* [Agent](docs/source/faker/agent.md)
 * [Alert](docs/source/faker/alert.md)
-* [Computer](docs/source/faker/computer.md)
 * [Application](docs/source/faker/application.md)
+* [Cloud](docs/source/faker/cloud.md)
+* [Computer](docs/source/faker/computer.md)
+* [Container](docs/source/faker/container.md)
+* [DNS](docs/source/faker/dns.md)
 * [Employee](docs/source/faker/employee.md)
 * [File](docs/source/faker/file.md)
+* [HTTP](docs/source/faker/http.md)
+* [Location](docs/source/faker/location.md)
 * [Logs](docs/source/faker/logs.md)
+    * [SysMon](docs/source/faker/sysmon.md)
+    * [Windows Event Logs](docs/source/faker/eventlog.md)
 * [Network](docs/source/faker/network.md)
+* [Operating System](docs/source/faker/operating_system.md)
 * [Organization](docs/source/faker/organization.md)
+* [PCAP](docs/source/faker/pcap.md)
+* [Process](docs/source/faker/process.md)
 * Products
     * [Azure](docs/source/faker/azure.md)
     * [Elastic](docs/source/faker/elastic.md)
     * [QualysGuard](docs/source/faker/qualysguard.md)
     * [ServiceNow](docs/source/faker/servicenow.md)
-* [User Agent](docs/source/faker/useragent.md)
-* [Vulnerability](docs/source/faker/vulnerability)
 * [Registry](docs/source/faker/registry.md)
 * [Timestamp](docs/source/faker/timestamp.md)
+* [TLS](docs/source/faker/tls.md)
+* [User Agent](docs/source/faker/useragent.md)
+* [Vulnerability](docs/source/faker/vulnerability)
+* [Words](docs/source/faker/words.md)
+
 
 ### Installing soc-faker
 
@@ -35,7 +49,7 @@ pip install soc-faker --user
 ### Installing from source
 
 ```bash
-git clone git@github.com:swimlane/soc-faker.git
+git clone https://github.com/swimlane/soc-faker.git
 cd soc-faker
 python setup.py install
 ```
@@ -45,30 +59,65 @@ python setup.py install
 The following libraries are required and installed by soc-faker
 
 ```
-requests
-pendulum
-ipaddress
-Pillow
-networkx
-matplotlib
-PyGithub
-PyYAML
-Faker
+requests==2.23.0
+pendulum==1.2.5
+ipaddress==1.0.23
+networkx==2.4
+matplotlib==3.3.0rc1
+Faker==4.1.1
+bs4==0.0.1
+lxml==4.5.1
+xmltodict==0.12.0
+netaddr==0.7.20
+fire==0.3.1
 ```
 
-### GitHub PAT
+## Usage
 
-In addition, you must provide a GitHub Personal Access Token to utilize specific features that rely on data from public github repositories.
+`soc-faker` is a Python package that can be imported or be used via the command line utility to generate fake data related to security tools, products, and general data related to security.
 
-Please follow this guide to get a personal access token [https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
+### Importing soc-faker
 
-Once you have a PAT you can provide this token during initialization of the the `SocFaker` object:
+After you have installed `soc-faker` from source or using `pip` you can import and instantiate it by doing the following:
 
-```
+```python
 from socfaker import SocFaker
 
-sf = SocFaker(github_token='YOUR PERSONAL ACCESS TOKEN')
+sc = SocFaker()
 ```
+
+Once you have instantiated an instance of `soc-faker` you can then access any of the [different properties and methods](docs/source/index.md) avaialble based on your needs. If you would like to see soc-faker in action, then please see the [bin/test.py](bin/test.py) script in the repository under the `bin` folder for an example of all avaialble properties and methods.
+
+Additionally, please read the [documentation](docs/source/index.md) for more details about each avaialble property and method.
+
+### Command-Line Usage
+
+When `soc-faker` is installed, it automatically creates a command-line utility for your use.  This utility can be accessed by simply typing `soc-faker` in your shell of choice.  
+
+To see `soc-faker` help type:
+
+```bash
+soc-faker
+# or
+soc-faker --help
+```
+
+You can access each property just like you can from the library, the only difference is you replace a `.` between properties with a space.  For example, if you wanted to get some randomly generated `hashes` quickly you can run:
+
+```bash
+soc-faker file hashes
+```
+
+This will return the following to your shell:
+
+
+```output
+md5:    aa3150ac34ee6a5911e61ab6a5052a6d
+sha1:   de5c15f64d979ed84bac340c334a63d94401059d
+sha256: 118a9f9de8f3dd6471ef113959485ecbaf66368dea16758eab4e22da182d0e9f
+```
+
+If you run into any issues, just type what you think is correct and the built-in help will guide you through all available groups, commands, etc. for each data point within `soc-faker`.
 
 ### Development
 
@@ -129,52 +178,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 ## Acknowledgments
 
 * This project utilizes data from the OSSEM project by [hunters-forge](https://github.com/hunters-forge/OSSEM)
-
-```eval_rst
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-   
-   docs/source/faker/application
-   docs/source/faker/azure
-   docs/source/faker/computer
-   docs/source/faker/elastic
-   docs/source/faker/employee
-   docs/source/faker/file
-   docs/source/faker/logs
-   docs/source/faker/network
-   docs/source/faker/organization
-   docs/source/faker/qualysguard
-   docs/source/faker/servicenow
-   docs/source/faker/useragent
-   docs/source/faker/vulnerability
-```
-
-
-## TODO
-
-### Employee
-
-- [ ] Manager (Employee Object)
-
-### Date
-- [ ] Date Between
-- [ ] Date X periods back (date after 1/1/2018)
-- [ ] Date X per. Forward (date after 1/1/2018)
-- [ ] Duration/Span
-
-### Address
-- [ ] Physical Address?
-
-### Network
-- [ ] URL
-
-
-### File Info
-- [ ] fuzzy?
-- [ ] File Path
-- [ ] File Reputation?
-
-### PCAP
-
-- [ ] Generate Fake PCAP files

@@ -1,60 +1,65 @@
-import random, pendulum
+from .timestamp import Timestamp
+from .baseclass import BaseClass
 
 
-class Application(object):
+class Application(BaseClass):
 
-    def __init__(self):
-        self.logon_timestamp = 45
-        self.status = ''
-        self.account_status = ''
-        self.name = ''
+    """Application object contains properties for a random 
+       (non-specific) application
+    """
 
     @property 
     def status(self):
-        return self._status
+        """Returns the application status
 
-    @status.setter
-    def status(self, value):
-        self._status = random.choice(['Active', 'Inactive', 'Legacy'])
+        Returns:
+            str: Returns the application status of 
+                 Active, Inactive, or Legacy
+        """
+        return self.random.choice(['Active', 'Inactive', 'Legacy'])
 
     @property
     def account_status(self):
-        return self._accountStatus
+        """A random account status for the application
 
-    @account_status.setter
-    def account_status(self, value):
-        self._accountStatus = random.choice(['Enabled'] * 9 + ['Disabled'])
+        Returns:
+            str: Returns whether an account is enabled or 
+                 disabled for an application
+        """
+        return self.random.choice(['Enabled'] * 9 + ['Disabled'])
 
     @property
     def name(self):
-        return self._name
+        """The name of an application
 
-    @name.setter
-    def name(self, value):
-        self._name = random.choice([
-            'DropBox',
-            'Office 365',
-            'GSuite',
-            'JIRA',
-            'ZenDesk',
-            'GitHub',
-            'Swimlane',
-            'Microsoft Azure',
-            'Amazon Web Services',
-            'Carbon Black',
-            'Salesforce',
-            'ServiceNow',
-            'Slack',
-            'Splunk',
-            'Zoom',
+        Returns:
+            str: Returns a random application name based on common 
+                 applications used in enterprises
+        """
+        return self.random.choice([
+            'DropBox', 
+            'Office 365', 
+            'GSuite', 
+            'JIRA', 
+            'ZenDesk', 
+            'GitHub', 
+            'Swimlane', 
+            'Microsoft Azure', 
+            'Amazon Web Services', 
+            'Carbon Black', 
+            'Salesforce', 
+            'ServiceNow', 
+            'Slack', 
+            'Splunk', 
+            'Zoom', 
             'ZScaler'
         ])
 
     @property
     def logon_timestamp(self):
-        return self._logon_timestamp
+        """Logon timestamp of a user/service for an applicaiton
 
-    @logon_timestamp.setter
-    def logon_timestamp(self, value):
-        if isinstance(value, int):
-            self._logon_timestamp = pendulum.now().subtract(days=random.randint(1,value), hours=random.randint(1,59), minutes=random.randint(1,59), seconds=random.randint(1,59))
+        Returns:
+            str: Returns an ISO 8601 timestamp in the past
+        """
+        return Timestamp().in_the_past()

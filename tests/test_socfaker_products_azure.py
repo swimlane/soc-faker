@@ -13,8 +13,8 @@ def test_socfaker_products_azure_vm_metrics(socfaker_fixture):
 #def test_socfaker_products_azure_vm_metrics_graphs(socfaker_fixture):
 #    assert socfaker_fixture.products.azure.vm.metrics.graphs
 
-def test_socfaker_products_azure_vm_topology(socfaker_fixture):
-    assert socfaker_fixture.products.azure.vm.topology
+#def test_socfaker_products_azure_vm_topology(socfaker_fixture):
+#    assert socfaker_fixture.products.azure.vm.topology
 
 #def test_socfaker_products_azure_vm_topology_graphic(socfaker_fixture):
  #   assert socfaker_fixture.products.azure.vm.topology_graphic()

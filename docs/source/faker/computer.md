@@ -10,12 +10,14 @@ from socfaker import SocFaker
 
 sc = SocFaker()
 
+print(sc.computer.architecture)
 print(sc.computer.name)
 print(sc.computer.disk)
 print(sc.computer.memory)
 print(sc.computer.platform)
 print(sc.computer.mac_address)
 print(sc.computer.os)
+print(sc.computer.ipv4)
 ```
 
 ## Computer Class

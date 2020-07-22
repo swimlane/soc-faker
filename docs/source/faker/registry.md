@@ -1,4 +1,4 @@
-# Alert
+# Registry
 
 This documentation provides details about the data that can be faked for the Windows Registry.
 
@@ -11,10 +11,14 @@ from socfaker import SocFaker
 sc = SocFaker()
 
 print(sc.registry.hive)
+print(sc.registry.root)
+print(sc.registry.key)
 print(sc.registry.path)
+print(sc.registry.type)
+print(sc.registry.value)
 ```
 
-## Alert Class
+## Registry Class
 
 ```eval_rst
 .. automodule:: socfaker.registry

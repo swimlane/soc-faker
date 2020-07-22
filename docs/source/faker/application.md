@@ -10,7 +10,6 @@ from socfaker import SocFaker
 
 sc = SocFaker()
 
-print(sc.application)
 print(sc.application.status)
 print(sc.application.account_status)
 print(sc.application.name)

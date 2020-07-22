@@ -1,114 +1,125 @@
-import random, requests, json, ipaddress, string
+import string
+from .network import Network
+from .operatingsystem import OperatingSystem
+from .baseclass import BaseClass
 
-class Computer(object):
 
-    def __init__(self):
-        self.name = 'test'
-        self.os = 'os'
+class Computer(BaseClass):
+
+    """A computer object containing common properties about a computer
+
+    Returns:
+        Computer: An object containing common properties of a computer
+    """
+    _name = None
+    _os = None
+
+    @property
+    def architecture(self):
+        """Architecture of a computer instance
+
+        Returns:
+            str: Architecture of computer system of either x86_64 or x86
+        """
+        return self.random.choice([
+            'x86_64', 
+            'x86'
+        ])
 
     @property
     def name(self):
-        return self._name
+        """The name of a comptuer
 
-    @name.setter
-    def name(self, value):
-        prefix = random.choice(['Desktop'] * 4 + ['Laptop'])
-        self._name = '%s-' % prefix + ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(7))
+        Returns:
+            str: A random name of a computer 
+        """
+        if not self._name:
+            prefix = self.random.choice(['Desktop'] * 4 + ['Laptop'])
+            self._name = '{}-{}'.format(prefix, ''.join(
+                self.random.choice(string.ascii_uppercase + string.digits) for _ in range(7)))
+        return self._name
 
     @property
     def disk(self):
+        """The disk size of a computer instance
+
+        Returns:
+            list: Returns a list of B,KB,MB,GB, and TB size of a computers disk
+        """
         disk_size_list = []
         precision = 2
-        size = random.randint(1, 1099511627776)
+        size = self.random.randint(1, 1099511627776)
         suffixes=['B','KB','MB','GB','TB']
         suffixIndex = 0
         while size > 1024 and suffixIndex < 4:
             suffixIndex += 1 #increment the index of the suffix
             size = size/1024.0 #apply the division
-            disk_size_list.append("%.*f%s"%(precision,size,suffixes[suffixIndex]))
-        
+            disk_size_list.append("%.*f{}".format((precision,size,suffixes[suffixIndex])))
         return disk_size_list
 
     @property
     def memory(self):
+        """The memory size of a computer instance
+
+        Returns:
+            list: Returns a list of B,KB,MB,GB, and TB size of a computers memory size
+        """
         mem_size_list = []
         precision = 2
-        gig_size = random.randint(1,32)
+        gig_size = self.random.randint(1,32)
         size = gig_size * 1073741824
-
         suffixes=['B','KB','MB','GB','TB']
         suffixIndex = 0
         while size > 1024 and suffixIndex < 4:
             suffixIndex += 1 #increment the index of the suffix
             size = size/1024.0 #apply the division
-            mem_size_list.append("%.*f%s"%(precision,size,suffixes[suffixIndex]))
-        
+            mem_size_list.append("%.*f{}".format((precision,size,suffixes[suffixIndex])))
         return mem_size_list
 
     @property
     def platform(self):
-        return random.choice(['Laptop', 'Desktop', 'Workstation', 'Server', 'Virtual Machine', 'Container', 'Micro-Service', 'Droplet', 'SaaS'])
+        """A random name of the computers platform
+
+        Returns:
+            str: Random name of a computers platform (e.g. worksation, server, etc.)
+        """
+        return self.random.choice([
+            'Laptop', 
+            'Desktop', 
+            'Workstation', 
+            'Server', 
+            'Virtual Machine', 
+            'Container', 
+            'Micro-Service', 
+            'Droplet', 
+            'SaaS'
+        ])
 
     @property
     def mac_address(self):
-        return ':'.join("%02x"%random.randint(0, 255) for _ in range(5))
-        
+        """A generated MAC address for a computer instance
+
+        Returns:
+            str: A random MAC Address
+        """
+        return ':'.join("{}02x".format(self.random.randint(0, 255) for _ in range(5)))
+
     @property
     def os(self):
+        """The operating system full name of the computer instance
+
+        Returns:
+            str: A random operating system version
+        """
+        if not self._os:
+            self._os = OperatingSystem().fullname
         return self._os
 
-    @os.setter
-    def os(self, value):
-        self._os = random.choice([
-            'Apple III',
-            'Red Hat Linux',
-            'CentOS',
-            'Fedora',
-            'openSUSE',
-            'Oracle Linux',
-            'SUSE Linux',
-            'Ubunutu GNOME',
-            'Apple Lisa',
-            'Apple Macintosh',
-            'Classic Mac OS',
-            'Rhapsody',
-            'macOS',
-            'macOS Server',
-            'iOS',
-            'watchOS',
-            'tvOS',
-            'DOS',
-            'Android 4.0.1', 
-            'Chrome OS',
-            'Windows 3.1x',
-            'Windows 95',
-            'Windows 98',
-            'Windows Millennium Edition',
-            'Windows NT',
-            'Windows NT 3.1',
-            'Windows NT 3.5',
-            'Windows NT 3.51',
-            'Windows NT 4.0',
-            'Windows 2000',
-            'Windows XP',
-            'Windows Server 2003',
-            'Windows Vista',
-            'Windows Home Server', 
-            'Windows Server 2008',
-            'Windows 7',
-            'Windows Server 2008 R2',
-            'Windows Server 2012',
-            'Windows 8',
-            'Windows 8.1',
-            'Windows Server 2012 R2',
-            'Windows 10',
-            'Windows Server 2016',
-            'Windows Server 2019',
-            'Windows CE',
-            'Novell',
-            'UnixWare',
-            'BSD',
-            'FreeBSD',
-            'OpenBSD',
-            'Darwin',
-            'GNU'])
+    @property
+    def ipv4(self):
+        """The operating system ipv4 address
+
+        Returns:
+            str: A random operating system ipv4 address
+        """
+        return Network(private=True).ipv4

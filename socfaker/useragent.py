@@ -7,18 +7,28 @@ __USER_AGENT_URL__ = 'http://www.useragentstring.com/pages/useragentstring.php?n
 
 class UserAgent(object):
 
-    __DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'useragent' + '.json'))
+    """The UserAgent class generates random UserAgent strings
+    """
 
-    BROWSER_LIST = ['Firefox','Internet+Explorer','Opera','Safari','Chrome','Edge','Android+Webkit+Browser']
+    __DATA_PATH = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), 'data', 'useragent' + '.json')
+    )
+    BROWSER_LIST = [
+        'Firefox', 
+        'Internet+Explorer', 
+        'Opera', 
+        'Safari', 
+        'Chrome', 
+        'Edge', 
+        'Android+Webkit+Browser'
+    ]
 
     def __init__(self, force=False):
         self._user_agents = {}
-        
         if not self.strings:
             self.download()
         elif self.updated >= (datetime.datetime.now() + datetime.timedelta(hours=1)).isoformat():
                 self.download()
-
         if force:
             self.download()
 
@@ -32,16 +42,12 @@ class UserAgent(object):
 
     @property
     def updated(self):
-       # dirname = os.path.dirname(os.path.dirname(__file__))
-       # filename = os.path.join(dirname, self.__DATA_PATH)
         with open(self.__DATA_PATH) as json_file:
             last_updated = json.load(json_file)['updated']
             return last_updated
 
     @updated.setter
     def updated(self, value):
-       # dirname = os.path.dirname(os.path.dirname(__file__))
-        #filename = os.path.join(dirname, __USER_AGENT_PATH__)
         if not os.path.exists(self.__DATA_PATH):
             try:
                 os.makedirs(os.path.dirname(self.__DATA_PATH))
@@ -51,13 +57,9 @@ class UserAgent(object):
         with open(self.__DATA_PATH, "w+") as f:
             f.write(json.dumps(value))
 
-           # json.dump(value, f)
-
     @property 
     def strings(self):
         try:
-            #dirname = os.path.dirname(os.path.dirname(__file__))
-           # filename = os.path.join(dirname, __USER_AGENT_PATH__)
             with open(self.__DATA_PATH, 'r') as f:
                 return json.loads(f.read())
         except:
