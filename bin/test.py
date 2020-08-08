@@ -124,6 +124,7 @@ print(sc.logs.syslog())
 print(sc.logs.windows)
 print(sc.logs.windows.eventlog())
 print(sc.logs.windows.sysmon())
+print(sc.logs.access(type='test', path_file="bin/securitylab.github.com_PATHS.txt", clients=4))
 
 # Network
 print(sc.network.ipv4)
