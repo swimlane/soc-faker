@@ -1,6 +1,7 @@
 from .computer import Computer
 from .words import Words
 from .baseclass import BaseClass
+from .azureproperties import AzureProperties
 
 
 class AzureVMDetails(BaseClass):
@@ -58,12 +59,62 @@ class AzureVMDetails(BaseClass):
     def __init__(self):
         super(AzureVMDetails, self).__init__()
         self.word_list = Words().get()
+        self.__props = AzureProperties()
 
     def __get_unique_ids(self):
         return_dict = {}
         return_dict['subscription_id'] = str(self.uuid.uuid4())
         return_dict['vm_id'] = str(self.uuid.uuid4())
         return return_dict
+
+    @property
+    def location(self):
+        """A location based on Microsoft Azure available locations
+
+        Returns:
+            str: Returns a Azure location
+        """
+        return self.__props.location
+
+    @property
+    def network_zone(self):
+        """Network zone type in Microsoft Azure
+
+        Returns:
+            str: Returns a random type for a network zone in Azure
+        """
+        return self.__props.network_zone
+    
+    @property
+    def score(self):
+        return self.__props.score
+
+    @property
+    def vm_name(self):
+        """A Azure VM Name
+
+        Returns:
+            str: Returns a random Azure VM name
+        """
+        return self.__props.vm_name
+
+    @property
+    def resource_group_name(self):
+        """Resource Group Name in Azure
+
+        Returns:
+            str: Returns a three-word Resource Group name for Microsoft Azure
+        """
+        return self.__props.resource_group_name
+
+    @property
+    def resource_group_id(self):
+        """Resource Group ID
+
+        Returns:
+            str: Returns a random resource group ID (GUID)
+        """
+        return self.__props.resource_group_id
 
     def __os_type(self):
         return_dict = {}

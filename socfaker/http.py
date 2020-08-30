@@ -115,7 +115,7 @@ class HTTP(BaseClass):
         Returns:
             str: A randomly selected status code for an HTTP request or response
         """
-        return self.random.choice(self._code_map)['code']
+        return int(self.random.choice(self._code_map)['code'])
 
     @property
     def method(self):

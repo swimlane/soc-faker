@@ -1,6 +1,7 @@
 import json, os
 from .network import Network
 from .words import Words
+from .organization import Organization
 from .baseclass import BaseClass
 
 
@@ -44,7 +45,7 @@ class DNS(BaseClass):
         Returns:
             str: A randomly selected DNS Header Flag
         """
-        return self.random.choice([
+        return [self.random.choice([
             'AA',
             'TC',
             'RD',
@@ -52,7 +53,7 @@ class DNS(BaseClass):
             'AD',
             'CD',
             'DO'
-        ])
+        ])]
 
     @property
     def id(self):
@@ -61,7 +62,7 @@ class DNS(BaseClass):
         Returns:
             int: A random DNS ID value
         """
-        return self.random.randint(10000,100000)
+        return str(self.random.randint(10000,100000))
 
     @property
     def response_code(self):
@@ -121,7 +122,12 @@ class DNS(BaseClass):
         Returns:
             dict: A random DNS question during a DNS request
         """
-        return self.__get_dns_answer()
+        return {
+            'class': 'IN',
+            'name': Organization().name,
+            'registered_domain': Organization().domain,
+            'type': self.record
+        }
 
     @property
     def direction(self):

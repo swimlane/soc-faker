@@ -7,7 +7,6 @@ class BaseClass(object):
     random = random
 
     def __init__(self):
-        #self.random = random
         self.uuid = uuid
         self._faker = Faker()
 

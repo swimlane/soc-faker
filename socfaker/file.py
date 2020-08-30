@@ -171,7 +171,10 @@ class File(BaseClass):
         while size > 1024 and suffixIndex < 4:
             suffixIndex += 1 #increment the index of the suffix
             size = size/1024.0 #apply the division
-            file_size_list.append(f"{size:.2f} {suffixes[suffixIndex]}")
+           # try:
+           #     file_size_list.append(f"{size:.2f} {suffixes[suffixIndex]}")
+           # except:
+            file_size_list.append("%.*f%s"%(precision,size,suffixes[suffixIndex]))
         return file_size_list
 
     @property

@@ -1,6 +1,9 @@
 import sys
 import binascii, base64
-from io import BytesIO
+try:
+    from io import BytesIO
+except:
+    from BytesIO import BytesIO
 from .network import Network
 
 
@@ -82,7 +85,10 @@ class PCAP(object):
 
     def __write_byte_string_to_file(self, tmpfile, filename):
         with open(filename, "wb") as f:
-            f.write(tmpfile.getbuffer())
+            try:
+                f.write(tmpfile.getbuffer())
+            except:
+                f.write(tmpfile.getvalue())
         encoded = base64.b64encode(tmpfile.getvalue())
         return {
             'attachment': {

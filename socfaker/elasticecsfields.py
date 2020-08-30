@@ -102,8 +102,8 @@ class ElasticECSFields(BaseClass):
                   fields/properties
         """
         return {
-            '@timestamp': self.__time.in_the_past(),
-            'lables': {'type': self.__alert.type, 'status': self.__alert.status},
+            '@timestamp': self.__time.current,
+            'labels': {'type': self.__alert.type, 'status': self.__alert.status},
             'message': self.__alert.summary,
             'tags': [self.__alert.type]
         }
@@ -118,16 +118,18 @@ class ElasticECSFields(BaseClass):
         """
         comp = Computer()
         network = Network(private=True)
+        for key,val in network.port.items():
+            port = key
         ip = network.ipv4
         return {
             "address": ip,
-            "domain": Organization().domain,
+            "registered_domain": Organization().domain,
             "ip": ip,
             "mac": comp.mac_address,
-            "port": network.port.values(),
+            "port": port,
             "nat": {
                 "ip": Network(private=True).ipv4,
-                "port": network.port.values()
+                "port": port
             },
             "packets": self.random.randint(7,2160),
             "bytes": self.random.randint(120,10160),
@@ -162,16 +164,18 @@ class ElasticECSFields(BaseClass):
         """
         comp = Computer()
         network = Network(private=False)
+        for key,val in network.port.items():
+            port = key
         ip = network.ipv4
         return {
             "address": ip,
-            "domain": Organization().domain,
+            "registered_domain": Organization().domain,
             "ip": ip,
             "mac": comp.mac_address,
-            "port": network.port.values(),
+            "port": port,
             "nat": {
                 "ip": Network(private=True).ipv4,
-                "port": network.port.values()
+                "port": port
             },
             "packets": self.random.randint(7,2160),
             "bytes": self.random.randint(120,10160),
@@ -208,7 +212,8 @@ class ElasticECSFields(BaseClass):
             'id': self.__dns.id,
             'op_code': self.__dns.op_code,
             'question': self.__dns.question,
-            'response_code': self.__dns.response_code   
+            'response_code': self.__dns.response_code,
+            'resolved_ip': [Network(private=False).ipv4]
         }
 
     @property
@@ -223,7 +228,7 @@ class ElasticECSFields(BaseClass):
             return {
                 'action': '{}-{}-{}'.format(self.random.choice(['process', 'file', 'user']), self.random.choice(['password', 'ran', 'stopped']), self.random.choice(['started', 'created', 'deleted'])),
                 'category': self.random.choice(['authentication', 'database', 'driver', 'file', 'host', 'iam', 'intrusion_detection', 'malware', 'network', 'package', 'process', 'web']),
-                'code': self.__hidden_event.get('Event').get('System').get('EventId'),
+                'code': str(self.__hidden_event.get('Event').get('System').get('EventId')),
                 'created': self.__hidden_event.get('Event').get('System').get('TimeCreated').get('@SystemTime'),
                 'dataset': 'windows.{}'.format(self.random.choice(['authentication', 'database', 'driver', 'file', 'host', 'iam', 'intrusion_detection', 'malware', 'network', 'package', 'process', 'web'])),
                 'id': self.__hidden_event.get('Event').get('System').get('Provider').get('@Guid'),
@@ -242,7 +247,7 @@ class ElasticECSFields(BaseClass):
             return {
                 'action': '{}-{}-{}'.format(self.random.choice(['process', 'file', 'user']), self.random.choice(['password', 'ran', 'stopped']), self.random.choice(['started', 'created', 'deleted'])),
                 'category': self.random.choice(['authentication', 'database', 'driver', 'file', 'host', 'iam', 'intrusion_detection', 'malware', 'network', 'package', 'process', 'web']),
-                'code': self.random.randint(1,9999),
+                'code': str(self.random.randint(1,9999)),
                 'created': self.__time.in_the_past(),
                 'dataset': 'windows.{}'.format(self.random.choice(['authentication', 'database', 'driver', 'file', 'host', 'iam', 'intrusion_detection', 'malware', 'network', 'package', 'process', 'web'])),
                 'id': str(self.uuid.uuid4()),
@@ -273,11 +278,11 @@ class ElasticECSFields(BaseClass):
             'directory': self.__file.directory,
             'drive_letter': self.__file.drive_letter,
             'extension': self.__file.extension,
-            'gid': self.__file.gid,
+            'gid': str(self.__file.gid),
             'mime_type': self.__file.mime_type,
             'name': self.__file.name,
             'path': self.__file.full_path,
-            'size': self.__file.size,
+            'size': float(self.__file.size[1].replace('MB','')),
             'type': self.__file.type,
             'code_signature': self.__get_file_code_signature(),
             'hash': self.__get_file_hash(),
@@ -300,13 +305,13 @@ class ElasticECSFields(BaseClass):
             'hostname': self.__computer.name.replace('-', '_'),
             'id': str(self.uuid.uuid4()),
             'ip': [ip],
-            'mac': self.__computer.mac_address,
+            'mac': [self.__computer.mac_address],
             'name': self.__computer.name.replace('-', '_'),
             'type': self.__computer.platform,
             'geo': self.__get_geo_data(),
             'os': {
                 'family': self.__operating_system.family,
-                'full': self.__operating_system.fullname,
+                'full': self.__operating_system.fullname.capitalize(),
                 'name': self.__operating_system.name,
                 'platform': self.__computer.platform,
                 'version': self.__operating_system.version
@@ -334,15 +339,17 @@ class ElasticECSFields(BaseClass):
             dict: Returns a dictionary of ECS 
                   network fields/properties
         """
-        protocol = Network().protocol
+        for key,val in Network().protocol.items():
+            protocol = key
+            transport = key
         return {
             'application': self.__app.name,
             #'bytes': # Need to add source.bytes and destination.bytes to get ths value
             'direction': self.__dns.direction,
-            'forwaded_ip': self.host['ip'],
+            'forwaded_ip': self.host['ip'][0],
             'type': self.random.choice(['ipv4', 'ipv6', 'ipsec', 'pim']),
-            'protocol': protocol.values(),
-            'transport': protocol.keys()
+            'protocol': str(protocol),
+            'transport': transport
         }
 
         
@@ -376,7 +383,7 @@ class ElasticECSFields(BaseClass):
             'installed': self.__file.timestamp,
             'name': self.__file.name,
             'path': self.__file.full_path,
-            'size': self.__file.size,
+            'size': float(self.__file.size[1].replace('MB', '')),
             'version': self.__file.version
         }
 
@@ -392,7 +399,7 @@ class ElasticECSFields(BaseClass):
         value = reg.value
         return {
             'data': {
-                'bytes': base64.b64encode(str(value).encode()),
+                #'bytes': base64.b64encode(str.encode(value)).decode('utf-8'),
                 'strings': [value],
                 'type': reg.type
             },
@@ -411,6 +418,8 @@ class ElasticECSFields(BaseClass):
                   server fields/properties
         """
         net = Network()
+        for key,val in net.port.items():
+            port = key
         address = net.ipv4
         return {
             'address': address,
@@ -418,7 +427,7 @@ class ElasticECSFields(BaseClass):
             'ip': address,
             'mac': Computer().mac_address,
             'packets': self.random.randint(1,80),
-            'port': net.port.values(),
+            'port': port,
             'geo': self.__get_geo_data()
         }
 
@@ -432,16 +441,18 @@ class ElasticECSFields(BaseClass):
         """
         comp = Computer()
         network = Network(private=True)
+        for key,val in network.port.items():
+            port = key
         ip = network.ipv4
         return {
             "address": ip,
             "domain": Organization().domain,
             "ip": ip,
             "mac": comp.mac_address,
-            "port": network.port.values(),
+            "port": port,
             "nat": {
                 "ip": Network(private=True).ipv4,
-                "port": network.port.values()
+                "port": port
             },
             "packets": self.random.randint(7,2160),
             "bytes": self.random.randint(120,10160),
@@ -466,7 +477,7 @@ class ElasticECSFields(BaseClass):
                 'name': self.__cloud.name
             },
             'machine': {
-                'type': self.__cloud.name
+                'type': self.__cloud.size
             },
             'provider': self.__cloud.provider,
             'region': self.__cloud.region
