@@ -32,7 +32,7 @@ class Network(BaseClass):
             else:
                 return "192.168.{}.{}".format(self.random.randint(0,255), self.random.randint(0,255))
         else:
-            return ipaddress.IPv4Address(self.random.getrandbits(32))
+            return str(ipaddress.IPv4Address(self.random.getrandbits(32)))
 
     @property
     def ipv6(self):
@@ -43,8 +43,8 @@ class Network(BaseClass):
         """
         addr = ipaddress.IPv6Address(self.random.getrandbits(128))
         return {
-            'compressed': addr.compressed,
-            'exploded': addr.exploded
+            'compressed': str(addr.compressed),
+            'exploded': str(addr.exploded)
         }
 
     def get_cidr_range(self, cidr):

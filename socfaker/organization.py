@@ -234,7 +234,10 @@ class Organization(BaseClass):
         Returns:
             str: Returns a domain name based on the organizational name
         """
-        return self.name.split(' ')[0].upper()
+        #try:
+        return self.name.split(' ')[0].upper() + '.{}'.format(self.random.choice(['com','net','org']))
+        #except:
+        #    return f"{self.name.split(' ')[0].upper()}.{self.random.choice(['com','net','org'])}"
             
     @property
     def division(self):

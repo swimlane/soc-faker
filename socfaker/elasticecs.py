@@ -53,8 +53,12 @@ class ElasticECS(BaseClass):
                 self.__hidden_event = None
                 self.__hidden_event = event
                 _document = None
-                _document = self.fields.base
+                base = self.fields.base
                 _document = {
+                    '@timestamp': base.get('@timestamp'),
+                    'labels': base.get('labels'),
+                    'message': base.get('message'),
+                    'tags': base.get('tags'),
                     'agent': self.fields.agent,
                     'client': self.fields.client,
                     'cloud': self.fields.cloud,

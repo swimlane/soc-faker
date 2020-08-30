@@ -37,7 +37,7 @@ class Location(BaseClass):
         Returns:
             str: Returns a random latitude coordinates
         """
-        return self.__location.get('latitude')
+        return float(self.__location.get('latitude'))
 
     @property
     def longitude(self):
@@ -46,7 +46,7 @@ class Location(BaseClass):
         Returns:
             str: Returns a random longitude coordinates
         """
-        return self.__location.get('longitude')
+        return float(self.__location.get('longitude'))
 
     @property
     def city(self):

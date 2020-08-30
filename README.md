@@ -132,7 +132,7 @@ docker build --force-rm -t socfaker .
 Once it is built, then run the docker container:
 
 ```
-docker run socfaker
+docker run -p 7001:7001 -ti socfaker
 ```
 
 Running this will call the test python file in [bin\test.py](bin\test.py).  Modify this file for additional testing and development.

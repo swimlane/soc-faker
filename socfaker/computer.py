@@ -54,7 +54,10 @@ class Computer(BaseClass):
         while size > 1024 and suffixIndex < 4:
             suffixIndex += 1 #increment the index of the suffix
             size = size/1024.0 #apply the division
-            disk_size_list.append(f"{size:.2f} {suffixes[suffixIndex]}") #.format(size,suffixes[suffixIndex]))
+            #try:
+            #    disk_size_list.append(f"{size:.2f} {suffixes[suffixIndex]}")
+            #except:
+            disk_size_list.append("%.*f{}".format((precision,size,suffixes[suffixIndex])))
         return disk_size_list
 
     @property
@@ -65,6 +68,7 @@ class Computer(BaseClass):
             list: Returns a list of B,KB,MB,GB, and TB size of a computers memory size
         """
         mem_size_list = []
+        precision = 2
         gig_size = self.random.randint(1,32)
         size = gig_size * 1073741824
         suffixes=['B','KB','MB','GB','TB']
@@ -72,7 +76,10 @@ class Computer(BaseClass):
         while size > 1024 and suffixIndex < 4:
             suffixIndex += 1 #increment the index of the suffix
             size = size/1024.0 #apply the division
-            mem_size_list.append(f"{size:.2f} {suffixes[suffixIndex]}")
+           # try:
+           #     mem_size_list.append(f"{size:.2f} {suffixes[suffixIndex]}")
+           # except:
+            mem_size_list.append("%.*f{}".format((precision,size,suffixes[suffixIndex])))
         return mem_size_list
 
     @property
@@ -101,15 +108,18 @@ class Computer(BaseClass):
         Returns:
             str: A random MAC Address
         """
-        mac = [
-            self.random.randint(0x00, 0xff),
-            self.random.randint(0x00, 0xff),
-            self.random.randint(0x00, 0xff),
-            self.random.randint(0x00, 0xff),
-            self.random.randint(0x00, 0xff),
-            self.random.randint(0x00, 0xff)
-        ]
-        return ':'.join(map(lambda x: f"{x:02X}", mac))
+       # try:
+       #     mac = [
+       #         self.random.randint(0x00, 0xff),
+       #         self.random.randint(0x00, 0xff),
+       #         self.random.randint(0x00, 0xff),
+       #         self.random.randint(0x00, 0xff),
+       #         self.random.randint(0x00, 0xff),
+       #         self.random.randint(0x00, 0xff)
+       #     ]
+       #     return ':'.join(map(lambda x: f"{x:02X}", mac))
+       # except:
+        return ':'.join("{}02x".format(self.random.randint(0, 255) for _ in range(5)))
 
     @property
     def os(self):
