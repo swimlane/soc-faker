@@ -17,6 +17,16 @@ class Products(object):
         return Azure()
 
     @property
+    def alienvault(self):
+        """AlienVault class contains properties related to AlienVault products
+
+        Returns:
+            AlienVauilt: AlienVault object containing properties and methods for generating data about AlienVault products and services
+        """
+        from .alienvault import AlienVault
+        return AlienVault()
+
+    @property
     def elastic(self):
         """Elastic class contains properties related to Elastic products
 
