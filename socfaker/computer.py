@@ -13,6 +13,16 @@ class Computer(BaseClass):
     """
     _name = None
     _os = None
+    __bit_shift = {
+        "B": 0,
+        "kb": 7,
+        "KB": 10,
+        "mb": 17,
+        "MB": 20,
+        "gb": 27,
+        "GB": 30,
+        "TB": 40,
+    }
 
     @property
     def architecture(self):
@@ -46,19 +56,10 @@ class Computer(BaseClass):
         Returns:
             list: Returns a list of B,KB,MB,GB, and TB size of a computers disk
         """
-        disk_size_list = []
-        precision = 2
-        size = self.random.randint(1, 1099511627776)
-        suffixes=['B','KB','MB','GB','TB']
-        suffixIndex = 0
-        while size > 1024 and suffixIndex < 4:
-            suffixIndex += 1 #increment the index of the suffix
-            size = size/1024.0 #apply the division
-            #try:
-            #    disk_size_list.append(f"{size:.2f} {suffixes[suffixIndex]}")
-            #except:
-            disk_size_list.append("%.*f{}".format((precision,size,suffixes[suffixIndex])))
-        return disk_size_list
+        return_list = []
+        for item in ['B', 'KB', 'MB', 'GB', 'TB']:
+            return_list.append("{:.0f}".format(self.random.randint(1, 1099511627776) / float(1 << self.__bit_shift[item])) + " " + item)
+        return return_list
 
     @property
     def memory(self):
@@ -67,20 +68,11 @@ class Computer(BaseClass):
         Returns:
             list: Returns a list of B,KB,MB,GB, and TB size of a computers memory size
         """
-        mem_size_list = []
-        precision = 2
-        gig_size = self.random.randint(1,32)
-        size = gig_size * 1073741824
-        suffixes=['B','KB','MB','GB','TB']
-        suffixIndex = 0
-        while size > 1024 and suffixIndex < 4:
-            suffixIndex += 1 #increment the index of the suffix
-            size = size/1024.0 #apply the division
-           # try:
-           #     mem_size_list.append(f"{size:.2f} {suffixes[suffixIndex]}")
-           # except:
-            mem_size_list.append("%.*f{}".format((precision,size,suffixes[suffixIndex])))
-        return mem_size_list
+        return_list = []
+        for item in ['B', 'KB', 'MB', 'GB', 'TB']:
+            size = self.random.randint(1,32) * 33554432.0
+            return_list.append("{:.0f}".format(size / float(1 << self.__bit_shift[item])) + " " + item)
+        return return_list
 
     @property
     def platform(self):
@@ -108,18 +100,13 @@ class Computer(BaseClass):
         Returns:
             str: A random MAC Address
         """
-       # try:
-       #     mac = [
-       #         self.random.randint(0x00, 0xff),
-       #         self.random.randint(0x00, 0xff),
-       #         self.random.randint(0x00, 0xff),
-       #         self.random.randint(0x00, 0xff),
-       #         self.random.randint(0x00, 0xff),
-       #         self.random.randint(0x00, 0xff)
-       #     ]
-       #     return ':'.join(map(lambda x: f"{x:02X}", mac))
-       # except:
-        return ':'.join("{}02x".format(self.random.randint(0, 255) for _ in range(5)))
+        return_list = []
+        for x in range(6):
+            a = self.random.randint(0,255)
+            hex = '%02x' % a
+            return_list.append(hex.upper())
+        return ':'.join(return_list)
+        
 
     @property
     def os(self):
