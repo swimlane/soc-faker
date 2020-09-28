@@ -28,6 +28,7 @@ At the time of writing this document, `soc-faker` has the ability to fake data f
 * [PCAP](faker/pcap.md)
 * [Process](faker/process.md)
 * Products
+    * [AlienVault USM](faker/alienvaultusm.md)
     * [Azure](faker/azure.md)
     * [Elastic](faker/elastic.md)
     * [QualysGuard](faker/qualysguard.md)
