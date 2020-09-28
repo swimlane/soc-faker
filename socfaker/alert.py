@@ -15,6 +15,15 @@ class Alert(BaseClass):
                detection or alert
     """
 
+    __severity_map = {
+        0: 'emergency',
+        1: 'critical',
+        2: 'high',
+        3: 'medium',
+        4: 'low',
+        5: 'informational'
+    }
+
     __DATA_PATH = os.path.abspath(
         os.path.join(
             os.path.dirname(__file__), 'data', 'alert_names' + '.txt'
@@ -23,6 +32,7 @@ class Alert(BaseClass):
     _url = 'https://www.symantec.com/security_response/attacksignatures/'
     __signature_name_list = []
     _location = Location()
+    __severity = None
 
     @property
     def summary(self):
@@ -66,8 +76,23 @@ class Alert(BaseClass):
             'network', 
             'host', 
             'correlation', 
-            'security endpoint'
+            'security endpoint',
+            'AwsApiCall',
+            'general',
+            'alert'
         ])
+
+    @property
+    def severity_label(self):
+        if not self.__severity:
+            self.__severity = self.random.randint(0,5)
+        return self.__severity_map[self.__severity].upper()
+
+    @property
+    def severity_level(self):
+        if not self.__severity:
+            self.__severity = self.random.randint(0,5)
+        return self.__severity
 
     @property
     def status(self):
@@ -89,7 +114,9 @@ class Alert(BaseClass):
         return self.random.choice([
             'connection', 
             'dropped connection', 
-            'initiated'
+            'initiated',
+            'created',
+            'completed'
         ])
 
     @property
