@@ -15,7 +15,7 @@ class AzureVM(object):
             AzureVMDetails: Returns a AzureVMDetails object containing properties details about a Azure VM
         """
         from .azurevmdetails import AzureVMDetails
-        return AzureVMDetails().get()
+        return AzureVMDetails()
 
     @property
     def metrics(self):
