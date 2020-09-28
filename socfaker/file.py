@@ -1,4 +1,4 @@
-import hashlib, string, os, fnmatch
+import hashlib, string, os, fnmatch, json
 import csv
 from .baseclass import BaseClass
 from .timestamp import Timestamp
@@ -12,7 +12,7 @@ class File(BaseClass):
     """
 
     __DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'filenames'))
-    __MIME_TYPE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'mime_types.csv'))
+    __MIME_TYPE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'mime_types' + '.json'))
     _filename_list = []
     _extension = None
     _full_path = None
@@ -120,13 +120,8 @@ class File(BaseClass):
         """
         if not self._mime_types:
             with open(self.__MIME_TYPE_PATH, 'r') as f:
-                csv_reader = csv.reader(f, delimiter=',')
-                line_count = 0
-                for row in csv_reader:
-                    if line_count == 0:
-                        line_count += 1
-                    else:
-                        self._mime_types.append(row[0])
+                for item in json.load(f):
+                    self._mime_types.append(item)
         return self.random.choice(self._mime_types)
 
     @property
