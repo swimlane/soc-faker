@@ -7,7 +7,7 @@ def parse_requirements(requirement_file):
 
 setup(
     name='soc-faker',
-    version='2.1.0',
+    version='2.2.0',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='A Python package to fake SOC (Security Operations Center) data',
