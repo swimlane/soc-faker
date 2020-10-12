@@ -155,11 +155,11 @@ class DNS(BaseClass):
             with open(self.__TLD_DATA_PATH, 'r') as tlds:
                 data = json.load(tlds)
                 for key,val in data.items():
-                    self.__TLD_LIST.append(val)
+                    self.__TLD_LIST.append(val.encode("utf-8", errors="ignore"))
         try:
             tld = self.random.choice(self.__TLD_LIST)
         except:
-            tld = self.random.choice(self.__TLD_LIST).encode('utf-8')
+            tld = self.random.choice(self.__TLD_LIST)
         return "{}.{}.{}".format(
             self.random.choice(self.__WORD_LIST),
             self.random.choice(self.__WORD_LIST),
