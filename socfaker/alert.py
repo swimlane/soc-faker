@@ -31,7 +31,6 @@ class Alert(BaseClass):
     )
     _url = 'https://www.symantec.com/security_response/attacksignatures/'
     __signature_name_list = []
-    _location = Location()
     __severity = None
 
     @property
@@ -92,7 +91,7 @@ class Alert(BaseClass):
     def severity_level(self):
         if not self.__severity:
             self.__severity = self.random.randint(0,5)
-        return self.__severity
+        return int(self.__severity)
 
     @property
     def status(self):
@@ -135,7 +134,7 @@ class Alert(BaseClass):
         Returns:
             str: A random country an alert was generated from
         """
-        return self._location.country
+        return Location().country
 
     def __save_location_data(self, url, file_path):
         response = requests.get(url)
