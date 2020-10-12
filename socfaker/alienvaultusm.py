@@ -7,15 +7,14 @@ from .location import Location
 
 class AlienVaultUSM(BaseClass):
 
-    __alert = Alert()
-    __priv_network = Network(private=True)
-    __pub_network = Network()
-    __dns = DNS()
-    __dest_location = Location()
-    __source_location = Location()
-
     def __init__(self):
         super(AlienVaultUSM, self).__init__()
+        self.__alert = Alert()
+        self.__priv_network = Network(private=True)
+        self.__pub_network = Network()
+        self.__dns = DNS()
+        self.__dest_location = Location()
+        self.__source_location = Location()
 
     @property
     def event_type(self):

@@ -16,7 +16,6 @@ class DNS(BaseClass):
     __WORDS_DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'words' + '.txt'))
     __WORD_LIST = Words().get()
     __TLD_LIST = []
-    _network = Network()
      
     @property
     def record(self):
@@ -95,6 +94,7 @@ class DNS(BaseClass):
         ])
 
     def __get_dns_answer(self):
+        self._network = Network()
         return {
             'class': 'IN',
             'data': self._network.ipv4,

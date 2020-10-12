@@ -36,6 +36,7 @@ At the time of writing this document, `soc-faker` has the ability to fake data f
 * [Registry](docs/source/faker/registry.md)
 * [Timestamp](docs/source/faker/timestamp.md)
 * [TLS](docs/source/faker/tls.md)
+* [Url](docs/source/faker/url.md)
 * [User Agent](docs/source/faker/useragent.md)
 * [Vulnerability](docs/source/faker/vulnerability)
 * [Words](docs/source/faker/words.md)
@@ -65,7 +66,6 @@ pendulum==1.2.5
 ipaddress==1.0.23
 networkx==2.4
 matplotlib==3.3.0rc1
-Faker==4.1.1
 bs4==0.0.1
 lxml==4.5.1
 xmltodict==0.12.0

@@ -102,6 +102,6 @@ class Registry(BaseClass):
             'Enabled',
             'Disabled',
             'Unknown',
-            1,
-            0
+            '1',
+            '0'
         ])

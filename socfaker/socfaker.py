@@ -222,6 +222,16 @@ class SocFaker(object):
         return Timestamp()
 
     @property
+    def url(self):
+        """Fake url
+
+        Returns:
+            Url: Returns an object with methods to generate fake urls
+        """
+        from .url import Url
+        return Url()
+
+    @property
     def user_agent(self):
         """Fake user agent information
 
