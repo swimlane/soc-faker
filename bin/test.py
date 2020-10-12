@@ -3,6 +3,7 @@ from socfaker import SocFaker
 sc = SocFaker()
 
 # Agent
+
 print(sc.agent.ephermeral_id)
 print(sc.agent.id)
 print(sc.agent.type)
@@ -193,9 +194,59 @@ print(sc.timestamp)
 
 # Products
 
+## AlienVault USM
+
+print(sc.products.alienvault.USM.event_type)
+print(sc.products.alienvault.USM.id)
+print(sc.products.alienvault.USM.description)
+print(sc.products.alienvault.USM.severity)
+print(sc.products.alienvault.USM.action)
+print(sc.products.alienvault.USM.category)
+print(sc.products.alienvault.USM.subcategory)
+print(sc.products.alienvault.USM.destination_hostname)
+print(sc.products.alienvault.USM.destination_fqdn)
+print(sc.products.alienvault.USM.destination_address)
+print(sc.products.alienvault.USM.destination_port)
+print(sc.products.alienvault.USM.destination_port_label)
+print(sc.products.alienvault.USM.destination_asset_id)
+print(sc.products.alienvault.USM.destination_longitude)
+print(sc.products.alienvault.USM.destination_latitude)
+print(sc.products.alienvault.USM.destination_city)
+print(sc.products.alienvault.USM.destination_country)
+print(sc.products.alienvault.USM.destination_region)
+print(sc.products.alienvault.USM.source_hostname)
+print(sc.products.alienvault.USM.source_fqdn)
+print(sc.products.alienvault.USM.source_address)
+print(sc.products.alienvault.USM.source_port)
+print(sc.products.alienvault.USM.source_port_label)
+print(sc.products.alienvault.USM.source_asset_id)
+print(sc.products.alienvault.USM.source_longitude)
+print(sc.products.alienvault.USM.source_latitude)
+print(sc.products.alienvault.USM.source_city)
+print(sc.products.alienvault.USM.source_country)
+print(sc.products.alienvault.USM.source_region)
+print(sc.products.alienvault.USM.plugin)
+print(sc.products.alienvault.USM.plugin_device)
+print(sc.products.alienvault.USM.plugin_device_type)
+print(sc.products.alienvault.USM.plugin_version)
+print(sc.products.alienvault.USM.packets_sent)
+print(sc.products.alienvault.USM.packets_received)
+print(sc.products.alienvault.USM.packet_type)
+print(sc.products.alienvault.USM.bytes_in)
+print(sc.products.alienvault.USM.bytes_out)
+print(sc.products.alienvault.USM.app_display_name)
+print(sc.products.alienvault.USM.application_protocol)
+print(sc.products.alienvault.USM.transport_protocol)
+
 ## Azure
 print(sc.products.azure.vm)
-print(sc.products.azure.vm.details)
+print(sc.products.azure.vm.details.get())
+print(sc.products.azure.vm.details.location)
+print(sc.products.azure.vm.details.network_zone)
+print(sc.products.azure.vm.details.score)
+print(sc.products.azure.vm.details.vm_name)
+print(sc.products.azure.vm.details.resource_group_name)
+print(sc.products.azure.vm.details.resource_group_id)
 print(sc.products.azure.vm.metrics)
 print(sc.products.azure.vm.metrics.generate())
 print(sc.products.azure.vm.metrics.average)
@@ -233,6 +284,17 @@ print(sc.products.qualysguard)
 ## ServiceNow
 print(sc.products.servicenow.search())
 print(sc.products.servicenow)
+
+## Url
+
+print(sc.url)
+print(sc.url.url)
+print(sc.url.scheme)
+print(sc.url.netloc)
+print(sc.url.path)
+print(sc.url.params)
+print(sc.url.query)
+print(sc.url.port)
 
 # User Agent
 print(sc.user_agent)
