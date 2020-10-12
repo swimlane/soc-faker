@@ -237,5 +237,7 @@ class Network(BaseClass):
             {143: 'IMAP'},
             {161: 'SNMP'},
             {194: 'IRC'},
-            {443: 'HTTPS'}
+            {443: 'HTTPS'},
+            {5601: 'HTTPS'},
+            {9200: 'HTTPS'}
         ])
