@@ -36,13 +36,14 @@ class Url(BaseClass):
     @property
     def netloc(self):
         if not self.__netloc:
-            www = self.random.choice(['www.',''])
-            domain = DNS().name
-            path = self.path
-            params = self.params
-            query = self.query
-            port = self.port
-            self.__netloc = f"{www}{domain}:{port}/{path}{params}/{query}"
+            self.__netloc = "{www}{domain}:{port}/{path}{params}/{query}".format(
+                www=self.random.choice(['www','']),
+                domain=DNS().name,
+                path=self.path,
+                params=self.params,
+                query=self.query,
+                port=self.port
+            )
         return self.__netloc
 
     @property
@@ -63,11 +64,11 @@ class Url(BaseClass):
         query_list = []
         for i in range(self.random.randint(1,3)):
             if i == 1:
-                query_list.append(f'id={str(self.uuid.uuid4())}')
+                query_list.append('id={}'.format(str(self.uuid.uuid4())))
             if i == 2:
-                query_list.append(f'name={Employee().name}')
+                query_list.append('name={}'.format(Employee().name))
             if i == 3:
-                query_list.append(f'os={Computer().os}')
+                query_list.append('os={}'.format(Computer().os))
         return '?' + '&'.join([x for x in query_list])
 
     @property
