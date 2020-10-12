@@ -1,6 +1,7 @@
 import pendulum
 from .baseclass import BaseClass
 
+
 class Timestamp(BaseClass):
 
     """The Timestamp Class provides methods to generate timestamps
