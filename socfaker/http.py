@@ -1,4 +1,5 @@
 from .baseclass import BaseClass
+from .url import Url
 
 
 class HTTP(BaseClass):
@@ -82,6 +83,7 @@ class HTTP(BaseClass):
         Returns:
             dict: A random request dictionary containing body, bytes, method and referrer information 
         """
+        url = Url()
         return {
             'body': {
                 'bytes': self.bytes,
@@ -89,7 +91,7 @@ class HTTP(BaseClass):
             },
             'bytes': self.bytes,
             'method': self.method,
-            'referrer': self._faker.url()
+            'referrer': url.url
         }
 
     @property

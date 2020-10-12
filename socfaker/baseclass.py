@@ -8,7 +8,6 @@ class BaseClass(object):
 
     def __init__(self):
         self.uuid = uuid
-        self._faker = Faker()
 
     def __str__(self):
         return_dict = {}
@@ -16,6 +15,20 @@ class BaseClass(object):
             if not item.startswith('_') and item not in self.__dict__ and not item.startswith('random'):
                 return_dict[item] = getattr(self, item)
         return str(return_dict)
+
+    def __repr__(self):
+        return_dict = {}
+        for item in dir(self):
+            if not item.startswith('_') and item not in self.__dict__ and not item.startswith('random'):
+                return_dict[item] = getattr(self, item)
+        return str(return_dict)
+
+    def __iter__(self):
+        return_dict = {}
+        for item in dir(self):
+            if not item.startswith('_') and item not in self.__dict__ and not item.startswith('random'):
+                return_dict[item] = getattr(self, item)
+        return iter(return_dict.items())
 
     def _get_data(self, file_path):
         return_list = []
