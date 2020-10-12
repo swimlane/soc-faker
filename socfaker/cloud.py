@@ -1,6 +1,4 @@
 import string
-from .network import Network
-from .computer import Computer
 from .baseclass import BaseClass
 
 
