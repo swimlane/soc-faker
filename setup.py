@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
           'console_scripts': [
-              'soc-faker = socfaker.__main__:main'https://swimlane.atlassian.net/wiki/spaces/CON/pages/1234731015/Release+Notes+1.2.0
+              'soc-faker = socfaker.__main__:main'
           ]
     }
 )
