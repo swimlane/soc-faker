@@ -106,10 +106,3 @@ class AzureVMMetrics(BaseClass):
             self.generate()
         from .azurevmmetricsproperties import AzureVMMetricsProperties
         return AzureVMMetricsProperties(self.__METRICS).get_average()
-
-    @property
-    def graphs(self):
-        if not self.__METRICS:
-            self.generate()
-        from .azurevmmetricsproperties import AzureVMMetricsProperties
-        return AzureVMMetricsProperties(self.__METRICS).get_graphs()
