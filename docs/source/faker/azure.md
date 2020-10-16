@@ -15,7 +15,6 @@ print(sc.products.azure.vm.details)
 print(sc.products.azure.vm.metrics)
 print(sc.products.azure.vm.metrics.average)
 print(sc.products.azure.vm.metrics.graphs)
-print(sc.products.azure.vm.topology)
 ```
 
 ## Azure VM Class
@@ -30,14 +29,6 @@ print(sc.products.azure.vm.topology)
 
 ```eval_rst
 .. automodule:: socfaker.azurevmmetrics
-   :members:
-   :undoc-members:
-```
-
-## Azure VM Topology Class
-
-```eval_rst
-.. automodule:: socfaker.azurevmtopology
    :members:
    :undoc-members:
 ```

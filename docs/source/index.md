@@ -63,8 +63,6 @@ The following libraries are required and installed by soc-faker
 requests==2.23.0
 pendulum==1.2.5
 ipaddress==1.0.23
-networkx==2.4
-matplotlib==3.3.0rc1
 bs4==0.0.1
 lxml==4.5.1
 xmltodict==0.12.0

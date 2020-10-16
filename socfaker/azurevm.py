@@ -26,13 +26,3 @@ class AzureVM(object):
         """
         from .azurevmmetrics import AzureVMMetrics
         return AzureVMMetrics()
-
-    @property
-    def topology(self):
-        """A Azure VM Topology
-
-        Returns:
-            AzureVMTopology: Returns an object containing information about the topology of an Azure VM
-        """
-        from .azurevmtopology import AzureVMTopology
-        return AzureVMTopology().get()
