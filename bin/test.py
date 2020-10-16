@@ -250,8 +250,6 @@ print(sc.products.azure.vm.details.resource_group_id)
 print(sc.products.azure.vm.metrics)
 print(sc.products.azure.vm.metrics.generate())
 print(sc.products.azure.vm.metrics.average)
-print(sc.products.azure.vm.topology)
-print(sc.products.azure)
 
 ## Elastic
 print(sc.products.elastic.hits(count=1))
