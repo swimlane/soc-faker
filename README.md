@@ -62,7 +62,7 @@ The following libraries are required and installed by soc-faker
 
 ```
 requests==2.23.0
-pendulum==1.2.5
+pendulum==2.1.2
 ipaddress==1.0.23
 bs4==0.0.1
 lxml==4.5.1
