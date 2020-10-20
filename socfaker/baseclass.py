@@ -1,5 +1,4 @@
 import uuid, random
-from faker import Faker
 
 
 class BaseClass(object):

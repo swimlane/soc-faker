@@ -1,11 +1,12 @@
 import random, time
 import socket
-from faker import Faker 
 import decimal
 import pendulum 
 from threading import Thread
 from .useragent import UserAgent
 from .network import Network
+from .url import Url
+from .file import File
 
 
 class LogStreamer(Thread):
@@ -17,7 +18,8 @@ class LogStreamer(Thread):
         super(LogStreamer, self).__init__()
         self.__log_list = []
         self.__log_count = 0
-        self.__fake = Faker('en_US')
+        self.__url = Url()
+        self.__file = File()
 
     def __wait(self, min_time=100, max_time=10000):
         time.sleep(float(decimal.Decimal(random.randrange(min_time, max_time))/1000))
@@ -74,11 +76,10 @@ class LogStreamer(Thread):
         return Network().ipv4
 
     def __get_full_path(self, method=None, extension=None):
-        path = self.__fake.uri_path(deep=random.randint(0, 6))
         if not extension:
             extension = self.__get_web_extension(method)
-        filename = self.__fake.file_name(extension=extension)
-        return "/{}/{}".format(path, filename)
+        file_name = self.__file.name.rsplit('.',1)[0]
+        return "/{}/{}".format(self.__url.netloc, file_name + '.' + extension)
 
     def __generate_outbound_log(self, method=None, extension=None, response_code=None, referrer=None):
         if not method:
@@ -96,7 +97,7 @@ class LogStreamer(Thread):
 
         if not referrer:
             if random.randint(0, 3) == 0:  # make fake referrer
-                referrer = self.__fake.uri()
+                referrer = Url().url
             else:
                 referrer = "-"
             
@@ -110,13 +111,11 @@ class LogStreamer(Thread):
             duration=duration,
             referrer=referrer, 
             user_agent=UserAgent().get())
-
        # yield log
         print(log)
         self.__log_list.append(log)
         self.__log_count += 1
 
-        
     def __generate_inbound_log(self, method=None, extension=None, response_code=None, referrer=None):
         if not method:
             method = self.__get_method()
@@ -133,10 +132,10 @@ class LogStreamer(Thread):
 
         if not referrer:
             if random.randint(0, 3) == 0:  # make fake referrer
-                referrer = self.__fake.uri()
+                referrer = Url().url
             else:
                 referrer = "-"
-            
+
         log = """{timestamp} {src_ip} => {dst_ip} {method} {full_path} {response_code} {duration} {referrer} \"{user_agent}\"""".format(
             timestamp=pendulum.now().to_iso8601_string(),
             src_ip=self.__get_public_ip(),
