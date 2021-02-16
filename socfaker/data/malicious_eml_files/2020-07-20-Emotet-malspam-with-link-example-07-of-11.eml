@@ -1,0 +1,54 @@
+ARC-Authentication-Results: i=1; [removed];
+       dkim=pass header.i=@trademarket.com.mx header.s=default header.b=KKrvuB7y;
+       spf=pass ([removed]: domain of ulises@trademarket.com.mx designates 68.66.210.48 as permitted sender) smtp.mailfrom=ulises@trademarket.com.mx
+Return-Path: <ulises@trademarket.com.mx>
+Received: from server.thinkpromotionals.com (server.thinkpromotionals.com. [68.66.210.48])
+        by [removed] with ESMTPS id z1si16603395jan.11.2020.07.20.14.17.28
+        for <[removed]
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Jul 2020 14:17:28 -0700 (PDT)
+Received-SPF: pass ([removed]: domain of ulises@trademarket.com.mx designates 68.66.210.48 as permitted sender) client-ip=68.66.210.48;
+Authentication-Results: [removed];
+       dkim=pass header.i=@trademarket.com.mx header.s=default header.b=KKrvuB7y;
+       spf=pass ([removed]: domain of ulises@trademarket.com.mx designates 68.66.210.48 as permitted sender) smtp.mailfrom=ulises@trademarket.com.mx
+Message-ID: <5f1609e8.1c69fb81.74374.f5f7SMTPIN_ADDED_MISSING@[removed]>
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=trademarket.com.mx; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Subject:To:From:Date:Sender:Reply-To:Message-ID:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=YB491mhH6l0Nz9SaQKicrCbzb6clVIvZwZN+ehg9a54=; b=KKrvuB7yW9CQELcQ4fCKpXmI41
+	wbvoOXTV0uhA0bR2d06phq4wcx2DenC9tVuqr4WToCQMoWGKDV1FNHg46sl88lIqgh7NOizecxDjE
+	erLh9Svvsn5f6ZntxYt5FTjc5s3g4nMr+7MDbvrog7m2bbUJ8ojYTJRNp/5GBDikPq5zgonZNnDZR
+	Nh2IbtcqCT8vOfTrHWwbhnDoJ+PPkKgnNKH+3IYLKdDH/PSHyQbYyVIiIz9ZB5CpLYUtMkNIgSyZC
+	VEd4r6Omgrys/95MSuNj2zWjdEOjuInhYuVCLEz7VtYBAlKOttWYcT31n43ru/vPKkaGG57ww9ee/
+	UD3ixdjA==;
+Received: from [181.131.112.201] (port=60375)
+	by server.thinkpromotionals.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <ulises@trademarket.com.mx>)
+	id 1jxdA7-0007OV-SJ
+	for [removed]; Mon, 20 Jul 2020 17:17:28 -0400
+Date: Mon, 20 Jul 2020 16:17:26 -0500
+From: "[removed] <[removed]@[removed]>" <ulises@trademarket.com.mx>
+To: [removed]
+Subject: Invoice G1945 from [recipient's email domain]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-Get-Message-Sender-Via: server.thinkpromotionals.com: authenticated_id: ulises@trademarket.com.mx
+X-Authenticated-Sender: server.thinkpromotionals.com: ulises@trademarket.com.mx
+
+<html>
+<body>
+Please find attached =E2=80=93thank you !=0D
+<br>
+<br>
+<a href=3D"https://myphamvietnam.net/wp-includes/g74e5554-71-095/">https://=
+myphamvietnam.net/wp-includes/g74e5554-71-095/</a>
+<br>
+<br>
+=0D<i>[spoofed sender's name]</i><br>=0D<i>[spoofed sender's email address]</i>
+</body>
+</html>

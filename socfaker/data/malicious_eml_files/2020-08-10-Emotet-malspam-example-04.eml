@@ -1,0 +1,53 @@
+ARC-Authentication-Results: i=1; [removed];
+       spf=neutral ([removed]: 93.89.232.210 is neither permitted nor denied by domain of info@metropolbelgelendirme.com) smtp.mailfrom=info@metropolbelgelendirme.com
+Return-Path: <info@metropolbelgelendirme.com>
+Received: from sg3.isimtescil.net (sg3.isimtescil.net. [93.89.232.210])
+        by [removed] with ESMTPS id f2si5760049wmf.120.2020.08.06.16.46.01
+        for [removed]
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 06 Aug 2020 16:46:02 -0700 (PDT)
+Received-SPF: neutral ([removed]: 93.89.232.210 is neither permitted nor denied by domain of info@metropolbelgelendirme.com) client-ip=93.89.232.210;
+Authentication-Results: [removed];
+       spf=neutral ([removed]: 93.89.232.210 is neither permitted nor denied by domain of info@metropolbelgelendirme.com) smtp.mailfrom=info@metropolbelgelendirme.com
+Received: (korumail 609 invoked from network); 6 Aug 2020 23:46:01 -0000
+Received: from unknown (HELO sg2.isimtescil.net) ()  by 0 with SMTP;
+	6 Aug 2020 23:45:58 -0000
+Received: from isimtescil.net (mailenable2.isimtescil.net [93.89.226.68])
+	by sg2.isimtescil.net (Postfix) with ESMTP id 8EEF632057D
+	for [removed]; Fri,  7 Aug 2020 02:42:49 +0300 (+03)
+Received: from [197.211.249.33] ([197.211.249.33]) by isimtescil.net
+	with MailEnable ESMTP; Fri, 7 Aug 2020 02:45:55 +0300
+Date: Fri, 07 Aug 2020 01:45:59 +0200
+From: [name removed] <info@metropolbelgelendirme.com>
+To: [removed]
+Subject: Re: Re: [info removed]
+MIME-Version: 1.0
+Message-ID: <7525276AF62848678EE0B0FBAF740C4D.MAI@isimtescil.net>
+X-Envelope-Sender: info@metropolbelgelendirme.com
+X-BitDefender-Scanner: Mail not scanned due to license constraints
+X-KORUMAIL-QueueId: 501-1596757558-796177
+X-SMTP-Filter: Korumail SMTP Filter Engine Korumail 6.7.6
+X-KORUMAIL-Result: Clean (Content eval: 8.000000 points)
+X-KORUMAIL-Reason: 
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<body>
+Please see attachment for your scanned document.=0D
+<br>
+<br>
+<a href=3D"http://megfigyel.hu/partnerlogo/LB/">http://megfigyel.hu/partner=
+logo/LB/</a>
+<br>
+
+<br>
+<br>
+<i>[info removed]</i>
+<br><br>
+<br>
+
+<pre>
+[email chain removed]</pre>
+</body>
+</html>

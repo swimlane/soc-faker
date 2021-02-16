@@ -1,0 +1,40 @@
+ARC-Authentication-Results: i=1; [removed];
+       dkim=pass header.i=@autotecfze.com header.s=default header.b=BqAdWLum;
+       spf=pass ([removed]: domain of qc@autotecfze.com designates 178.79.135.66 as permitted sender) smtp.mailfrom=qc@autotecfze.com
+Return-Path: <qc@autotecfze.com>
+Received: from webs.cubeabout.com (webs.cubeabout.com. [178.79.135.66])
+        by [removed] with ESMTPS id p15si13983652wrx.164.2020.07.20.14.47.39
+        for [removed]
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Jul 2020 14:47:40 -0700 (PDT)
+Received-SPF: pass ([removed]: domain of qc@autotecfze.com designates 178.79.135.66 as permitted sender) client-ip=178.79.135.66;
+Authentication-Results: [removed];
+       dkim=pass header.i=@autotecfze.com header.s=default header.b=BqAdWLum;
+       spf=pass ([removed]: domain of qc@autotecfze.com designates 178.79.135.66 as permitted sender) smtp.mailfrom=qc@autotecfze.com
+Message-ID: <5f1610fc.1c69fb81.80a06.a4c6SMTPIN_ADDED_MISSING[removed]>
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=autotecfze.com; s=default; h=Content-Transfer-Encoding:Content-Type: MIME-Version:Subject:To:From:Date:Sender:Reply-To:Message-ID:Cc:Content-ID: Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe: List-Subscribe:List-Post:List-Owner:List-Archive; bh=zXiUHiXYLa3ToM1EN78ZLtSvXt+Z82mw1sqlMygL9G8=; b=BqAdWLumx+t7ZEKcIyfmjm47tm pDmyvclSut3q1ozR9Tm4ahx6ipoKOW4REYb1FAfdsYsuI8oZ9ZCj9exNf+FUrBy5sDq59+2kDA+0D YeNmp6XG+0dAd7TrVK74zlceAtMByLPC9Xa29g2S6Eul+NtyBEPoi5i098oxcBqdyebLzwsYQ1q5Z wFRThrmKnwaBqUJFl/brde+tquOvt2giAHWs4NZbFEMJNQZXVV56fhducsqYW52/Of7NTSPgXUzwA n0PsvUJWEgjiIyv9yG9la4yjUNNiMqLS3/f1VR3VSkA7Dc1hGGuCm9yGDuXqT8uuStMIhehWcR1iH PvNNMUqQ==;
+Received: from host-173.183.52.190.copaco.com.py ([190.52.183.173]:57791) by webs.cubeabout.com with esmtpsa
+  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.93) (envelope-from <qc@autotecfze.com>) id 1jxddL-0006lb-86 for [removed]; Tue, 21 Jul 2020 01:47:39 +0400
+Date: Mon, 20 Jul 2020 17:47:38 -0400
+From: "[removed] <[removed]@[removed]>" <qc@autotecfze.com>
+To: [removed]
+Subject: Estimate RH11125 from [recipient's email domain]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<body>
+See attached.
+
+<br>
+<br>
+<a href=3D"https://myphamvietnam.net/wp-includes/g74e5554-71-095/">https://=
+myphamvietnam.net/wp-includes/g74e5554-71-095/</a>
+<br>
+<br>
+[recipient's email domain]
+</body>
+</html>------=_20200720171821000000_61473--
+
+
