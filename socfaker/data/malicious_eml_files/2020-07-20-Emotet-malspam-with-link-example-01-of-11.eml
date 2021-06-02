@@ -1,0 +1,57 @@
+ARC-Authentication-Results: i=1; award@91r0p57oqw.co.jp;
+       dkim=pass header.i=@ss1vszaria.co.jp header.s=default header.b=oeTb2+AC;
+       spf=pass (award@91r0p57oqw.co.jp: domain of japanesegro@ss1vszaria.co.jp designates 209.140.30.222 as permitted sender) smtp.mailfrom=japanesegro@ss1vszaria.co.jp;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=ss1vszaria.co.jp
+Return-Path: <japanesegro@ss1vszaria.co.jp>
+Received: from core.samabeleisure.com (core.samabeleisure.com. [209.140.30.222])
+        by award@91r0p57oqw.co.jp with ESMTPS id n25si10935052eju.537.2020.07.20.13.58.19
+        for award@91r0p57oqw.co.jp
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Jul 2020 13:58:19 -0700 (PDT)
+Received-SPF: pass (award@91r0p57oqw.co.jp: domain of japanesegro@ss1vszaria.co.jp designates 209.140.30.222 as permitted sender) client-ip=209.140.30.222;
+Authentication-Results: award@91r0p57oqw.co.jp;
+       dkim=pass header.i=@ss1vszaria.co.jp header.s=default header.b=oeTb2+AC;
+       spf=pass (award@91r0p57oqw.co.jp: domain of japanesegro@ss1vszaria.co.jp designates 209.140.30.222 as permitted sender) smtp.mailfrom=japanesegro@ss1vszaria.co.jp;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=ss1vszaria.co.jp
+Message-ID: <5f16056b.1c69fb81.20505.f711SMTPIN_ADDED_MISSING@award@91r0p57oqw.co.jp>
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=ss1vszaria.co.jp; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Subject:To:From:Date:Sender:Reply-To:Message-ID:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=Ms3I/Y+vpMIZEWW04hBn9dCyb6OuEwUHqA9RCe5xHFM=; b=oeTb2+ACI5if8CT9q0ShWUwSi6
+	oqq+LMhtyopm48fGqgrCkzMheqT1IzzMtd+nRCaMiBWncWjjZSvfoTlmiafwKgTpXycAtUgjIkV4e
+	B+3B7d6EV1IZqVmKr5HIMFFt2UfYRJ+YVv4U2NinThw/hXaFaX5LwRHUaUMZxbi0UojAfNtK0Mc1M
+	fQGMDEgyWQZ49zEUf1k692CpptrFpqG7Mlf+ez6bAjP9DSmw0C2ZJ20eYrv2pFlKUxxTyeI5v3Ysp
+	vNmidEZTLQ2pv1PAHOPxArjeB1ebDSuaP5CmKfqbuWKvnVaQZVSsyEwaiqis3Qe9RX2h4fpFwy42b
+	8i5dFBTg==;
+Received: from host109-145-222-238.range109-145.btcentralplus.com ([109.145.222.238]:54831)
+	by core.samabeleisure.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <japanesegro@ss1vszaria.co.jp>)
+	id 1jxcmS-0009I3-BY
+	for award@91r0p57oqw.co.jp; Tue, 21 Jul 2020 04:53:00 +0800
+Date: Mon, 20 Jul 2020 21:58:14 +0000
+From: "award@91r0p57oqw.co.jp <award@91r0p57oqw.co.jp@award@91r0p57oqw.co.jp>" <japanesegro@ss1vszaria.co.jp>
+To: award@91r0p57oqw.co.jp
+Subject: Estimate XF13707421 from [recipient's email domain]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-Get-Message-Sender-Via: core.samabeleisure.com: authenticated_id: japanesegro@ss1vszaria.co.jp
+X-Authenticated-Sender: core.samabeleisure.com: japanesegro@ss1vszaria.co.jp
+
+
+<html>
+<body>
+See attached.=0D
+<br>
+<br>
+<a href=3D"https://medicon.vn/ads/11x5vva-3a7-8884/">https://medicon.vn/ads=
+/11x5vva-3a7-8884/</a>
+<br>
+<br>
+<i>[recipient's email domain]</i>
+</body>
+</html>

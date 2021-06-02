@@ -1,0 +1,52 @@
+Delivered-To: efoster@1gcq4zegeb.org
+Received: from static.29.187.243.136.clients.your-server.de (static.29.187.243.136.clients.your-server.de. [136.243.187.29])
+        by efoster@1gcq4zegeb.org for efoster@1gcq4zegeb.org;
+        Mon, 10 Aug 2020 11:17:53 -0700 (PDT)
+Received-SPF: pass (efoster@1gcq4zegeb.org: domain of info@3bu439lmqy.co.uk designates 136.243.187.29 as permitted sender) client-ip=136.243.187.29;
+Authentication-Results: efoster@1gcq4zegeb.org;
+       dkim=pass header.i=@3bu439lmqy.co.uk header.s=default header.b=hjMGd3x2;
+       spf=pass (efoster@1gcq4zegeb.org: domain of info@3bu439lmqy.co.uk designates 136.243.187.29 as permitted sender) smtp.mailfrom=info@3bu439lmqy.co.uk
+Message-ID: <5f318f51.1c69fb81.fa729.9b48SMTPIN_ADDED_MISSING@efoster@1gcq4zegeb.org>
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=3bu439lmqy.co.uk; s=default; h=Content-Transfer-Encoding:Content-Type: MIME-Version:Subject:To:From:Date:Sender:Reply-To:Message-ID:Cc:Content-ID: Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe: List-Subscribe:List-Post:List-Owner:List-Archive; bh=AtuJplztQFrzVxePZAom+qDrs0jcEmGOBhFW1n+D62Y=; b=hjMGd3x2Ld7a0h+sZGsqxZ10R3 QtEWp4p+BsMmJo6QylahW4i6Y7/cDzqOQWtj6YPbte30qoqBLHAnkY3NacMnKW678mz4+7UmMIL+q x08xqPH7UuZXhbd7qGG4yUz5x4jiF5nHqAoPSJLIEdT7Eou11lnL/lBgvzPY+3bea1vqUBobH6TOR BV7M0FYfJC0k0sMfTKUkDG0RuwKmzXeMaHacA5JS2AUOgDB95Puv7PIl1udgjvG+/okjiDRi6BkXG t1dmWzYs5h05uk+wSeKwJbRZNsimVKpNJREEduIhB1S6gz0U+YLVuOrSpCqW8kTH7BOtGCSC98+iD GQVapqhg==;
+Received: from [200.6.186.182] (port=52058) by dc2.euralb.net with esmtpsa
+  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.93) (envelope-from <info@3bu439lmqy.co.uk>) id 1k5CMq-00DeQd-W3 for sanford.hutcheson@xal1vs1drj.co.jp; Mon, 10 Aug 2020 20:17:53 +0200
+Date: Mon, 10 Aug 2020 13:17:53 -0500
+From: UPS Quantum View <info@3bu439lmqy.co.uk>
+To: efoster@1gcq4zegeb.org
+Subject: UPS Express Domestic
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - dc2.euralb.net
+efoster@1gcq4zegeb.orgX-AntiAbuse: Sender Address Domain - 3bu439lmqy.co.uk
+X-Get-Message-Sender-Via: dc2.euralb.net: authenticated_id: info@3bu439lmqy.co.uk
+X-Authenticated-Sender: dc2.euralb.net: info@3bu439lmqy.co.uk
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+
+<html>
+<body>
+=20
+<br>
+=20
+=20
+<br><br>
+<br>------------------------------------------------------------
+=20
+<br><br>
+SHIPMENT CONTENTS
+<br>------------------------------------------------------------
+<br><br>
+<br>From: <font style=3D"text-transform:uppercase;"><b>United Parcel Servic=
+e of America, Inc.</b></font>
+<br>Tracking Number: <a href=3D"https://www.albazai.com.sa/stats-json/invoi=
+ce/wr32ce5/">8JAX84648636884844</a>
+=20
+<br>Number of Packages: 2
+<br>Scheduled Delivery: 08/10/2020
+<br>Weight: 16.6 KGS
+=20
+</body>
+</html>

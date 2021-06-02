@@ -1,0 +1,50 @@
+Return-Path: <delegacia5334@ouwqyx78cs.edu>
+Delivered-To: admin@9sep0yo95p.org
+Received: from ouwqyx78cs.edu (ouwqyx78cs.edu [84.38.185.4])
+	by astewart@jzqnhet456.org
+	for <admin@9sep0yo95p.org>; Fri, 22 Jan 2021 10:02:54 +0000 (UTC)
+Received: by ouwqyx78cs.edu (Exim, from userid 33)
+	id D825F54E1A3; Fri, 22 Jan 2021 06:48:21 -0300 (-03)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+	d=ouwqyx78cs.edu; s=mail; t=1611309121;
+	bh=u3UH2ICggBQhRYfhvU75q5O/sLInj2RfdKS7syjDrvg=;
+	h=To:Subject:From:Date:Reply-To:From;
+	b=HjqIsLlFUKxe2NL7VfFCglR7kZgCGRuzoFLZBbwMFrL2dOTBk2pOAOrkl3R00qVhN
+	 B8l76qZ7CZeTxZNZbr48D0g+vDPsxaxiiFx/VfB9hwHTmzZWo3yTsfuib8e0btH/Ye
+	 tIdGKwLyLNDS3iXOoFYCa91xVwvQa68EKnwQ7EBQ=
+To: admin@9sep0yo95p.org
+Subject: SEU BOLETIM ELETRONICO 924
+MIME-Version: 1.0
+From: DelegaciaEletronica 9850496 <delegacia5334@ouwqyx78cs.edu>
+Date: Fri, 22 Jan 2021 06:48:21 -0300
+Reply-To: delegacia5334@ouwqyx78cs.edu
+Content-type: multipart/mixed; boundary="-------220120214821_76b102a3cadd25989effee8cc5089195"
+Message-Id: <20210122095201.D825F54E1A3@ouwqyx78cs.edu>
+
+---------220120214821_76b102a3cadd25989effee8cc5089195
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+DQogPGhlYWQ+PC9oZWFkPg0KIDxib2R5IGNsYXNzPSJtcy1mb250LXMgZGlzYWJsZVRl
+eHRTZWxlY3Rpb24iIHN0eWxlPSJtaW4td2lkdGg6IDBweDsiPiANCiAgPGRpdj4gDQogICA8ZGl2
+PiANCiAgICA8ZGl2IHN0eWxlPSJ3aWR0aDogNTAwcHg7IG1hcmdpbjogMHB4IGF1dG87IGZvbnQ6
+IDEycHgvMTUwJSBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmLCBzZXJpZiwgRW1vamlGb250
+OyBjb2xvcjogcmdiKDUxLCA1MSwgNTEpOyBiYWNrZ3JvdW5kOiByZ2IoMjU1LCAyNTUsIDI1NSk7
+IGJvcmRlcjogMXB4IHNvbGlkIHJnYigyMDQsIDIwNCwgMjA0KTsiPiANCiAgICAgPGltZyBkYXRh
+LWltYWdldHlwZT0iRXh0ZXJuYWwiIHNyYz0iaHR0cHM6Ly9pbWcxLnVwbG9hZGhvdXNlLmNvbS9m
+aWxldXBsb2Fkcy8yNjg0NC8yNjg0NDk4MThiN2UwNmRjYzY0ZGJmZGY2ZDNiNDhkMjE2ZDU4NDAz
+LmpwZyI+IA0KICAgICA8cCBzdHlsZT0icGFkZGluZzoxMHB4IDIwcHgiPlNldSBCb2xldGltIGRl
+IE9jb3JyZW5jaWEgZm9pIGdlcmFkbyBjb20gc3VjZXNzbyBlbTogMjcvMTEvMjAxOCAxNzozNjox
+MSBwZWxvIElQOiA4OC40MzIuMjQwLjQzMi48YnI+IDwvcD4gDQogICAgIDx1bCBzdHlsZT0iZm9u
+dC1zaXplOjE0cHg7IGxpc3Qtc3R5bGU6bm9uZTsgbWFyZ2luOjAgMjBweCAyMHB4OyBwYWRkaW5n
+OjE1cHg7IGJhY2tncm91bmQ6I0NDQyI+IA0KICAgICAgPGxpPk51bWVybyBCb2xldGltOiA8c3Ry
+b25nPjI0NDA0MDUyPC9zdHJvbmc+PC9saT4NCiAgICAgIDxsaT5Bbm8gQm9sZXRpbTogPHN0cm9u
+Zz4yMDE4PC9zdHJvbmc+PC9saT4NCiAgICAgIDxsaT5Qcm90b2NvbG86IDxzdHJvbmc+MjI3MDEg
+PC9zdHJvbmc+PC9saT4NCiAgICAgIDxicj48YSBocmVmPSJodHRwOi8vMTR2d2Zwa2VpZy5lZnJp
+dmJjeC5tb25zdGVyL0JvbGV0aW0zMjQzNDM1LzEyODgyOS9Cb2xldGltMjI3MDEyNTUyIiB0YXJn
+ZXQ9Il9ibGFuayI+Qm9sZXRpbSgxODgsOEtCKS48L2E+PGJyPg0KICAgICA8L3VsPg0KICAgICA8
+c3Ryb25nPiA8L3N0cm9uZz4gDQogICAgIDxwPjwvcD4gDQogICAgPC9kaXY+IA0KICAgPC9kaXY+
+IA0KICA8L2Rpdj4NCiA8L2JvZHk+DQo8L2h0bWw+
+
+---------220120214821_76b102a3cadd25989effee8cc5089195--
+

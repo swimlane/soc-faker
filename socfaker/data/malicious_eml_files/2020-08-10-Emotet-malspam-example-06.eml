@@ -1,0 +1,47 @@
+Return-Path: <massimoloizzo@5v4niv7hk8.co.uk>
+Received: from smtp200-pc.aruba.it ([62.149.157.200] helo=smtpg-pc.aruba.it)
+	by mmurphy@8nhxontorx.co.uk with esmtp (Exim 4.92)
+	(envelope-from <massimoloizzo@5v4niv7hk8.co.uk>)
+	id 1k5EZK-0005bK-Ur
+	for mmurphy@8nhxontorx.co.uk; Mon, 10 Aug 2020 13:39:09 -0700
+Received: from [148.56.150.50] ([148.56.150.50])
+	by smtpcm2-pc.aruba.it with bizsmtp
+	id Dwep2300U15VBak01weqZC; Mon, 10 Aug 2020 22:38:50 +0200
+Date: Mon, 10 Aug 2020 22:38:49 +0100
+From: "[name removed]" <massimoloizzo@5v4niv7hk8.co.uk>
+To: mmurphy@8nhxontorx.co.uk
+Subject: 
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aruba.it; s=a1;
+	t=1597091931; bh=YfBH27JuJhD0n7rLFnD+2knm/KQg9HsfzbusGrkdrmY=;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	b=FFuFbz073fdXOiiioP2JpFWv3JLEtZPGt/2qve7cQVLFgCJ58+40HRFYzsSlX4rLv
+	 6JORLSPwNoY+BAE+R8CL9v2luldKi5dizrsxxnOC66ND5y4w9A2HBKIolkf98f5hYE
+	 WKeUn5aQkKcZUIpccBFpQb+rCubvcmbs9S7nByNE2wbXZ3Bb2AGWdPtI9X4imJHVzX
+	 u1KbMt4mt2MfeBgLY7RnPWHPQI1LfbPL9Nu4F9vA3N31/4KkOeBKSOcC6k/9GMLr2g
+	 7XFsjyu6MAMvnF19gNBDJQY2detKX7FPC7xVdek4DgMjDR+Xd3qwOCXyrtX39eOsHv
+	 e/tbciALMPOdg==
+Received-SPF: pass (mmurphy@8nhxontorx.co.uk: domain of 5v4niv7hk8.co.uk designates 62.149.157.200 as permitted sender) client-ip=62.149.157.200; envelope-from=massimoloizzo@5v4niv7hk8.co.uk; helo=smtpg-pc.aruba.it;
+X-SPF-Result: mmurphy@8nhxontorx.co.uk: domain of 5v4niv7hk8.co.uk designates 62.149.157.200 as permitted sender
+Authentication-Results:  mmurphy@8nhxontorx.co.uk; spf=pass smtp.mailfrom=massimoloizzo@5v4niv7hk8.co.uk; dkim=pass header.i=aruba.it
+X-SpamExperts-Class: unsure
+X-SpamExperts-Evidence: Combined (0.59)
+X-Recommended-Action: accept
+
+<html>
+<body>
+Please confirm.
+<br>
+<br>
+<a href=3D"https://artisan.com.sa/interior/Overview/">http://spraline.com/O=
+CT/</a>
+<br>
+<br>
+<br>
+
+
+<i>[signature block removed]</i>
+</body>
+</html>

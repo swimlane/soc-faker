@@ -1,0 +1,60 @@
+ARC-Authentication-Results: i=1; ocampbell@6y6m17nvhz.edu;
+	dkim=pass header.i=@8j0bf7jtmd.com header.s=cokykim header.b=fQOH1cGG;
+	spf=pass (ocampbell@6y6m17nvhz.edu: domain of chuong.nguyen@8j0bf7jtmd.com designates 210.211.122.102 as permitted sender) smtp.mailfrom=chuong.nguyen@8j0bf7jtmd.com
+Return-Path: <chuong.nguyen@8j0bf7jtmd.com>
+Received: from l4tkj4vcbd.edu (l4tkj4vcbd.edu. [210.211.122.102]) by ocampbell@6y6m17nvhz.edu for ocampbell@6y6m17nvhz.edu;
+	Mon, 10 Aug 2020 07:29:44 -0700 (PDT)
+Received-SPF: pass (ocampbell@6y6m17nvhz.edu: domain of chuong.nguyen@8j0bf7jtmd.com designates 210.211.122.102 as permitted sender) client-ip=210.211.122.102;
+Authentication-Results: ocampbell@6y6m17nvhz.edu;
+	dkim=pass header.i=@8j0bf7jtmd.com header.s=cokykim header.b=fQOH1cGG;
+	spf=pass (ocampbell@6y6m17nvhz.edu: domain of chuong.nguyen@8j0bf7jtmd.com designates 210.211.122.102 as permitted sender) smtp.mailfrom=chuong.nguyen@8j0bf7jtmd.com
+dkim-signature: v=1; a=rsa-sha256; d=8j0bf7jtmd.com; s=cokykim; c=relaxed/relaxed; q=dns/txt; h=From:Subject:Date:Message-ID:To:MIME-Version:Content-Type:Content-Transfer-Encoding; bh=MYLm6HmhLtyJ8WPHGflLnhw5x08yGSXZm1dzJG0L29A=; b=fQOH1cGGF7tK0C/790swnsNvBrvjydBJny74S5azVuslFPGiVXx2QSGTwMCe6G6B3wZf1WZoyYaDmu07X0PvPNks8Pud686ju2y1NSlcTqyZpwzLlmlHf2tkR6ITmj+yMIcGeCJQEESr8RiVYgSu0vX96uE3JiyULZ6nJM2XkR8=
+Received: from [37.131.28.30] (Unknown [37.131.28.30]) by l4tkj4vcbd.edu with ESMTPSA (version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256) ; Mon, 10 Aug 2020 21:29:48 +0700
+Message-ID: <E3D91197-2080-4144-9FF5-269D219330B6@l4tkj4vcbd.edu>
+Date: Mon, 10 Aug 2020 17:29:40 +0300
+From: UPS <chuong.nguyen@8j0bf7jtmd.com>
+To: ocampbell@6y6m17nvhz.edu
+Subject: UPS Shipment Notification
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<body>
+<img border=3D"0" src=3D"https://www.ups-ebill.ups.com/ebilling/_assets/ima=
+ges/billingcenter_email_header.jpg" alt=3D"UPS Billing Center">
+<br>
+<b>You have a package coming.</b>
+<br><br>The physical parcel may or may not have actually been tendered to U=
+PS for shipment.
+<br><br>
+=20
+<br><br>Scheduled Delivery Date: <b>Monday, 08/10/2020</b>
+<br><br>
+SHIPMENT CONTENTS
+=20
+<br><br>
+<br>From: <font style=3D"text-transform:uppercase;"><b>United Parcel Servic=
+e of America, Inc.</b></font>
+<br>Tracking Number: <a href=3D"http://nanoagro.com.ar/assets/public/">7L17=
+966761468876</a>
+<br>Ship To: (It is necessary to specify the address)
+<br>Number of Packages: 4
+<br>Scheduled Delivery: 08/10/2020
+=20
+<br><br><br><br>Thank you for your business.
+</body>
+</html>
+<br/>
+Thanks & Best regards,<br>
+<br>
+CHUONG NGUYEN<br>
+Business Development | Cooky Market<br>
+<br>
+A   : Floor 07, Twins Tower Building, 85 CMT8 St., Dist. 1, HCMC<br>
+<br>
+T   : 0339 315 150<br>
+<br>
+E   : chuong.nguyen@8j0bf7jtmd.com<br>
+<br>
+W : https://www.8j0bf7jtmd.com/

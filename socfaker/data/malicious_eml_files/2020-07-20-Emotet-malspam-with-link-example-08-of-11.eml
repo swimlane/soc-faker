@@ -1,0 +1,67 @@
+Return-Path: <ravi@2k7oeclsfg.co.jp>
+Received: from 173.231.248.13 (EHLO se2g-iad1.servconfig.com)
+ by acooper@qc4h7sy43i.co.uk with SMTPs; Mon, 20 Jul 2020 19:17:04 +0000
+X-Originating-Ip: [173.231.248.13]
+Received-SPF: none (domain of 2k7oeclsfg.co.jp does not designate permitted sender hosts)
+Authentication-Results: acooper@qc4h7sy43i.co.uk;
+ dkim=perm_fail header.i=@2k7oeclsfg.co.jp header.s=default;
+ spf=none smtp.mailfrom=2k7oeclsfg.co.jp;
+ dmarc=unknown
+X-Apparently-To: acooper@qc4h7sy43i.co.uk; Mon, 20 Jul 2020 19:17:05 +0000
+X-Originating-IP: [173.231.248.13]
+Received: from 10.197.42.223  (EHLO se2g-iad1.servconfig.com) (173.231.248.13)
+  by acooper@qc4h7sy43i.co.uk with SMTPS; Mon, 20 Jul 2020 19:17:04 +0000
+Received: from res225.servconfig.com ([192.145.239.205])
+	by 2jehsym5kh.co.uk with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <ravi@2k7oeclsfg.co.jp>)
+	id 1jxYbJ-000r5B-HR
+	for acooper@qc4h7sy43i.co.uk; Mon, 20 Jul 2020 12:25:14 -0400
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=2k7oeclsfg.co.jp;
+	 s=default; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:
+	From:Date:Sender:Reply-To:Message-ID:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=U69q1OpZVVpPiIeDDaGYJnyZmGaZG8uPNkzy0nSahAo=; b=CF3S3ALBeP+2TSngtT/muCryV0
+	tNg9afihKNqZR1nTVSrTeAALStcjY4bby6TNbhM2zDp0zJStQkaANu1S4UVyYn17nPxf4uhKfkQ+2
+	hXgcdfjTTfHhqkKKmo3aGTrHrzosVHdfhSgqSrtDfU2NqTaqjjzxyCO9Olcx/AZhXExqPyfRmz1S4
+	J3oxkt/JiPgUbq+Z2WV68atqU6CLxO1KkI41XEOaUjM36YwEG1mxDmoaPE11tsrZK9GhwvXdCihrb
+	8Mh6Bz3TiaMVHoKItIlpttwv9GNptR5SIUG4wDW75MQfA1iqsHXcHEhjXenTxSaelZiVS+gN4KSHL
+	TsBmt28w==;
+Received: from [176.218.215.179] (port=53161)
+	by res225.servconfig.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <ravi@2k7oeclsfg.co.jp>)
+	id 1jxYbI-00H8pj-FE
+	for acooper@qc4h7sy43i.co.uk; Mon, 20 Jul 2020 09:25:12 -0700
+Date: Mon, 20 Jul 2020 19:25:14 +0300
+From: "acooper@qc4h7sy43i.co.uk <acooper@qc4h7sy43i.co.uk@acooper@qc4h7sy43i.co.uk>" <ravi@2k7oeclsfg.co.jp>
+To: acooper@qc4h7sy43i.co.uk
+Subject: Re: Zoom meeting next week cancelled
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-Get-Message-Sender-Via: res225.servconfig.com: authenticated_id: ravi@2k7oeclsfg.co.jp
+X-Authenticated-Sender: res225.servconfig.com: ravi@2k7oeclsfg.co.jp
+Message-ID: <E1jxYbJ-000r5B-HR@2jehsym5kh.co.uk>
+X-Originating-IP: 192.145.239.205
+
+<html>
+<body>
+Please see attached and thanks!=0D
+<br>
+<br>
+<a href=3D"https://theeruditionofsoftandtech.com/wp-content/pzz-9tl4q-3415/=
+">https://theeruditionofsoftandtech.com/wp-content/pzz-9tl4q-3415/</a>
+<br>
+(Re: Zoom meeting next week cancelled)
+<br>
+<br>
+<i>[info removed]</i>
+<br><br>
+<br>
+----Original Message-----<br><br>
+<i>[email chain removed]</i>
+</body>
+</html>
