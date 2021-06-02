@@ -1,0 +1,170 @@
+Received: from 125-209-89-85.multi.net.pk ([125.209.89.85]) by ogonzalez@e1aebrkxpe.edu for ogonzalez@e1aebrkxpe.edu;
+	Wed, 03 Jun 2020 16:14:18 +0000 (UTC)
+Received: from [204.148.40.195] (helo=JEWYEAX.club)
+	by 125-209-89-85.multi.net.pk with ESMTPA 
+	id 8rewq5pgm11ion9.9.20200603211415
+	for ogonzalez@e1aebrkxpe.edu; Wed, 3 Jun 2020 21:14:15 +0500
+Received: from ([84.90.67.186]) by 125-209-89-85.multi.net.pk with SMTP id
+ 00AB9B657009; Wed, 3 Jun 2020 21:14:15 +0500
+Date: Wed, 3 Jun 2020 21:14:15 +0500
+Subject: Credit Card Refund #187148
+From: "service" <system@d7ahbzfvv3.com>
+Content-Type: multipart/mixed;
+	boundary="--NextPart_000_000E_6DF7DD11.5CCDE71Ec"
+To: ogonzalez@e1aebrkxpe.edu
+Reply-To: "service" <system@d7ahbzfvv3.com>
+
+This is a multi-part message in MIME format.
+
+----NextPart_000_000E_6DF7DD11.5CCDE71Ec
+Content-Type: multipart/alternative;
+	boundary="[information_removed]"
+
+--[information_removed]
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset="iso-8859-1"
+
+Cash Refund
+Date	 	6/03/2020
+Refund #	 	187148
+Payment Method	 	Website Payment
+Check #	 	7000924345
+Project	 	
+Department	 	
+Phone Number	 	
+Shipping Method	 	UPS 2nd Day Air®
+Credit Card #	 	****************
+Transaction Next Approver	 	
+
+	
+
+********CREDIT WILL BE ISSUED TO YOUR CREDIT CARD USED FOR ORIGINAL PURCHASE********
+
+
+--[information_removed]
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset="iso-8859-1"
+
+<!DOCTYPE html><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Credit Card Refund</title>
+<script language="JavaScript" type="text/javascript">window.status='';</script><script type="text/javascript" src="/core/elements/compound/NLMapping.nl__t=rgwq2o4PI&amp;NS_VER=2019.2.0&minver=162&locale=en_US.nlqs"></script>
+<script type="text/javascript" src="/javascript/suitescript/utility/undefine.js"></script>
+<style>
+<!--
+body, p, td, th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+th {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+headline {
+	font-family: Helvetica, sans-serif;
+	font-size: 17pt;
+	font-weight: bold;
+}
+disclaimer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+lined {
+	border: 1px solid #777777;
+}
+-->
+</style>
+
+<script type="application/json" id="data_05972259" ?="">{"translations":{},"horizontalLabelEnabled":false}</script>
+<script type="application/javascript">
+(function (data, preferences) {
+NS = window.NS || {};
+
+NS.Translations = NS.Translations || {};
+NS.Translations.dictionary = NS.Translations.dictionary || {};
+for(var key in data.translations)
+{
+    if (data.translations.hasOwnProperty(key))
+    {
+        NS.Translations.dictionary[key] = data.translations[key];
+    }
+}
+
+NS.UI = NS.UI || {};
+NS.UI.Preferences = NS.UI.Preferences || {};
+NS.UI.Preferences.horizontalLabelsEnabled = data.horizontalLabelEnabled;
+
+})(JSON.parse(document.getElementById('data_05972259').textContent),{});
+</script>
+</head>
+<body bgcolor="#FFFFFF" class="body_2010 nl-pagetint " link="#000000" vlink="#000000" alink="#000000" text="#000000" style="background-image:none;margin: 5px 0px 5px 0px;">
+<div id="outerwrapper" style="width:100%">
+<div id="innerwrapper">
+<div id="div__header" class="noprint" leftmargin="0" topmargin="0" marginwidth="1">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+</table></div>
+<div id="div__title" style="margin: 0px;"></div>
+<div id="div__label" class="scrollarea" style="margin: 0px; overflow:hidden;"></div>
+<div id="div__body" style="margin: 0px; ">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td valign="top">
+			
+			<div class="headline"></div><br>
+			
+<br>
+<br>
+			<p>
+			<table border="0" cellpadding="1" cellspacing="0">
+				<tr>
+					<td valign="top"><b></b><br><br><br></td>
+					<td>&nbsp;&nbsp;</td>
+					
+				</tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table align="center" border="0" cellpadding="1" cellspacing="0">
+				<tr><td colspan="3"><div class="headline">Cash Refund</div></td></tr>
+				<tr><td>Date</td><td>&nbsp;</td><td>6/03/2020</td></tr>
+				<tr><td>Refund #</td><td>&nbsp;</td><td>187148</td></tr>
+				
+				<tr><td>Payment Method</td><td>&nbsp;</td><td><span class="inputreadonly">Website Payment</span></td></tr><tr><td>Check #</td><td>&nbsp;</td><td>7000924345</td></tr><tr><td>Project</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>Department</td><td>&nbsp;</td><td><span class="inputreadonly"></span></td></tr><tr><td>Phone Number</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>Shipping Method</td><td>&nbsp;</td><td><span class="inputreadonly">UPS 2nd Day Air&reg;</span></td></tr><tr><td>Credit Card #</td><td>&nbsp;</td><td>****************</td></tr><tr><td>Transaction Next Approver</td><td>&nbsp;</td><td><span class="inputreadonly"></span><input name="custbody_tsg_next_approver" id="custbody_tsg_next_approver" type="hidden" onChange="callRecordScript({eventName: 'invalidateTaxes', arguments: {source: 'custbody_tsg_next_approver'}, isCustomMethodCall: true});" value=""></td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<p>
+<table align="center" border="0" cellpadding="3" cellspacing="0" width="100%" style="border-collapse: collapse;"><tr bgcolor="#777777"><th nowrap="" class="lined" align="left">Item</th><th nowrap="" class="lined" align="right">Quantity</th><th nowrap="" class="lined" align="left">Description</th><th nowrap="" class="lined" align="left">Options</th><th nowrap="" class="lined" align="right">Rate</th><th nowrap="" class="lined" align="right">Amount</th><th nowrap="" class="lined" align="right">Gross Amt</th><th nowrap="" class="lined" align="right">Tax Amount</th><th nowrap="" class="lined" align="left">Tax Details Reference</th></tr><tr><td valign="top" class="lined">5353371-42</td>
+<td valign="top" class="lined" align="right" nowrap="">1</td>
+<td valign="top" class="lined">2020</td>
+<td valign="top" class="lined">&nbsp;</td>
+<td valign="top" class="lined" align="right" nowrap="">2,817.76</td>
+<td valign="top" class="lined" align="right" nowrap="">2,817.76</td>
+<td valign="top" class="lined" align="right" nowrap="">2,817.76</td>
+<td valign="top" class="lined" align="right" nowrap=""></td>
+<td valign="top" class="lined">50923457_1</td>
+</tr><tr><td valign="top" class="lined" style="border-width: 0;" align="right" colspan="5">Subtotal</td><td valign="top" class="lined" style="border-width: 0;" align="right" nowrap="">2,817.76</td><td valign="top" class="lined" style="border-width: 0;"></td><td valign="top" class="lined" style="border-width: 0;"></td><td valign="top" class="lined" style="border-width: 0;"></td></tr><tr><td valign="top" class="lined" style="border-width: 0;" align="right" colspan="5">Shipping Cost (UPS 2nd Day Air&reg;)</td><td valign="top" class="lined" style="border-width: 0;" align="right" nowrap="">0.00</td><td valign="top" class="lined" style="border-width: 0;"></td><td valign="top" class="lined" style="border-width: 0;"></td><td valign="top" class="lined" style="border-width: 0;"></td></tr><tr><td valign="top" class="lined" style="font-weight: bold;border-width: 0;" align="right" colspan="5">Total</td><td valign="top" class="lined" style="border-width: 0;" align="right" nowrap="">$2,817.76</td><td valign="top" class="lined" style="border-width: 0;"></td><td valign="top" class="lined" style="border-width: 0;"></td><td valign="top" class="lined" style="border-width: 0;"></td></tr></table>
+<table align="center" border="0" cellpadding="3" cellspacing="1" width="100%"><tr bgcolor="#FFFFFF"><td align="left">&nbsp;</td></tr></table>
+<table align="center" border="0" cellpadding="3" cellspacing="0" width="100%" style="border-collapse: collapse;"> </table>
+<table align="center" border="0" cellpadding="3" cellspacing="1" width="100%"><tr bgcolor="#FFFFFF"><td align="left" class="disclaimer">********CREDIT WILL BE ISSUED TO YOUR CREDIT CARD USED FOR ORIGINAL PURCHASE*********</td></tr></table>
+</div>
+<div id="div__footer" class="noprint" leftmargin="0" topmargin="0" marginwidth="1" marginheight="1">
+</div>
+</div></div>
+</body></html>
+
+
+--[information_removed]--
+
+----NextPart_000_000E_6DF7DD11.5CCDE71Ec
+Content-Transfer-Encoding: base64
+Content-Type: application/octet-stream; name="Invoice_Receipt_187148.xlsm"
+
+[attachment removed]
+
+----NextPart_000_000E_6DF7DD11.5CCDE71Ec--

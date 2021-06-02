@@ -1,0 +1,554 @@
+Received: from ([168.195.252.177]) by oprice@yyfthdnd8d.biz for oprice@yyfthdnd8d.biz;
+	Thu, 12 Nov 2020 13:30:15 +0000 (UTC)
+Received: from [64.2.125.123] (account listlesslyb7@cvb8jr8t2y.co.jp HELO vj.icamneaaok.website)
+	by 168.195.252.177.bahianettelecom.com.br (Exim 4.89) with ESMTPA id 
+	l8ii0fik1bxaetk.7.20201112103015 for oprice@yyfthdnd8d.biz; Thu, 12 Nov 2020 10:30:15 -0300
+Received: from [34.101.18.181] (helo=TOROGOL.LYQARIN.cc)
+	by 168.195.252.177.bahianettelecom.com.br with esmtpa (Exim 4.85)
+	(envelope-from listlesslyb7@cvb8jr8t2y.co.jp)
+	id VcMi4WCjh98cli.987 for oprice@yyfthdnd8d.biz; Thu, 12 Nov 2020 10:30:15 -0300
+Date: Thu, 12 Nov 2020 10:30:15 -0300
+Subject: Invoice from General Manager (109048)
+From: Office <service@f8m3bglqfs.co.jp>
+To: oprice@yyfthdnd8d.biz
+Reply-To: Office <service@f8m3bglqfs.co.jp>
+Content-Type: multipart/mixed;
+	boundary="_iWx/y3Lrq3DuEh8ak7wb"
+
+--_iWx/y3Lrq3DuEh8ak7wb
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset="iso-8859-1"
+
+--_iWx/y3Lrq3DuEh8ak7wb
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset="iso-8859-1"
+
+<html >
+   <head>
+   		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=no">
+        <title>Invoice (109048)</title><!-- Noto Sans Google Font --><link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic&subset=latin,greek,greek-ext,devanagari,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			<!-- Begin Styles -->
+/* PP Sans Font Import */
+@font-face {
+    font-family: 'pp-sans-big-light';
+    font-weight: 100;
+    font-style: normal;
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.svg") format("svg")
+}
+@font-face {
+    font-family:"pp-sans-big-bold";
+    src:url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Bold.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Bold.svg") format("svg")
+}
+/* PP Sans Class */
+ppsans { font-family: 'pp-sans-big-light', 'Noto Sans', Calibri, Trebuchet, Arial, sans serif !important; }
+ppsansbold { font-family: 'pp-sans-big-bold', 'Noto Sans', Calibri, Trebuchet, Arial, sans serif !important; }
+/* prevent iOS font upsizing */
+* { -webkit-text-size-adjust: none; }
+/* force Outlook.com to honor line-height */
+ExternalClass * { line-height: 100%; }
+td { mso-line-height-rule: exactly; }
+/* prevent iOS auto-linking */
+/* Android margin fix */
+body { margin: 0 !important; }
+div[style*="margin: 16px 0"] { margin: 0 !important; }
+/** Prevent Outlook Purple Links **/
+greyLink a:link { color: #949595; }
+/* prevent iOS auto-linking */
+applefix a { /* use on a span around the text */
+  color: inherit;
+  text-decoration: none;
+}
+/* neptune links standard color for PayPal */
+ a {
+    color: #0070ba !important;
+}
+neptuneButtonWhite a {
+    color: #ffffff !important;
+}
+neptuneButtonBlue a {
+    color: #0070BA !important;
+}
+ .pisces-menu a {
+    color: #086A87 !important;
+}
+/*** Responsive CSS ***/
+@media only screen and (max-width: 414px) {
+/*** Layout ***/
+body {
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+marginFix {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+mobContent {
+    width: 100% !important;
+    min-width: 100% !important;
+    padding: 0px 0px 0px 0px !important;
+}
+/*.mobMargin { width: 10% !important; }*/
+hide {
+    width: 0px !important;
+    height: 0px !important;
+    display: none !important;
+}
+full-width {
+    width: 100% !important;
+    min-width: 100% !important;
+}
+stackTbl {
+    width: 100% !important;
+    display: table !important;
+}
+stackTblMarginTop {
+    width: 100% !important;
+    display: table !important;
+    margin-top: 20px !important;
+}
+center { margin: 0px auto !important; }
+floatLeft {
+    float: left !important;
+    width: 35% !important;
+}
+floatRight {
+    float: right !important;
+    width: 60% !important;
+}
+autoHeight { height: auto !important; }
+autoWidth { width:auto !important; }
+/*** Padding Styles ***/
+mobilePadding { padding: 20px 20px 20px 20px !important; }
+mobilePadding1 { padding: 40px 20px 40px 20px !important; height: auto !important; }
+mobilePadding2 { padding: 0px 20px 40px 20px !important; }
+mobilePadding3 { padding: 20px 20px 0px 20px !important; }
+mobilePadding4 { padding: 0px 0px 30px 0px !important; }
+mobilePadding5 { padding:0px 20px 30px 20px !important; }
+mobilePadding6 { padding:30px 20px 30px 20px !important; }
+mobilePadding7 { padding:0px 20px 0px 20px !important; }
+mobilePadding8 { padding:50px 0px 50px 0px !important; }
+mobilePadding9 { padding: 10px 0px 15px 0px !important; }
+mobilePadding10 { padding: 0px 20px 0px 20px !important; }
+mobilePadding11 { padding: 40px 0px 40px 0px !important; }
+mobilePadding12 { padding: 40px 0px 0px 0px !important; }
+mobilePadding13 { padding: 0px 0px 40px 0px !important; }
+mobilePadding14 { padding: 40px 30px 10px 30px !important; }
+mobilePadding15 { padding: 0px 30px 0px 30px !important; }
+mobilePadding16 { padding: 0px 0px 10px 0px !important; }
+mobilePadding17 { padding: 0px 0px 30px 0px !important; }
+padding0 { padding: 0px !important; }
+topPadding0 { padding-top: 0px !important; }
+topPadding10 { padding-top: 10px !important; }
+topPadding20 { padding-top: 20px !important; }
+topPadding30 { padding-top: 30px !important; }
+topPadding40 { padding-top: 40px !important; }
+bottomPadding0 { padding-bottom: 0px !important; }
+bottomPadding10 { padding-bottom: 10px !important; }
+bottomPadding20 { padding-bottom: 20px !important; }
+bottomPadding30 { padding-bottom: 30px !important; }
+bottomPadding40 { padding-bottom: 40px !important; }
+/* use to make image scale to 100 percent */
+fullWidthImg {
+    width: 100% !important;
+    height: auto !important;
+    min-width: 100% !important;
+}
+/* background image replacement scalable height */
+bgSwap {
+    background-image: url(images/lifestyle-background-mob.jpg) !important;
+    width: 100% !important;
+    padding-top: 65% !important;  /* update height here */
+    background-size: cover !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    display: block !important;
+}
+/*** Border Styles ***/
+borderBottomDot { border-bottom: 1px dotted #999999 !important; }
+/*** Text Align Styles ***/
+textAlignLeft { text-align:left !important; }
+textAlignRight { text-align:right !important; }
+textAlignCenter { text-align:center !important; }
+/*** Misc Styles ***/
+mobileStrong { font-weight: bold !important; }
+/*** Width Styles ***/
+td150px { width: 150px !important; }
+td130px { width: 130px !important; }
+td120px { width: 120px !important; }
+td100px { width: 100px !important; }
+/*** Image Width Styles ***/
+imgWidth10px { width: 10px !important; }
+/*** END Responsive CSS ***/
+}
+/* use to make image scale to 100 percent */
+mpidiv img {
+    width: 100% !important;
+    height: auto !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+/* Fix for Neptune partner logo */
+partner_image {
+	max-width: 250px !important;
+	max-height: 90px !important;
+	display: block;
+}
+		</style>
+   <style type='text/css'>
+    /*sup {font-size:7px !important;}*/
+
+    /*sup {font-size:7px !important;}*/
+</style><!--OUTLOOK HOSTED FONT FIX - DO NOT DELETE--><!--[if gt mso 9]><style type="text/css">.ppsans {font-family: Calibri, Trebuchet, Arial, sans serif !important;} /* prevents Outlook from defaulting to Times New Roman */</style><![endif]--></head>
+   <body  style="padding:0; margin:0; background:#f2f2f2;">
+ <div style="display:none; display:none !important; color:#fff; font-size:1pt;"></div>	<!-- Preheader -->
+<span style="display:none !important; font-size:0px; line-height:0px; color:#ffffff;">
+	Here are your invoice details
+</span>
+<!-- end Preheader --><!-- CONTAINER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="marginFix">
+    <!-- WHITE BACKGROUND -->
+    <tr>
+        <td bgcolor="#ffffff" class="mobMargin" style="font-size:0px;">&nbsp;
+        </td>
+        <td bgcolor="#ffffff" width="660" align="center" class="mobContent">
+        <!-- inner container / place all modules below --><!-- Greeter Flat -->
+      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td class="hide">&nbsp;</td>
+          <td align="center" width="600" style="padding-bottom:20px;"><table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f5f5f5">
+              <tr>
+                <!-- copy 14px/18px -->
+                <td align="center" style="font-family:Calibri, Trebuchet, Arial, sans serif; font-size:14px; line-height:18px;color:#777777;padding:20px" class="ppsans"><p style="">
+          		Hello,</p></td>
+                <!-- end copy -->
+              </tr>
+            </table></td>
+          <td class="hide">&nbsp;</td>
+        </tr>
+      </table>
+      <!-- End Greeter Flat -->
+   	 	  <!-- Logo Header Standard -->
+      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+	        <!-- logo row 1 -->
+	        	
+	        <tr>
+	          <td class="mobMargin">&nbsp;</td>
+	          <td align="center" width="600" style="padding-bottom:20px;"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+	              <tr>
+	                <td>&nbsp;</td>
+	                <td align="center" style="max-height: 90px !important;"><a  type="Link" target="_blank" linkId="39bc56fd4af3d7702f8a97363f0a613f"  style="max-width:250px; max-height:90px; display:block;"  href="https://pics.f8m3bglqfs.co.jp/00/s/"><img class="partner_image" logoprop="" style="max-width:250px; max-height:90px; display:block;" border="0" src="image_452.PNG"></a></td>
+	                <td>&nbsp;</td>
+	              </tr>
+	            </table></td>
+	          <td class="mobMargin">&nbsp;</td>
+	        </tr>
+	        	
+	        <!-- end logo row 1 -->
+	    	<!-- logo row 2 / gradient w/circle -->
+	        <tr dir="LTR">
+	          <td class="mobMargin" align="center" valign="top" bgcolor="#004f9b"><!-- image scales to 100% -->
+	            <img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/2header-sidebar-left-top.jpg" width="100%" height="58" style="display:block;" border="0" alt=""></td>
+	          <td dir="LTR" align="center" width="600" bgcolor="#004f9b"><table height="100%" width="100%" cellpadding="0" cellspacing="0" border="0" dir="LTR">
+	              <tr>
+	                <td width="12" align="center" valign="top"><img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/2header-left-corner.jpg" width="12" height="100%" style="display:block;" border="0" alt=""></td>
+	                <td align="center" valign="top"><!-- image scales to 100% -->
+	                  <img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/2header-center.jpg" width="100%" height="100%" style="display:block;" border="0" alt=""></td>
+	                <td width="12" align="center" valign="top"><img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/2header-right-corner.jpg" width="12" height="100%" style="display:block;" border="0" alt=""></td>
+	              </tr>
+	            </table></td>
+	          <td class="mobMargin" align="center" valign="top" bgcolor="#004f9b"><!-- image scales to 100% -->
+	            <img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/2header-sidebar-right-top.jpg" width="100%" height="58" style="display:block;" border="0" alt=""></td>
+	        </tr>
+	        <!-- end logo row 2 / gradient w/circle -->
+        <!-- main content row 3 -->
+        <tr>
+          <!-- colored side bar -->
+          <td class="mobMargin" align="left" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center" valign="top" bgcolor="#004f9b"><!-- image scales to 100% -->
+                  <img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/header-sidebar-left-bottom.jpg" width="100%" height="96" style="display:block;" border="0" class="imgWidth10px" alt=""></td>
+              </tr>
+              <tr>
+                <td bgcolor="#ffffff" align="right" valign="top"><img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/sidebar-gradient.png" width="1" height="100" style="display:block;" alt=""></td>
+              </tr>
+            </table></td>
+          <!-- end colored side bar -->
+          <!-- BEGIN MAIN CONTENT -->
+          <td width="600" valign="top" align="center">
+          		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+              		<tr>
+                		<td align="center" valign="top" bgcolor="#ffffff" style="padding-top:20px;">
+                    		<!-- PLACE ALL MODS BELOW -->
+			                    <!-- section header / adjust padding below to control spacing -->
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <!-- PLACE ALL MODS BELOW -->
+                    <!-- section header / adjust padding below to control spacing -->
+                    <tr>
+                      <td align="center" style="padding:0px 30px 30px 30px;"  >
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <!-- primary headline 36/44 -->
+                            <td align="center" valign="top" style="font-family:Calibri, Trebuchet, Arial, sans serif; font-size:26px; line-height:44px; color:#333333;" class="ppsans">Here's your invoice</td>
+                            <!-- end primary headline -->
+                          </tr>
+                        </table></td>
+                    </tr>
+               </table>
+			                    <!-- end section header -->
+			                    <!-- section subheadline / adjust padding below to control spacing -->
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+                      <td align="center" style="padding:0px 30px 30px 30px;">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <!-- sub header 19/24 -->
+                                <td align="center" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family:Calibri, Trebuchet, Arial, sans serif; font-size:19px; line-height:24px; color:#777777;" class="ppsans">General Manager sent you an invoice for&nbsp;$1,350.00&nbsp;USD
+                                                                                                                                                   </td>
+                            <!-- end primary headline -->
+                          </tr>
+                        </table></td>
+                    </tr>
+                 </table>
+			                    <!-- end section subheadline --><!-- PLACE ALL MODS ABOVE -->
+                    		<!-- PLACE ALL MODS BELOW --><table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+                      <td align="center" style="padding:0px 30px 30px 30px;">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <!-- sub header 19/24 -->
+                                <td align="center" style="vertical-align: top; padding: 0px 0px 0px 0px; font-family:Calibri, Trebuchet, Arial, sans serif; font-size:19px; line-height:24px; color:#777777;" class="ppsans"><div style="display: block;"  id="69af3a15-80591-d9d1-191a-5996a141c934" ><div style="display:block;"  id="6c6c8d9e-05eb-38694-0c69-8d1512046526" >Due date: November 12, 2020</div></div></td>
+                            <!-- end primary headline -->
+                          </tr>
+                        </table></td>
+                    </tr>
+                 </table><table width="100%" cellspacing="0" cellpadding="0" border="0" class="neptuneButtonwhite">
+				<tbody>
+		          <tr>
+						<td align="center" style="padding:0px 30px 30px 30px;">
+                        <table border="0" cellspacing="0" cellpadding="0"  class="stackTbl" style="color:#ffffff !important;">
+                          <tr>
+                            <!-- CTA text 17/21 -->
+                            <td bgcolor="#0070BA" align="center" valign="middle" style="padding:13px 90px 13px 90px; display: block; color:#ffffff !important; text-decoration:none; white-space: nowrap;  -webkit-print-color-adjust: exact; display: block; font-family:Calibri, Trebuchet, Arial, sans serif; font-size:17px; line-height:21px; color:#ffffff !important;border-radius:25px;" class="ppsans mobilePadding9"><a  type="Link" target="_blank" linkId="61947fb5c0cc2470895b4c3ed974a002"  style="text-decoration:none;color:#ffffff !important; white-space: nowrap;"  href="https://vegetablecutter.in/peevish.php">View and Pay Invoice</a></td>
+                            <!-- end CTA text --></tr>
+                        </table>
+                  </td>
+		          </tr>
+		        </tbody>
+		    </table><table width="100%" cellspacing="0" cellpadding="0"  border="0">
+				<tbody>
+		          <tr>
+					<td align="center" style="padding:0px 30px 30px 30px;" class="mobilePadding4">
+				  		<!-- Text section Italics Grey Background with Image -->
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#f5f5f5" align="left" valign="top" style="padding:25px;"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <!-- body copy 17/22 -->
+                                  <!-- end body copy -->
+                                  <!-- body copy 15/22 -->
+                                  	<td align="left" valign="middle" >
+                                  		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	                          				<tr>
+	                          					<!-- sub header 19/24 -->
+					                            <td style="vertical-align: top; padding: 0px 0px 20px 0px; font-family:Calibri, Trebuchet, Arial, sans serif; font-size:19px; line-height:24px; color:#009cde;" class="ppsans">Buy now Pay over time.</td>
+					                            <!-- end primary headline -->
+	                          				</tr>
+	                          				<tr>
+	                          				<td align="left" valign="middle" style="font-family:Calibri, Trebuchet, Arial, sans serif; font-size:15px; line-height:22px; color:#333333;" class="ppsans">
+			                                  	<em>
+			                                  	<span style="font-style: italic;"><p style=""><span style="font-style: normal;"></span></p></span>
+			                                  	</em>
+			                                  </td>
+		                                  	</tr>
+		                                 </table>
+                                  </td>
+                                  <!-- end body copy -->
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                  		<!-- end Text section Italics Grey Background with Image -->
+                  	</td>
+		          </tr>
+		        </tbody>
+		    </table><table width="100%" cellspacing="0" cellpadding="0"  border="0">
+				<tbody>
+		          <tr>
+					<td align="center" style="padding:30px 30px 30px 30px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" >
+                          <tr>
+                            <!-- solid line -->
+                            <td align="center" valign="top" style="font-size:0px; line-height:0px; border-bottom:1px solid #d6d6d6;">&nbsp;</td>
+                            <!-- end solid line -->
+                          </tr>
+                        </table>
+                    </td>
+		          </tr>
+		        </tbody>
+		    </table><table width="100%" cellspacing="0" cellpadding="0"  border="0">
+			<tbody>
+		           <tr>
+					<!--
+						<td align="center" style="padding:0px 30px 30px 30px;"> -->
+					  <!--  -->
+						<td>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+                      <td align="center" style="padding:0px 30px 30px 30px;">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <!-- sub header 19/24 -->
+                            <td style="vertical-align: top; padding: 0px 0px 0px 0px; font-family:Calibri, Trebuchet, Arial, sans serif; font-size:19px; line-height:24px; color:#009cde;" class="ppsans">
+                                </td>
+                            <!-- end primary headline -->
+                          </tr>
+                        </table></td>
+                    </tr>
+                 </table>
+                    	</td>
+					</tr>
+					<tr>
+					<td align="center" style="padding:0px 30px 30px 30px;">
+												<table width="100%" cellpadding="0" cellspacing="0" border="0" >
+                          <tr>
+                            <!-- body copy 17/22 -->
+                            <!-- Commenting attribute align=left from below td, default is left aligned and it causing rendering issue when the request is for RTL -->
+                            	<td valign="top" style="font-family:Calibri, Trebuchet, Arial, sans serif; font-size:17px; line-height:22px; color:#333333;" class="ppsans"></td>
+                            <!-- end body copy -->
+                          </tr>
+                        </table>
+					</td>
+     				</tr>
+	        </tbody>
+	    </table><!-- PLACE ALL MODS ABOVE -->
+              </td>
+                  </tr>
+              </table>
+          </td>
+          <!-- END MAIN CONTENT -->
+
+          <!-- colored side bar -->
+          <td valign="top" align="left" class="mobMargin"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tbody><tr>
+                <td valign="top" bgcolor="#004f9b" align="center"><!-- image scales to 100% --><img width="100%" border="0" height="96" class="imgWidth10px" style="display:block;" src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/header-sidebar-right-bottom.jpg"></td>
+              </tr>
+              <tr>
+                <td valign="top" bgcolor="#ffffff" align="left"><img width="1" height="100" style="display:block;" src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/sidebar-gradient.png"></td>
+              </tr>
+            </tbody></table></td>
+          <!-- end colored side bar -->
+        </tr>
+        <!-- end - body content -->
+      </tbody></table>
+      <!-- End Logo Header Standard --><!-- Footer Logo + Links -->
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" dir="LTR">
+        <tr>
+          <td class="mobMargin">&nbsp;</td>
+          <td align="center" width="600"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="left" style="vertical-align: top; padding: 0px 0px 0px 0px;"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td width="12" align="center" valign="top"><img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/footer-left-corner.jpg" width="12" height="141" style="display:block;" border="0" alt=""></td>
+                      <td align="center" valign="top"><!-- image scales to 100% --><img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/footer-left-stroke.jpg" width="100%" height="141" style="display:block;" border="0" alt=""></td>
+                      <td width="120" align="center" valign="top"><!-- circle image --><img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/footer-pp-logo.jpg" width="120" height="141" style="display:block;" border="0" alt="PayPal"></td>
+                      <td align="center" valign="top"><!-- image scales to 100% --><img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/footer-right-stroke.jpg" width="100%" height="141" style="display:block;" border="0" alt=""></td>
+                      <td width="12" align="center" valign="top"><img src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/footer-right-corner.jpg" width="12" height="141" style="display:block;" border="0" alt=""></td>
+                    </tr>
+                  </table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <!-- copy 14px/18px -->
+                      <td align="center" style="font-family:Calibri, Trebuchet, Arial, sans serif; font-size:15px; line-height:22px;color:#444444;padding:20px" class="ppsans"><a href="https://www.f8m3bglqfs.co.jp/selfhelp/home?utm_source=unp&utm_medium=email&utm_campaign=PPC000977&utm_unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&ppid=PPC000977&cnac=US&rsta=en_US&cust=&unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&calc=e465f69daa1e8&unp_tpcid=invoice-buyer-notification&page=main:email:PPC000977:::&pgrp=main:email&e=cl&mchn=em&s=ci&mail=sys&xt=109688&unp_adv=true" target="_blank" style="color:#0070ba; text-decoration:none;"  alt="Help & Contact">Help & Contact</a> &nbsp;|&nbsp;
+	                      	<a href="https://www.f8m3bglqfs.co.jp/us/webapps/mpp/paypal-safety-and-security?utm_source=unp&utm_medium=email&utm_campaign=PPC000977&utm_unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&ppid=PPC000977&cnac=US&rsta=en_US&cust=&unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&calc=e465f69daa1e8&unp_tpcid=invoice-buyer-notification&page=main:email:PPC000977:::&pgrp=main:email&e=cl&mchn=em&s=ci&mail=sys&xt=109688&unp_adv=true" target="_blank" style="color:#0070ba; text-decoration:none;"  alt="Security">Security</a> &nbsp;|&nbsp;
+	                      	<a href="https://www.f8m3bglqfs.co.jp/us/webapps/mpp/mobile-apps?utm_source=unp&utm_medium=email&utm_campaign=PPC000977&utm_unptid=de9748a2-46707-11eb-868f-b875c0c3c09f&ppid=PPC000977&cnac=US&rsta=en_US&cust=&unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&calc=e465f69daa1e8&unp_tpcid=invoice-buyer-notification&page=main:email:PPC000977:::&pgrp=main:email&e=cl&mchn=em&s=ci&mail=sys&xt=109688&unp_adv=true" target="_blank" style="color:#0070ba; text-decoration:none;"  alt="Apps">Apps</a></td><!-- end copy -->
+                    </tr>
+                  </table>
+                  </td>
+              </tr>
+            </table></td>
+          <td class="mobMargin">&nbsp;</td>
+        </tr>
+      </table>
+      <!-- end Footer Logo + Links -->
+	  <!-- Footer Social Links -->
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td align="center" style="padding-bottom:20px;"><table align="center" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                	<td align="left" valign="middle" style="padding: 0px 25px 0px 0px;"><a href="https://twitter.com/PayPal?utm_source=unp&utm_medium=email&utm_campaign=PPC000977&utm_unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&ppid=PPC000977&cnac=US&rsta=en_US&cust=&unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&calc=e465f69daa1e8&unp_tpcid=invoice-buyer-notification&page=main:email:PPC000977:::&pgrp=main:email&e=cl&mchn=em&s=ci&mail=sys&xt=109688&unp_adv=true" target="_blank" ><img border="0" src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/icon-tw.jpg" width="28" height="29" style="display:block" alt="twitter"></a></td>
+                	<td align="left" valign="middle" style="padding: 0px 25px 0px 0px;"><a href="https://www.instagram.com/paypal/?utm_source=unp&utm_medium=email&utm_campaign=PPC000977&utm_unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&ppid=PPC000977&cnac=US&rsta=en_US&cust=&unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&calc=e465f69daa1e8&unp_tpcid=invoice-buyer-notification&page=main:email:PPC000977:::&pgrp=main:email&e=cl&mchn=em&s=ci&mail=sys&xt=109688&unp_adv=true" target="_blank" ><img border="0" src="https://www.paypalobjectscom/digitalassets/c/system-triggered-email/n/layout/images/icon-ig.jpg" width="28" height="29" style="display:block" alt="instagram"></a></td>
+                	<td align="left" valign="middle" style="padding: 0px 25px 0px 0px;"><a href="https://www.facebook.com/PayPalUSA?utm_source=unp&utm_medium=email&utm_campaign=PPC000977&utm_unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&ppid=PPC000977&cnac=US&rsta=en_US&cust=&unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&calc=e465f69daa1e8&unp_tpcid=invoice-buyer-notification&page=main:email:PPC000977:::&pgrp=main:email&e=cl&mchn=em&s=ci&mail=sys&xt=109688&unp_adv=true" target="_blank" ><img border="0" src="https://www.paypalobjectscom/digitalassets/c/system-triggered-email/n/layout/images/icon-fb.jpg" width="28" height="29" style="display:block" alt="facebook"></a></td>
+                	<td align="left" valign="middle" style="padding: 0px 25px 0px 0px;"><a href="http://www.linkedin.com/company/1482?trk=tyah&utm_source=unp&utm_medium=email&utm_campaign=PPC000977&utm_unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&ppid=PPC000977&cnac=US&rsta=en_US&cust=&unptid=de9748a2-0513-11eb-868f-b875c0c3c09f&calc=e465f69daa1e8&unp_tpcid=invoice-buyer-notification&page=main:email:PPC000977:::&pgrp=main:email&e=cl&mchn=em&s=ci&mail=sys&xt=109688&unp_adv=true" target="_blank" ><img border="0" src="https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/icon-li.jpg" width="28" height="29" style="display:block" alt="linkedin"></a></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      <!--end Footer Social Links --><!-- Footer Text Module -->
+      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td class="hide">&nbsp;</td>
+          <td align="center" width="600" valign="top">
+
+           </td>
+          <td class="hide">&nbsp;</td>
+        </tr>
+      </table>
+      <!-- End Footer Text Module --><!-- TEMPLATE: FOOTER -->
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+		        <tr>
+		          <td class="hide">&nbsp;</td>
+		          <td align="center" width="600"></td>
+		          <td class="hide">&nbsp;</td>
+		        </tr>
+		      </table><!-- Start - EmailConfirmation Footer -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="hide">&nbsp;</td>
+      <td align="center" width="600">
+
+      </td>
+      <td class="hide">&nbsp;</td>
+    </tr>
+    </table>
+  <!-- End - EmailConfirmation Footer -->
+			<!-- Copyright Module -->
+		      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+		        <tr>
+		          <td class="hide">&nbsp;</td>
+		          <td align="center" width="600"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+		              <tr>
+		                <!-- copy 13px/20px -->
+		                <td style="font-family:Calibri, Trebuchet, Arial, sans serif; font-size:13px; line-height:20px;color:#999999; padding:20px 30px 30px 30px;" class="ppsans"><table border="0" cellpadding="0" cellspacing="0" id="emailFooter" width="100%" style="font-family:Calibri, Trebuchet, Arial, sans serif; font-size:13px; line-height:20px;color:#999999;" class="ppsans"><tbody><tr><td><p>Copyright &copy; 1999-2020 PayPal, Inc. All rights reserved. PayPal is located at 2211 N. First St., San Jose, CA 95131.</p></td></tr></tbody></table>
+</p>
+		                </td>
+		                <!-- end copy -->
+		              </tr>
+		            </table></td>
+		          <td class="hide">&nbsp;</td>
+		        </tr>
+		      </table>
+		      <!-- Copyright Module -->
+        <!-- end inner container / place all modules above -->
+        </td>
+        <td bgcolor="#ffffff" class="mobMargin" style="font-size:0px;">&nbsp;
+        </td>
+    </tr>
+    <!-- END WHITE BACKGROUND -->
+</table>
+<!-- END CONTAINER -->
+   </body>
+</html>
+
+--_iWx/y3Lrq3DuEh8ak7wb--

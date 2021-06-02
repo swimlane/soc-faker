@@ -1,0 +1,198 @@
+Received: from ([2.186.151.69]) by jhenderson@d7uw80s8iz.edu for jhenderson@d7uw80s8iz.edu;
+	Mon, 13 Jul 2020 14:24:38 +0000 (UTC)
+Received: from ([165.174.187.185]) by  with SMTP id A50F6906A7E5; 
+	Mon, 13 Jul 2020 17:54:40 +0330
+Date: Mon, 13 Jul 2020 17:54:40 +0330
+Subject: Reminder: Invoice 360882
+From: "C.C" <quickbooks@rocyn2zsvu.com>
+To: jhenderson@d7uw80s8iz.edu
+Content-Type: multipart/mixed;
+	boundary="E92D1326554879D37"
+
+This is a multi-part message in MIME format.
+
+----E92D1326554879D37
+Content-Type: multipart/alternative;
+	boundary="--E92D1326554879D37a"
+
+----E92D1326554879D37a
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset="utf-8"
+
+Just a reminder that we have not received a payment for this invoice yet. Let us know if you have questions.
+
+Thanks for your business!
+
+
+
+------------------------   Invoice Summary  --------------------------
+Invoice # : 360882
+Invoice Date: 07/07/2020
+Due Date: 07/14/2020
+Terms: Due on receipt
+Amount Due: $1,630.00
+
+The complete version has been provided as an attachment to this email.
+---------------------------------------------------------------------
+
+----E92D1326554879D37a
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset="utf-8"
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>QuickBooks</title>
+        <style media="print">body {-webkit-print-color-adjust: exact; color-adjust: exact} </style>
+        <!-- windows outlook styles, outlook 2007 onwards -->
+        <!--[if gte mso 12]>
+            <style type="text/css">
+                .billToHeader {
+                    width: 250px !important;
+                }
+                .shippingHeader {
+                    width: 250px !important;
+                }
+                .customFieldTitle {
+                    width: 250px !important;
+                    padding: 0px 5px 0px 5px !important;
+                    letter-spacing: 0px;
+                    white-space: nowrap;
+                }
+                .customFieldText {
+                    padding: 0px 5px 0px 5px !important;
+                    letter-spacing: 0px;
+                    white-space: nowrap;
+                }
+                .itemDetails td{
+                    width: 150px !important;
+                }
+                .spoofMsg a {
+                    color: #6b6c72 !important;
+                    text-decoration: none !important;
+                    pointer-events: none !important;
+                }
+            </style>
+        <![endif]-->
+        <style>
+            /** for iPhone */
+            @media only screen and (min-device-width : 320px) and (max-device-width: 767px) {
+                .rfc-container .billToSection .billToHeader, .rfc-container .billToSection .billToContent {
+                    width: 100% !important;
+                    display: inline-block !important;
+                }
+                .rfc-container .billToSection .billToHeader > div, .rfc-container .billToSection .billToContent > div {
+                    width: 100% !important;
+                }
+                .rfc-container .shippingSection .shippingHeader, .rfc-container .shippingSection .shippingContent {
+                    width: 100% !important;
+                    display: inline-block !important;
+                }
+                .rfc-container .shippingSection .shippingHeader > div, .rrfc-container .shippingSection .shippingContent > div {
+                    width: 100% !important;
+                }
+                .rfc-container .custom-fields-container .customFieldTitle, .rfc-container .custom-fields-container .customFieldText {
+                    width: 100% !important;
+                    display: inline-block !important;
+                }
+                .rfc-container .custom-fields-container .customFieldTitle > div, .rfc-container .custom-fields-container .customFieldText > div {
+                    width: 100% !important;
+                }
+                .rfc-container .custom-fields-container .customFieldText {
+                    padding: 0px 0px !important;
+                }
+                .rfc-container .custom-fields-container .customFieldTitle {
+                    padding: 20px 0px 5px 0px !important;
+                }
+                .rfc-container .custom-fields-container .customSection:first-child .customFieldTitle{
+                    padding: 10px 0px 5px 0px !important;
+                }
+                .rfc-container .billToSection .billToContent {
+                    padding: 0px 0px !important;
+                }
+                .rfc-container .billToSection .billToHeader {
+                    padding: 10px 0px 5px 0px !important;
+                }
+                .rfc-container .shippingSection .shippingContent {
+                    padding: 0px 0px !important;
+                }
+                .rfc-container .shippingSection .shippingHeader {
+                    padding: 10px 0px 5px 0px !important;
+                }
+                .shippingAndCustomLayout .outerWrapper {
+                    padding: 10px 0px !important;
+                }
+                .rfc-container .shippingSection .outerWrapper {
+                    padding: 10px 0px 20px 0px !important;
+                }
+                .rfc-container .subTotalContainer {
+                    padding: 30px 20px 20px 20px !important;
+                }
+                .rfc-container .totalSummaryLeft{
+                    padding: 0px 20px 10px 0px !important;
+                }
+                .rfc-container .totalSummaryRight{
+                    padding: 0px 0px 10px 0px !important;
+                }
+                .rfc-container .subTotalContainer .subTotalSection {
+                    width: 100% !important;
+                }
+                .rfc-container .messageSection, .rfc-container .footerSection, .rfc-container .companyAddrSection{
+                    padding: 20px 20px !important;
+                }
+                .rfc-container .detail-section-container {
+                    padding: 30px 20px !important;
+                }
+                .rfc-container .detail-section-container .title-and-amount .itemTitleTd {
+                    width: 50% !important;
+                }
+                .rfc-container .acctSummaryContainer {
+                    padding: 30px 20px 20px 20px !important;
+                }
+                .rfc-container .estimateSummryContainer{
+                    padding: 10px 20px 20px 20px !important;
+                }
+                .rfc-container .billToSection,.rfc-container .shippingSection {
+                    padding: 10px 20px 10px 20px !important;
+                }
+                .rfc-container .customFieldsSection {
+                    padding: 10px 20px 20px 20px !important;
+                }
+                .rfc-container .contentLeft, .rfc-container .contentRight {
+                    display: none !important;
+                }
+                .rfc-container .contentCenterTd {
+                    width: 100% !important;
+                }
+                .rfc-container .detailSection .itemDetails td{
+                    padding: 0px 10px 0px 0px !important;
+                }
+            }
+            /** for iPad */
+            /* @media only screen and (min-device-width : 768px){
+
+            } */
+        </style>
+    </head>
+    <body id="mainContainer">
+        <div id="main">
+            <div data-reactroot><div id="mainContainer" class="rfc-container rfc-email-flow" style="font-family: ArialMT, Arial, Helvetica, Times New Roman; color: #393a3d; padding-top: 0.5in; padding-bottom: 0.25in;"><table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family: ArialMT, Arial, Helvetica, Times New Roman; color: #393a3d;"><tbody><tr><td class="contentLeft" style="font-size: 0px;">&nbsp;</td><td width="768" align="center" class="contentCenterTd"><table class="width100 mainContentTable" cellpadding="0" cellspacing="0" border="0" style="font-family: ArialMT, Arial, Helvetica, Times New Roman; color: #393a3d; width: 100%; table-layout: fixed;"><tbody><tr><td><div id="titleContainer" class="titleContainer" style="font-size: 13px; letter-spacing: 0px; text-align: center; color: #6b6c72; margin-bottom: 10px;">INVOICE   360882</div><div id="header container"><div class="headerSec row"><div class="logoCenter" style="width: 100%;"><table class="width100 logoAndNameTable" style="font-family: ArialMT, Arial, Helvetica, Times New Roman; color: #393a3d; width: 100%;"><tbody><tr><td class="templateLogo" style="padding: 0px; width: 100%; text-align: center;"><img alt src="https://c6.qbo.intuit.com/qbo6/ext/Image/show/24733562515/1?15010472330000" height="72" style="height:72px"></td></tr><tr><td class="companyNameStyle" style="font-size: 20px; letter-spacing: 0px; text-align: center; padding: 14px 0px 0px 0px; color: #4F90BB;"></td></tr></tbody></table></div></div><br><br><div id="emailContainer" class="emailContainer" style="font-size: 18px; line-height: 1.5; text-align: left; padding-left: 20px; margin-left: 20px;"><p><br><br>Just a reminder that we have not received a payment for this invoice yet. Let us know if you have questions.<br><br>Thanks for your business!<br></p></div></div><table id="dueAmountContainer" class="dueAmountContainer width100" style="font-family: ArialMT, Arial, Helvetica, Times New Roman; color: #393a3d; text-align: center; align-items: center; width: 100%; font-size: 13px; background-color: #dce9f1;" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="duwDateWrapper" style="padding: 37px 0px 48px 0px; word-break: break-word;"><table class="width100" cellpadding="0" cellspacing="0" border="0" style="font-family: ArialMT, Arial, Helvetica, Times New Roman; color: #393a3d; width: 100%;"><tbody><tr><td id="dueDateContainer" class="dueDateContainer" height="1" style="padding: 0px; font-size: 16px; font-weight: bold; letter-spacing: 0px; text-align: center; color: #393a3d;">DUE 07/14/2020</td></tr><tr><td id="amountDueContainer" class="amountDueContainer" height="1" style="font-size: 48px; letter-spacing: 0px; text-align: center; color: #393a3d; padding: 10px 0px 35px 0px;">$1,630.00</td></tr><tr><td class="reviewTabWrapper" align="center" style="padding: 0px 0px 10px 0px;"><table style="font-family: ArialMT, Arial, Helvetica, Times New Roman; color: #393a3d; margin: auto;" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="reviewTab" style="width: 200px; height: 36px; border-radius: 4px; background-color: #393a3d; font-size: 16px; text-align: center; padding: 0px;"></td></tr></tbody></table></td></tr><tr><td class="labelText" height="1" style="font-size: 15px; text-align: center; color: #393a3d; font-weight: 300; padding: 0px;">Powered by QuickBooks</td></tr></tbody></table></td></tr></tbody></table><table class="companyAddrSection width100" cellpadding="0" cellspacing="0" border="0" style="font-family: ArialMT, Arial, Helvetica, Times New Roman; color: #393a3d; width: 100%; border-top: dotted 1px #babec5; padding: 10px 40px 25px 40px;"><tbody><tr><td><div><div class="companyDetails" style="font-size: 15px; text-align: center; color: #6b6c72; margin-top: 15px;"></div><div><div class="companyDetails" style="font-size: 15px; text-align: center; color: #6b6c72; margin-top: 15px;"></div></div><div class="additionalDetailsContainer" style="text-align: center;"><div class="companyDetails additionalDetails" style="font-size: 15px; text-align: center; color: #6b6c72; margin-top: 15px; display: inline-block; margin-left: 10px; margin-right: 10px;">(408) 943-1991</div><div class="companyDetails additionalDetails" style="font-size: 15px; text-align: center; color: #6b6c72; margin-top: 15px; display: inline-block; margin-left: 10px; margin-right: 10px;"></div></div></div></td></tr></tbody></table><table class="spoofMsgContainer" style="font-family: ArialMT, Arial, Helvetica, Times New Roman; color: #393a3d; border-top: dotted 1px #babec5;"><tbody><tr><td class="spoofMsg" style="padding: 27px 0px 5px 0px; font-size: 15px; color: #6b6c72; text-decoration: none; cursor: text;"><div><span>If you receive an email that seems fraudulent, please check with the business owner before paying.</span></div></td></tr></tbody></table><div><div class="qbLogoSection" style="width: 100%; text-align: center; padding-top: 30px; padding-bottom: 20px; display: block; border: 0;"><a href="http://links.rocyn2zsvu.com/ls/click?upn=LEV65WI9EZ1l5TkUt4hKq8-2FVBbYuuj0nDg25Ut8MlRk7KabmTeKnCw6LVYtMSGH036LdJvE-2F7kxSEi1KXvACa12simZJeFWpXodkcmPOYOMea3n4-2FgS6wyIcvtwS2-2F4S0Bco_3vYrV8oeYy0KrnS9GcBSYacpLr0SsjJY5rAUw2qU0Dn0-2BdAO3ar7xEt5-2BhRfcE6hVCNM3-2B6vKBo3jFXrG-2B-2B6VslJHPWdRQ4YZ4UhGuJA-2BeOZSIWIH1uMe2Kop0EvxxLBDoxGwTibV2q7eWuOyDwk5VJ9kgC9j9dINCmcnhZ6SF-2Bm8Y3qQsne7JBGcpyaIbb6cv4AxAwiXfSFbMOBGXTHfcLwN7NI4ML3WBuRNCD5h2MGJeskW5rdqXtBn97owiPmgz-2BbiDxD5-2BaiXXTkYOsXVObzBDH4JG2nc-2FcMynMysQWWkeKp5MvU8gFs0qVdOKm8FDxUES7YWm7hOfk0PiQ8w7wTCQ6UICE9waxEUda1cB8lQi0NPAdZbwvyAr2pkiiDOyhz1a-2Fuu5jpxiWtONwnYb-2FfgBb8ypHCXayiRZmkyUiEuZIZvPwFbxx-2BKjjoV110oMJld2twej1y-2B8n82kmFkiBrMz176rNztWxfRqOzd0-2BDV3qQe-2F0q-2B6esas8aiAYJ9W6wK6kJDVoCDtYvRuWXTIp-2FBpdCd2Hp-2BYWIJ1SNauy3L7nI4SmNET59cwWVkkt8Yiw-2FLei5bEuYPL-2F4AFTgKk15-2FM3CP2Bab3QDBdOYxJc-3D" target="_blank"><img width="147" height="40" style="height:40px;max-height:40px;max-width:147px" src="https://plugin-qbo.intuit.com/brand/1.1.9/product-specific-brand/assets/quickbooks-payments/logos/qbeinvoiceemail.png"></a></div><div style="height:10px"></div><div class="tosSection-container" style="text-align: center;"><div class="tosSection" style="font-size: 15px; text-align: center; color: #6b6c72; display: inline-block; margin: 10px;">&#169; Intuit, Inc. <!-- -->All rights reserved.</div><div class="tosSection" style="font-size: 15px; text-align: center; color: #6b6c72; display: inline-block; margin: 10px;"><a href="http://links.rocyn2zsvu.com/ls/click?upn=LEV65WI9EZ1l5TkUt4hKqyNfdD7XsSyGjP-2FDmkGJ0tnq4AuWnklWqFBquYMugwypHbKG_3vYrV8oeYy0KrnS9GcBSYacpLr0SsjJY5rAUw2qU0Dn0-2BdAO3ar7xEt5-2BhRfcE6hVCNM3-2B6vKBo3jFXrG-2B-2B6VslJHPWdRQ4YZ4UhGuJA-2BeOZSIWIH1uMe2Kop0EvxxLBDoxGwTibV2q7eWuOyDwk5VJ9kgC9j9dINCmcnhZ6SF-2Bm8Y3qQsne7JBGcpyaIbb6cv4AxAwiXfSFbMOBGXTHfcLwN7NI4ML3WBuRNCD5h2MGJeskW5rdqXtBn97owiPmgz-2BbiDxD5-2BaiXXTkYOsXVObzBDH4JG2nc-2FcMynMysQWWkeKp5MvU8gFs0qVdOKm8FDxUES7YWm7hOfk0PiQ8w7wTCQ6UICE9waxEUda1cB8lQi0NPAdZbwvyAr2pkiiDOyhz1a-2Fuu5jpxiWtONwnYb-2FfgBb8ypHCXayiRZmkyUi8G13rET8FU4rEMElb-2BpasLRoeAO9dCbHkU6w2pCtl0Uh0J8tD6pvuMD6YFXeVNI7yyZPFnmTHyQd5pT-2F0jO4eiIqgBE5cVAb74V-2FXmxqiq5IZyhytN5RHuJOP3Cofpt0ytIyJ9Q4UFUUsC14NL5NhZLE-2FHk7CNtdJijYVRw1zilXAYR9WGgTw3ELQjADonjc-3D">Privacy</a> |<!-- --> <a href="http://links.rocyn2zsvu.com/ls/click?upn=Wdp-2Bokx3FDF4PLntBJIh3afZMvmmLCoDYLeXSbsMjBMqIlLoawreFORQ356su6fISvk__3vYrV8oeYy0KrnS9GcBSYacpLr0SsjJY5rAUw2qU0Dn0-2BdAO3ar7xEt5-2BhRfcE6hVCNM3-2B6vKBo3jFXrG-2B-2B6VslJHPWdRQ4YZ4UhGuJA-2BeOZSIWIH1uMe2Kop0EvxxLBDoxGwTibV2q7eWuOyDwk5VJ9kgC9j9dINCmcnhZ6SF-2Bm8Y3qQsne7JBGcpyaIbb6cv4AxAwiXfSFbMOBGXTHfcLwN7NI4ML3WBuRNCD5h2MGJeskW5rdqXtBn97owiPmgz-2BbiDxD5-2BaiXXTkYOsXVObzBDH4JG2nc-2FcMynMysQWWkeKp5MvU8gFs0qVdOKm8FDxUES7YWm7hOfk0PiQ8w7wTCQ6UICE9waxEUda1cB8lQi0NPAdZbwvyAr2pkiiDOyhz1a-2Fuu5jpxiWtONwnYb-2FfgBb8ypHCXayiRZmkyUisctqQku1Oat6qaDBjrnjJbR07SRjrO6YUums6Dsckdg7cPbLbVeUZbneXswuHcjR0fFkuAViZKUYvaKa8KajEGoekGD1s8Ll6-2Fs0mEyJQguX0SCxa60mb-2BK0ZaGybjxVSzIMIrmbnr7bl9eQKEFbGnwVZGH78kZeLyV-2ByMfs2h13RhsSiDFrHR9zzkrg2TW4-3D">Security</a> |<!-- --> <a href="http://links.rocyn2zsvu.com/ls/click?upn=LEV65WI9EZ1l5TkUt4hKqzq6J49VEXJMRhUxqRckK3UK6eeEy0A-2FylQ0WpPN9IR94h7q62Fdp-2FzLMdeKepzQ-2FNvWIAQb48hzQ5UxY8k9fsyGtrA-2F8h8jxSDrUTeTBKlD6Knx_3vYrV8oeYy0KrnS9GcBSYacpLr0SsjJY5rAUw2qU0Dn0-2BdAO3ar7xEt5-2BhRfcE6hVCNM3-2B6vKBo3jFXrG-2B-2B6VslJHPWdRQ4YZ4UhGuJA-2BeOZSIWIH1uMe2Kop0EvxxLBDoxGwTibV2q7eWuOyDwk5VJ9kgC9j9dINCmcnhZ6SF-2Bm8Y3qQsne7JBGcpyaIbb6cv4AxAwiXfSFbMOBGXTHfcLwN7NI4ML3WBuRNCD5h2MGJeskW5rdqXtBn97owiPmgz-2BbiDxD5-2BaiXXTkYOsXVObzBDH4JG2nc-2FcMynMysQWWkeKp5MvU8gFs0qVdOKm8FDxUES7YWm7hOfk0PiQ8w7wTCQ6UICE9waxEUda1cB8lQi0NPAdZbwvyAr2pkiiDOyhz1a-2Fuu5jpxiWtONwnYb-2FfgBb8ypHCXayiRZmkyUiVpQOKBpTOBcDCk742OlfMYjcxV-2F8kdJ9xbWdr0UHr2RUQw3tADoN6Q0yENAy5BGDE-2FsZZPysa09Pd0XOOqy4yd5JQaKgbRV41tbQV2wCNXxgXpbwkjbzZpp6QExnQDP60iypNxxoJUwTCAPUpc1QNUBnL4x-2FNbwyqkJNFlqEFAIqtigRtkhLR2-2Bkil-2FiTAMM-3D">Terms of Service</a></div></div></div></td></tr></tbody></table></td><td class="contentRight" style="font-size: 0px;">&nbsp;</td></tr></tbody></table></div></div>        </div>
+
+
+</body>
+</html>
+
+----E92D1326554879D37a--
+
+----E92D1326554879D37
+Content-Transfer-Encoding: base64
+Content-Type: application/octet-stream; name="Invoice_360882_INC.xlsm"
+
+information removed
+
+----E92D1326554879D37--

