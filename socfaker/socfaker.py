@@ -82,6 +82,16 @@ class SocFaker(object):
         return DNS()
 
     @property
+    def email(self):
+        """An email object
+
+        Returns:
+            Email: Returns an object with properties about a fake email
+        """
+        from .email import Email
+        return Email()
+
+    @property
     def employee(self):
         """An employee object
 
