@@ -1,6 +1,7 @@
 import string, requests
 from .timestamp import Timestamp
 from .baseclass import BaseClass
+from .dns import DNS
 
 
 class Employee(BaseClass):
@@ -61,7 +62,7 @@ class Employee(BaseClass):
         Returns:
             str: Returns the email address of an employee
         """
-        return '{}@company.com'.format(self.username)
+        return '{}@{}'.format(self.username, DNS().name)
 
     @property
     def gender(self):
