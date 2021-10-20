@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import uuid, random, pendulum
 
 
 class WindowsEventData(object):
@@ -19,7 +18,7 @@ class WindowsEventData(object):
     def __init__(self):
         self.data_list = []
         self.soup = BeautifulSoup(features='lxml')
-        
+
     @property
     def get(self):
         return self.soup
