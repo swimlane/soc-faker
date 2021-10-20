@@ -112,7 +112,7 @@ class Employee(BaseClass):
 
     def __get_photo_url(self):
         url = '{}{}'.format(self._photo_url, self.random.randint(0,1084))
-        if requests.get(url).status_code is 200:
+        if requests.get(url).status_code == 200:
             return url
         else:
             self.__get_photo_url()
