@@ -1,5 +1,6 @@
 def test_socfaker_cloud_id(socfaker_fixture):
     assert socfaker_fixture.cloud.id
+    assert len(socfaker_fixture.cloud.id) == 36
 
 def test_socfaker_cloud_zone(socfaker_fixture):
     assert socfaker_fixture.cloud.zone
