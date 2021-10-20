@@ -10,8 +10,7 @@ class AlienVaultUSM(BaseClass):
     def __init__(self):
         super(AlienVaultUSM, self).__init__()
         self.__alert = Alert()
-        self.__priv_network = Network(private=True)
-        self.__pub_network = Network()
+        self.__network = Network()
         self.__dns = DNS()
         self.__dest_location = Location()
         self.__source_location = Location()
@@ -46,7 +45,7 @@ class AlienVaultUSM(BaseClass):
 
     @property
     def destination_hostname(self):
-        return self.__priv_network.hostname
+        return self.__network.netbios
 
     @property
     def destination_fqdn(self):
@@ -54,18 +53,18 @@ class AlienVaultUSM(BaseClass):
 
     @property
     def destination_address(self):
-        return self.__priv_network.ipv4
+        return self.__network.private_ipv4
 
     @property
     def destination_port(self):
         if not hasattr(self, '__priv_port'):
-            self.__priv_port = self.__priv_network.port
+            self.__priv_port = self.__network.port
         return list(self.__priv_port.keys())[0]
 
     @property
     def destination_port_label(self):
         if not hasattr(self, '__priv_port'):
-            self.__priv_port = self.__priv_network.port
+            self.__priv_port = self.__network.port
         return list(self.__priv_port.values())[0]
         
     @property
@@ -94,7 +93,7 @@ class AlienVaultUSM(BaseClass):
 
     @property
     def source_hostname(self):
-        return self.__pub_network.hostname
+        return self.__network.netbios
 
     @property
     def source_fqdn(self):
@@ -102,18 +101,18 @@ class AlienVaultUSM(BaseClass):
 
     @property
     def source_address(self):
-        return self.__pub_network.ipv4
+        return self.__network.ipv4
 
     @property
     def source_port(self):
         if not hasattr(self, '__pub_port'):
-            self.__pub_port = self.__pub_network.port
+            self.__pub_port = self.__network.port
         return list(self.__pub_port.keys())[0]
 
     @property
     def source_port_label(self):
         if not hasattr(self, '__pub_port'):
-            self.__pub_port = self.__pub_network.port
+            self.__pub_port = self.__network.port
         return list(self.__pub_port.values())[0]
 
     @property
@@ -186,11 +185,11 @@ class AlienVaultUSM(BaseClass):
     @property
     def application_protocol(self):
         if not hasattr(self, '__priv_protocol'):
-            self.__priv_protocol = self.__priv_network.protocol
+            self.__priv_protocol = self.__network.protocol
         return list(self.__priv_protocol.keys())[0]
         
     @property
     def transport_protocol(self):
         if not hasattr(self, '__priv_protocol'):
-            self.__priv_protocol = self.__priv_network.protocol
+            self.__priv_protocol = self.__network.protocol
         return list(self.__priv_protocol.values())[0]
