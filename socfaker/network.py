@@ -1,4 +1,3 @@
-import ipaddress
 from netaddr import IPNetwork
 from .baseclass import BaseClass
 
@@ -11,41 +10,46 @@ class Network(BaseClass):
         Network: Returns an object with properties related to network information
     """
 
-    def __init__(self, private=False):
-        super(Network, self).__init__()
-        self._private = private
-        self.hostname = 'test'
+    @property
+    def private_ipv4(self):
+        """Returns an IPv4 IP Address
+
+        Returns:
+            str: Returns an IPv4 Address that will be 10.x.x.x or 172.x.x.x or 192.168.x.x.
+        """
+        root = self.random.choice([10,172,192])
+        if root == 10:
+            return "10.{}.{}.{}".format(self.random.randint(0, 255), self.random.randint(0, 255), self.random.randint(0, 255))
+        elif root == 172:
+            return "172.{}.{}.{}".format(self.random.randint(16, 31), self.random.randint(0, 255), self.random.randint(0, 255))
+        else:
+            return "192.168.{}.{}".format(self.random.randint(0,255), self.random.randint(0,255))
 
     @property
     def ipv4(self):
         """Returns an IPv4 IP Address
 
         Returns:
-            str: Returns an IPv4 Address.  If private the address will be 10.x.x.x or 172.x.x.x or 192.168.x.x.
+            str: Returns an IPv4 Address.
         """
-        if self._private:
-            root = self.random.choice([10,172,192])
-            if root == 10:
-                return "10.{}.{}.{}".format(self.random.randint(0, 255), self.random.randint(0, 255), self.random.randint(0, 255))
-            elif root == 172:
-                return "172.{}.{}.{}".format(self.random.randint(16, 31), self.random.randint(0, 255), self.random.randint(0, 255))
-            else:
-                return "192.168.{}.{}".format(self.random.randint(0,255), self.random.randint(0,255))
-        else:
-            return str(ipaddress.IPv4Address(self.random.getrandbits(32)))
+        addr = ".".join(
+            map(
+                str, (
+                    self.random.randint(0, 255) 
+                        for _ in range(4)
+                    )
+                )
+            )
+        return addr
 
     @property
     def ipv6(self):
         """Returns an IPv6 IP Address
 
         Returns:
-            dict: Returns a compressed and exploded IPv6 Address.
+            str: Returns a IPv6 Address.
         """
-        addr = ipaddress.IPv6Address(self.random.getrandbits(128))
-        return {
-            'compressed': str(addr.compressed),
-            'exploded': str(addr.exploded)
-        }
+        return ':'.join('{:x}'.format(self.random.randint(0, 2**16 - 1)) for i in range(8))
 
     def get_cidr_range(self, cidr):
         """Returns an IPv4 range

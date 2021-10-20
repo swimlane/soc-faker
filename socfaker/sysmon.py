@@ -80,7 +80,7 @@ class SysMon(BaseClass):
                     elif item == 'protocol':
                         properties['protocol'] = net.protocol
                     elif item == 'source_ip':
-                        properties['source_ip'] = Network(private=True).ipv4
+                        properties['source_ip'] = Network().private_ipv4
                     elif item == 'source_port':
                         properties['source_port'] = self.random.randint(100,5000)
                     elif item == 'destination_ip':

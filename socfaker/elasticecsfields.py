@@ -117,7 +117,7 @@ class ElasticECSFields(BaseClass):
                   client fields/properties
         """
         comp = Computer()
-        network = Network(private=True)
+        network = Network()
         for key,val in network.port.items():
             port = key
         ip = network.ipv4
@@ -128,7 +128,7 @@ class ElasticECSFields(BaseClass):
             "mac": comp.mac_address,
             "port": port,
             "nat": {
-                "ip": Network(private=True).ipv4,
+                "ip": Network().private_ipv4,
                 "port": port
             },
             "packets": self.random.randint(7,2160),
@@ -163,7 +163,7 @@ class ElasticECSFields(BaseClass):
                   destination fields/properties
         """
         comp = Computer()
-        network = Network(private=False)
+        network = Network()
         for key,val in network.port.items():
             port = key
         ip = network.ipv4
@@ -174,7 +174,7 @@ class ElasticECSFields(BaseClass):
             "mac": comp.mac_address,
             "port": port,
             "nat": {
-                "ip": Network(private=True).ipv4,
+                "ip": Network().private_ipv4,
                 "port": port
             },
             "packets": self.random.randint(7,2160),
@@ -213,7 +213,7 @@ class ElasticECSFields(BaseClass):
             'op_code': self.__dns.op_code,
             'question': self.__dns.question,
             'response_code': self.__dns.response_code,
-            'resolved_ip': [Network(private=False).ipv4]
+            'resolved_ip': [Network().ipv4]
         }
 
     @property
@@ -297,8 +297,8 @@ class ElasticECSFields(BaseClass):
             dict: Returns a dictionary of ECS 
                   host fields/properties
         """
-        network = Network(private=True)
-        ip = network.ipv4
+        network = Network()
+        ip = network.private_ipv4
         return {
             'architecture': self.__computer.architecture,
             'domain': self.__organization.domain,
@@ -440,10 +440,10 @@ class ElasticECSFields(BaseClass):
                   source fields/properties
         """
         comp = Computer()
-        network = Network(private=True)
+        network = Network()
         for key,val in network.port.items():
             port = key
-        ip = network.ipv4
+        ip = network.private_ipv4
         return {
             "address": ip,
             "domain": Organization().domain,
@@ -451,7 +451,7 @@ class ElasticECSFields(BaseClass):
             "mac": comp.mac_address,
             "port": port,
             "nat": {
-                "ip": Network(private=True).ipv4,
+                "ip": Network().private_ipv4,
                 "port": port
             },
             "packets": self.random.randint(7,2160),
