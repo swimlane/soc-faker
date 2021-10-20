@@ -98,7 +98,7 @@ class DNS(BaseClass):
         return {
             'class': 'IN',
             'data': self._network.ipv4,
-            'name': self._network.hostname,
+            'name': self.name,
             'ttl': self.random.randint(10,400),
             'type': self.record
         }
