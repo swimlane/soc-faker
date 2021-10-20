@@ -71,7 +71,7 @@ class Email(BaseClass):
         return_string = '\n'
         if not self.__X_HEADER_LIST:
             self.__X_HEADER_LIST = self.__read_from_file(self.__X_HEADER_DATA_PATH)
-        for i in range(self.random.randint(0,5)):
+        for i in range(self.random.randint(1,5)):
             return_string += self.random.choice(self.__X_HEADER_LIST)
         return return_string.strip()
 
