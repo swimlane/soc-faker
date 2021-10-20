@@ -13,12 +13,7 @@ class Process(BaseClass):
     """
 
     _agent_id = None
-
-    def __init__(self, windows_event_obj=None, sysmon_event_obj=None):
-        if windows_event_obj:
-            self.args = self.__search_dict(windows_event_obj, 'process')
-        elif sysmon_event_obj:
-            pass
+    _args = []
 
     def __search_dict(self, search_dict, field):
         """
@@ -46,8 +41,11 @@ class Process(BaseClass):
     def args(self):
         if not self._args:
             # then we need to generate args
-            pass
-        return self._args
+            for item in ['-v', '-g', '-f', '--run']:
+                self._args.append(item)
+        if not isinstance(self._args, list):
+            self._args = [self._args]
+        return ' '.join([x for x in self._args])
 
     @args.setter
     def args(self, value):
@@ -58,35 +56,23 @@ class Process(BaseClass):
 
     @property
     def args_count(self):
-        return len(self.args)
+        return len(self._args)
     
     @property
     def command_line(self):
         return ''.join(x for x in self.args)
 
     @property
-    def entity_id(self):
-        return str(self.uuid.uuid4())
-    
-    @property
     def executable(self):
         return self.args[0]
-    
+
     @property
     def name(self):
         pass
 
     @property
-    def parent(self):
-        return Process()
-
-    @property
     def pid(self):
         return self.random.randint(0,9999)
-
-    @property
-    def start(self):
-        return Timestamp().current
 
     @property
     def thread_id(self):
