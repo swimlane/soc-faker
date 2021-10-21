@@ -27,9 +27,6 @@ def test_socfaker_employee_ssn(socfaker_fixture):
 def test_socfaker_employee_dob(socfaker_fixture):
     assert socfaker_fixture.employee.dob
 
-def test_socfaker_employee_photo(socfaker_fixture):
-    assert socfaker_fixture.employee.photo
-
 def test_socfaker_employee_user_id(socfaker_fixture):
     assert socfaker_fixture.employee.user_id
 
