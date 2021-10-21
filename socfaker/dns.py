@@ -1,4 +1,5 @@
-import json, os
+import json
+import os
 from .network import Network
 from .words import Words
 from .organization import Organization

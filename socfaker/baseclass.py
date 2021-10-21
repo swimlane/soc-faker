@@ -1,4 +1,5 @@
-import uuid, random
+import uuid
+import random
 
 
 class BaseClass(object):

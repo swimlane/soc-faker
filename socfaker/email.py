@@ -1,5 +1,4 @@
 import os
-import json
 from lorem_text import lorem
 from .timestamp import Timestamp
 from .baseclass import BaseClass

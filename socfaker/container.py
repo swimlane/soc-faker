@@ -1,4 +1,3 @@
-from .network import Network
 from .words import Words
 from .baseclass import BaseClass
 

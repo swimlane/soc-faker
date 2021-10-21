@@ -1,4 +1,5 @@
-import glob, os, fnmatch
+import os
+import fnmatch
 from string import Formatter
 from .computer import Computer
 from .file import File

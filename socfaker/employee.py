@@ -1,4 +1,5 @@
-import string, requests
+import string
+import requests
 from .timestamp import Timestamp
 from .baseclass import BaseClass
 from .dns import DNS

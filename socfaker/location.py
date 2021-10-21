@@ -1,4 +1,5 @@
-import os, json
+import os
+import json
 from .baseclass import BaseClass
 
 

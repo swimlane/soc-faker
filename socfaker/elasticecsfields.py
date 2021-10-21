@@ -1,4 +1,3 @@
-import base64
 from .timestamp import Timestamp
 from .alert import Alert
 from .organization import Organization
