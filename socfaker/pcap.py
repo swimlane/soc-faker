@@ -1,4 +1,3 @@
-import sys
 import binascii, base64
 try:
     from io import BytesIO
@@ -49,10 +48,10 @@ class PCAP(object):
 
     @property
     def __ip_header(self):
-        source_ip = Network(private=True).ipv4.split('.')
+        source_ip = Network().private_ipv4.split('.')
         source_ip_hex = '{:02X} {:02X} {:02X} {:02X}'.format(*map(int, source_ip))
 
-        dest_ip = Network(private=True).ipv4.split('.')
+        dest_ip = Network().private_ipv4.split('.')
         dest_ip_hex = '{:02X} {:02X} {:02X} {:02X}'.format(*map(int, dest_ip))
 
         return ('45'                    #IP version and header length (multiples of 4 bytes)   

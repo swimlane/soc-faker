@@ -7,6 +7,21 @@ class Timestamp(BaseClass):
     """The Timestamp Class provides methods to generate timestamps
     """
 
+    def in_the_past_pendulum_object(self, 
+        years=0, 
+        months=BaseClass().random.randint(0,3),
+        days=BaseClass().random.randint(1,15), 
+        hours=BaseClass().random.randint(1,24),
+        minutes=BaseClass().random.randint(1,60),
+        seconds=BaseClass().random.randint(1,60)):
+        return pendulum.now().subtract(
+            years=years,
+            months=months,
+            days=days,
+            hours=hours,
+            minutes=minutes,
+            seconds=seconds)
+
     def in_the_past(self,
         years=0, 
         months=BaseClass().random.randint(0,3),

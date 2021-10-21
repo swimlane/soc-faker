@@ -12,21 +12,20 @@ def test_socfaker_employee_username(socfaker_fixture):
 
 def test_socfaker_employee_email(socfaker_fixture):
     assert socfaker_fixture.employee.email
+    assert '@' in socfaker_fixture.employee.email
 
 def test_socfaker_employee_gender(socfaker_fixture):
     assert socfaker_fixture.employee.gender
 
 def test_socfaker_employee_account_status(socfaker_fixture):
     assert socfaker_fixture.employee.account_status
+    assert socfaker_fixture.employee.account_status in ['Enabled', 'Disabled']
 
 def test_socfaker_employee_ssn(socfaker_fixture):
     assert socfaker_fixture.employee.ssn
 
 def test_socfaker_employee_dob(socfaker_fixture):
     assert socfaker_fixture.employee.dob
-
-def test_socfaker_employee_photo(socfaker_fixture):
-    assert socfaker_fixture.employee.photo
 
 def test_socfaker_employee_user_id(socfaker_fixture):
     assert socfaker_fixture.employee.user_id

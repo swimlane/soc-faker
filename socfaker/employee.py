@@ -1,6 +1,8 @@
-import string, requests
+import string
+import requests
 from .timestamp import Timestamp
 from .baseclass import BaseClass
+from .dns import DNS
 
 
 class Employee(BaseClass):
@@ -61,7 +63,7 @@ class Employee(BaseClass):
         Returns:
             str: Returns the email address of an employee
         """
-        return '{}@company.com'.format(self.username)
+        return '{}@{}'.format(self.username, DNS().name)
 
     @property
     def gender(self):
@@ -111,7 +113,7 @@ class Employee(BaseClass):
 
     def __get_photo_url(self):
         url = '{}{}'.format(self._photo_url, self.random.randint(0,1084))
-        if requests.get(url).status_code is 200:
+        if requests.get(url).status_code == 200:
             return url
         else:
             self.__get_photo_url()

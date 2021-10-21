@@ -37,7 +37,7 @@ class Url(BaseClass):
     def netloc(self):
         if not self.__netloc:
             self.__netloc = "{www}{domain}:{port}/{path}{params}/{query}".format(
-                www=self.random.choice(['www','']),
+                www=self.random.choice(['www.','']),
                 domain=DNS().name,
                 path=self.path,
                 params=self.params,

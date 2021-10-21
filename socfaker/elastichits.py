@@ -114,7 +114,7 @@ class ElasticHits(BaseClass):
                         }
                     }
                     hit_list.append(hit_dict)
-                    count += 1
+                count += 1
         return hit_list
 
     def get_log_level(self, value):

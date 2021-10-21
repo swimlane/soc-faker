@@ -1,0 +1,61 @@
+X-Virus-Scanned: by SpamTitan at unonet.it
+X-Spam-Flag: NO
+X-Spam-Score: 0.569
+X-Spam-Level:
+X-Spam-Status: No, score=0.569 tagged_above=-999 required=5
+X-Mailer: Outlook
+X-CP-Spam-Trigger: true
+X-Authority-Reason: ss=1
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5931
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6157
+X-Rambler-User: fe7pyhdorais@ajmzre2qyk.co.uk/178.243.152.241
+X-EN-UserInfo: 19ad05cd842d5aa6a70730a3b4f4fdda:931c98230c6409dcc37fa7e93b490c27
+X-EN-AuthUser: staff@47s0vctoui.co.uk
+Sender:  metrolink@rxvlabhv2y.org
+X-EN-OrigIP: 206.74.106.202
+X-EN-OrigHost: unknown
+X-TM-AS-GCONF: 00
+X-imss-reprocess-rules: 29.14
+X-imss-reprocess-type: quarantine
+X-Spam-Processed: mail.ureqmr65mp.net, Wed, 27 May 2020 10:40:20 -0400
+X-MDOP-RefID: str=0001.0A090209.5ECE7B7B.0013,ss=1,re=0.000,recu=0.000,reip=0.000,vtr=str,vl=0,cl=1,cld=1,fgs=0 (_st=1 _vt=0 _iwf=0)
+X-MDSPF-Result: unapproved (mail.ureqmr65mp.net)
+X-MDRemoteIP: 173.201.192.111
+X-MDHelo: p3plsmtpa06-10.prod.phx3.secureserver.net
+X-MDArrival-Date: Wed, 27 May 2020 10:40:20 -0400
+X-Rcpt-To: carm@ureqmr65mp.net
+X-MDRcpt-To: carm@ureqmr65mp.net
+X-Return-Path: sales@yospek9lwv.edu
+X-Envelope-From: sales@yospek9lwv.edu
+X-MDaemon-Deliver-To: carm@ureqmr65mp.net
+X-ClientProxiedBy: AM0PR10CA0116.EURPRD10.PROD.OUTLOOK.COM
+X-MS-Exchange-MessageSentRepresentingType: 1
+X-Mailer: Microsoft Outlook 15.0
+X-Originating-IP: [24.52.136.143]
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: e7cb03ef-4a5d-4455-fa68-08d807b54cde
+X-MS-TrafficTypeDiagnostic: BN8PR15MB2785:|SN6PR11MB3039:|BN3NAM04HT009:
+X-Microsoft-Antispam-PRVS: <BN8PR15MB2785AB30AF71087EE35913C39D880@t91ia2mtd6.biz>
+X-MS-Oob-TLC-OOBClassifiers: OLM:7691;OLM:7691;
+X-Forefront-PRVS: 04238CD941
+X-MS-Exchange-SenderADCheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original: Naod5XpakurqLZrzIM2sftdFtb9V/CcfS6ZkCJJgIn6hgj5qy9Q92Irvyws1FVcNuAe6m/Y/Yt8CzsPKFPTuFZ2XP4qMwTy+14Qd+H9gx1lzkQvwlZWu2GlemnqVhhWjNu2zRM0eyWD0kE0x8NKaG7Q8pFB/tzacg9PyQJaC+kx0KXVEWPEeQACmLMqMWSjr1QYaHz9KfKGN8ulLwuOB2Pxi5SLFdUBrnDW43oMPxz/Z9qOrvnxV61GPShOWhnzYup8qKnW9k5FTruxQjMb2Sz3DKKxvuuRrt5Qv5IYFWvVGZDYNmkWV/qYJwBziP8Y9IDR7F4LHx48kNBuTMSyUL0autZGwMOPtb2hu8XUa9TkrslQb9u9pJKILy5X2sex+F+2mj5cKZrvuHbRvT2++HnygkkTUDtoYiBBjRagnnNhiX4aC6GiMBF91puWqXT29IMqmZu6/KygbKiGbiW6fpvFNcs5AMweckXW9T0KhAZc=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BN8PR15MB3476.namprd15.prod.outlook.com;PTR:;CAT:NONE;SFTY:;SFS:(376002)(346002)(366004)(39830400003)(396003)(136003)(86362001)(52116002)(66946007)(24736004)(108616005)(5660300002)(66476007)(478600001)(66616009)(33964004)(66556008)(235185007)(166002)(6916009)(2906002)(6496006)(53546011)(8676002)(956004)(83380400001)(3480700007)(8936002)(21480400003)(186003)(316002)(26005)(14286002)(9686003)(16526019)(6486002)(6666004)(21470400002)(583454002)(8420600001);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData: 3ZKEPe20uoA9Tivvfjo+xYwJJ2Lm6O0z9xif0i+4b40KgaNc5QA5CjvVbx1aXqwp6g0VUlua6nKHmE2CLCE9io7wiJOiHajD1Be9oTsC0thUE0Tudgi8VZBj5Dm0sSoY9jLQ/3mfPhmmVdh/Sc7PuBcLGU1yRgnY1NeAMPoBMXqcVepIYiEWmMnnZEBuOzukLmJgWMrjQkOWpAEYp39CNA0NvTVpOGBj23Qd+SO/uvlB+Ju9k6MfopIQsh4ZVTWSy4kQIbDZrh6WxTAoGZHzWCUX1nqYr8Mu/t22lmO+g3Es1Wi76NlpegOrZgm5292mg4ZBvFe4fBqIiIBKPx3YXEVMqFDirts7nZFANVMDBvKNODN3JXhD7HNRqub9W2Q363XA20munzDSamo5YWmrAfr74o1bzzpml479/79k+u71ILN4J903SduYpj4DM08mfyYoHjIgYTCzpJ3NTFuiVRhmwD41Mlk2C7n+HwGWKsM=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN8PR15MB2785
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 4298a6c0-3111-4e0c-b60c-030ea7ab66ee:0
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: BN3NAM04FT033.eop-NAM04.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: BN3NAM04FT033.eop-NAM04.prod.protection.outlook.com
+X-Forefront-Antispam-Report: CIP:40.107.243.86;CTRY:US;LANG:en;SCL:9;SRV:;IPV:NLI;SFV:SPM;H:NAM12-DM6-obe.outbound.protection.outlook.com;PTR:mail-dm6nam12on2086.outbound.protection.outlook.com;CAT:SAP;SFTY:;SFS:(4636009)(5060100009);DIR:INB;SFP:;
+X-MS-Office365-Filtering-Correlation-Id-Prvs: bfee8524-f7ea-499f-03fc-08d807b5462a
+X-MS-Exchange-AtpMessageProperties: SA
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info: =?utf-8?B?Wld6di9CN0NnUlg1NGRrbjNSNCt1TDFqak5NcDArdkkyWUdpK0NUcWJyc3ZB?=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR11MB3039
+X-EopAttribution-RoutedToQuarantineCount: 0
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: BN3NAM04FT051.eop-NAM04.prod.protection.outlook.com
+X-OriginatorOrg: bronxcareorg.onmicrosoft.com

@@ -1,4 +1,5 @@
-import json, os
+import json
+import os
 from .network import Network
 from .words import Words
 from .organization import Organization
@@ -98,7 +99,7 @@ class DNS(BaseClass):
         return {
             'class': 'IN',
             'data': self._network.ipv4,
-            'name': self._network.hostname,
+            'name': self.name,
             'ttl': self.random.randint(10,400),
             'type': self.record
         }
@@ -155,7 +156,7 @@ class DNS(BaseClass):
             with open(self.__TLD_DATA_PATH, 'r') as tlds:
                 data = json.load(tlds)
                 for key,val in data.items():
-                    self.__TLD_LIST.append(val.encode("utf-8", errors="ignore"))
+                    self.__TLD_LIST.append(val)
         try:
             tld = self.random.choice(self.__TLD_LIST)
         except:

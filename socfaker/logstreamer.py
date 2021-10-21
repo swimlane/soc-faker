@@ -1,5 +1,5 @@
-import random, time
-import socket
+import random
+import time
 import decimal
 import pendulum 
 from threading import Thread
@@ -70,7 +70,7 @@ class LogStreamer(Thread):
             return random.choice(["html", "htm", "gif", "php", "jpg", "png", None])
             
     def __get_private_ip(self):
-        return Network(private=True).ipv4
+        return Network().private_ipv4
 
     def __get_public_ip(self):
         return Network().ipv4
@@ -79,7 +79,8 @@ class LogStreamer(Thread):
         if not extension:
             extension = self.__get_web_extension(method)
         file_name = self.__file.name.rsplit('.',1)[0]
-        return "/{}/{}".format(self.__url.netloc, file_name + '.' + extension)
+        file_name = f'{file_name}.{extension}'
+        return "/{}/{}".format(self.__url.netloc, file_name)
 
     def __generate_outbound_log(self, method=None, extension=None, response_code=None, referrer=None):
         if not method:

@@ -1,6 +1,6 @@
-import requests, os, ast
+import os
+import requests
 from bs4 import BeautifulSoup
-from .network import Network
 from .location import Location
 from .baseclass import BaseClass
 

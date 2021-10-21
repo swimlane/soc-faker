@@ -126,4 +126,4 @@ class Computer(BaseClass):
         Returns:
             str: A random operating system ipv4 address
         """
-        return Network(private=True).ipv4
+        return Network().private_ipv4

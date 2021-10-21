@@ -1,5 +1,4 @@
 import hashlib, string, os, fnmatch, json
-import csv
 from .baseclass import BaseClass
 from .timestamp import Timestamp
 

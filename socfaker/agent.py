@@ -1,4 +1,3 @@
-import random
 from .computer import Computer
 from .baseclass import BaseClass
 

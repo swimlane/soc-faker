@@ -1,5 +1,5 @@
-import codecs, re
-from bs4 import BeautifulSoup
+import codecs
+import re
 import collections
 
 
