@@ -4,7 +4,7 @@ soc-faker is used to generate fake data for use by Security Operation Centers, I
 
 ## Getting Started
 
-`soc-faker` is compatible with Python 2.x and 3.x.  You can install `soc-faker` using `pip` as well as cloning this repository directly.
+`soc-faker` works with Python 3.6 or greater. You can install `soc-faker` using `pip` as well as cloning this repository directly.
 
 At the time of writing this document, `soc-faker` has the ability to fake data for the following main categories.  You can find specific details for each category by selecting the links below:
 
@@ -15,6 +15,7 @@ At the time of writing this document, `soc-faker` has the ability to fake data f
 * [Computer](docs/source/faker/computer.md)
 * [Container](docs/source/faker/container.md)
 * [DNS](docs/source/faker/dns.md)
+* [Email](docs/source/faker/email.md)
 * [Employee](docs/source/faker/employee.md)
 * [File](docs/source/faker/file.md)
 * [HTTP](docs/source/faker/http.md)
@@ -35,7 +36,6 @@ At the time of writing this document, `soc-faker` has the ability to fake data f
     * [ServiceNow](docs/source/faker/servicenow.md)
 * [Registry](docs/source/faker/registry.md)
 * [Timestamp](docs/source/faker/timestamp.md)
-* [TLS](docs/source/faker/tls.md)
 * [Url](docs/source/faker/url.md)
 * [User Agent](docs/source/faker/useragent.md)
 * [Vulnerability](docs/source/faker/vulnerability)
