@@ -15,6 +15,7 @@ At the time of writing this document, `soc-faker` has the ability to fake data f
 * [Computer](faker/computer.md)
 * [Container](faker/container.md)
 * [DNS](faker/dns.md)
+* [Email](faker/email.md)
 * [Employee](faker/employee.md)
 * [File](faker/file.md)
 * [HTTP](faker/http.md)
@@ -35,7 +36,6 @@ At the time of writing this document, `soc-faker` has the ability to fake data f
     * [ServiceNow](faker/servicenow.md)
 * [Registry](faker/registry.md)
 * [Timestamp](faker/timestamp.md)
-* [TLS](faker/tls.md)
 * [Url](faker/url.md)
 * [User Agent](faker/useragent.md)
 * [Vulnerability](faker/vulnerability)
@@ -160,6 +160,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
    faker/container
    faker/dns
    faker/elastic
+   faker/email
    faker/employee
    faker/file
    faker/http
@@ -168,11 +169,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
    faker/network
    faker/organization
    faker/operating_system
+   faker/process
    faker/qualysguard
    faker/registry
    faker/servicenow
    faker/sysmon
    faker/timestamp
+   faker/url
    faker/useragent
    faker/vulnerability
    faker/words
