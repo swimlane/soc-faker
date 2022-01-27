@@ -1,4 +1,3 @@
-from lxml import etree as ET
 import uuid, random, pendulum
 from bs4 import BeautifulSoup
 

@@ -64,7 +64,6 @@ requests==2.23.0
 pendulum==2.1.2
 ipaddress==1.0.23
 bs4==0.0.1
-lxml==4.5.1
 xmltodict==0.12.0
 netaddr==0.7.20
 fire==0.3.1
