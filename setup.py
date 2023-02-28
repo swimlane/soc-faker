@@ -18,7 +18,7 @@ setup(
     url='https://github.com/swimlane/soc-faker',
     author='Swimlane',
     author_email='info@swimlane.com',
-    python_requires='>=3.6, <4',
+    python_requires='>=3.7, <4',
     package_data={
         'socfaker':  ['data/*.txt', 'data/*.csv', 'data/*.json', 'data/filenames/*.txt', 'data/sysmon/*.txt', 'data/windows-event/*.md']
     },
