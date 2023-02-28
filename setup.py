@@ -7,7 +7,7 @@ def parse_requirements(requirement_file):
 
 setup(
     name='soc-faker',
-    version='4.0.0',
+    version='4.0.1',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='A Python package to fake SOC (Security Operations Center) data',
@@ -18,7 +18,7 @@ setup(
     url='https://github.com/swimlane/soc-faker',
     author='Swimlane',
     author_email='info@swimlane.com',
-    python_requires='>=3.6, <4',
+    python_requires='>=3.7, <4',
     package_data={
         'socfaker':  ['data/*.txt', 'data/*.csv', 'data/*.json', 'data/filenames/*.txt', 'data/sysmon/*.txt', 'data/windows-event/*.md']
     },
