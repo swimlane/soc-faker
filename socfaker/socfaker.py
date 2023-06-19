@@ -288,3 +288,24 @@ class SocFaker(object):
         """
         from .words import Words
         return Words()
+
+    @property
+    def cves(self):
+        """Used to create a random CVE.
+
+        Returns:
+            cve: Returns an object with methods to generate a random CVE.
+        """
+        from .cves import CVES
+        return CVES()
+
+    @property
+    def ssdeep_hash(self):
+        """Used to create a random ssdeep hash.
+
+        Returns:
+            cve: Returns an object with method to generate a random ssdeep hash.
+        """
+        from .cves import CVES
+        return CVES()
+
