@@ -1,0 +1,62 @@
+Unauthorized Access Attempt
+Brute Force Login Attempt
+Malware Detection
+Suspicious Network Activity
+Phishing Attempt Detected
+Data Exfiltration Detected
+Lateral Movement Detected
+Privilege Escalation Attempt
+Unusual User Activity
+Endpoint Compromise Detected
+Command and Control Traffic
+Exploit Attempt Detected
+Suspicious File Download
+Unauthorized Application Execution
+Inbound Port Scan Detected
+Outbound Port Scan Detected
+Suspicious Email Attachment
+Ransomware Activity Detected
+Unauthorized System Change
+Suspicious PowerShell Activity
+Suspicious Script Execution
+Anomalous User Behavior
+Endpoint Isolation Triggered
+Data Leakage Detected
+Suspicious Domain Access
+Unauthorized Data Access
+Suspicious Process Activity
+Account Compromise Detected
+Zero-Day Exploit Attempt
+Failed Login Attempt
+Multiple Failed Login Attempts
+Suspicious VPN Activity
+Threat Intelligence Match
+Suspicious Registry Change
+High Privilege Account Usage
+Internal Reconnaissance Detected
+Unauthorized Software Installation
+Suspicious Cloud Activity
+Suspicious SSH Activity
+Suspicious HTTP Activity
+External Media Usage Detected
+Suspicious SMB Activity
+Suspicious DNS Query
+Malware Outbreak Detected
+Unauthorized Remote Access
+Anomalous Network Traffic
+Suspicious Database Activity
+Abnormal User Login Time
+Exploit Attempt Detected
+Unauthorized Configuration Change
+Unauthorized File Access
+Suspicious Network Share Access
+Unknown Device Connected
+Network Intrusion Detected
+Phishing Attempt Detected
+Anomalous Network Port Activity
+Anomalous File Activity
+High Number of Connections Detected
+Unauthorized Application Usage
+Abnormal Outbound Traffic Detected
+Unauthorized User Account Creation
+Unusual System Behavior Detected
