@@ -21,14 +21,4 @@ If you discover a security vulnerability, please report it to us as follows:
 
 We will release security updates as needed. Users are encouraged to update to the latest version to ensure they have the latest security fixes.
 
-## Security Best Practices
-
-To help secure your Angular project, we recommend the following best practices:
-
-- **Keep dependencies up to date**: Regularly update your project dependencies to the latest versions.
-- **Use HTTPS**: Ensure your application is served over HTTPS to protect data in transit.
-- **Sanitize inputs**: Always sanitize user inputs to prevent injection attacks.
-- **Enable Content Security Policy (CSP)**: Use CSP to mitigate cross-site scripting (XSS) and other code injection attacks.
-- **Regularly review code**: Conduct regular code reviews to identify and fix potential security issues.
-
 Thank you for helping us keep our project secure!
