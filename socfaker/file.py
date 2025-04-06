@@ -250,6 +250,14 @@ class File(BaseClass):
         """
         return self.random.choice([hashlib.sha256(str(self.random_value).encode('utf-8')).hexdigest()])
 
+    def sha512(self):
+        """A random generated SHA256 hash
+
+        Returns:
+            str: A randomly generated SHA256 file hash
+        """
+        return self.random.choice([hashlib.sha512(str(self.random_value).encode('utf-8')).hexdigest()])
+
     @property
     def hashes(self):
         """A dict containing MD5, SHA1, and SHA256 hashes
@@ -260,7 +268,8 @@ class File(BaseClass):
         return {
             'md5': self.md5,
             'sha1': self.sha1,
-            'sha256': self.sha256
+            'sha256': self.sha256,
+            'sha512' :self.sha512
         }
 
     @property
